@@ -22,7 +22,7 @@ public class CGSendGift extends BaseMessageJSON{
 	
 	@Override
 	public void execute() {
-		GiftHandlerFactory.getHandler().execute(new Player(), this);
+		GiftHandlerFactory.getHandler().execute(this.getNettyClientSession().getPlayer(), this);
 	}
 	
 

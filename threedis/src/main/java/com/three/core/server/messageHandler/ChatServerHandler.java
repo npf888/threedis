@@ -5,30 +5,35 @@ import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
 import com.google.protobuf.Message;
 import com.three.core.msg.transform.MsgTransform;
 import com.three.core.protobuf.SubcribeReqProto;
 import com.three.core.protobuf.SubcribeRespProto;
+import com.three.core.session.NettyClientSession;
 import com.three.gift.msg.CGSendGift;
+import com.three.globals.Globals;
 
 public class ChatServerHandler extends SimpleChannelInboundHandler<Message> {  
 		Logger logger = Logger.getLogger(ChatServerHandler.class);
 		
+		
+		
 	    @Override  
 	    public void channelActive(ChannelHandlerContext ctx) throws Exception { // (5)  
 	        Channel incoming = ctx.channel();  
-	        logger.info("ChatClient:" + incoming.remoteAddress() + "上线");  
-	  
+	        logger.info("用户:" + incoming.remoteAddress() + "上线");  
+	        NettyClientSession clientSession = new NettyClientSession(ctx);
+	        Globals.setNettyClientSessionMap(clientSession);
 	    } 
 	    
 	    @Override  
 	    public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {  
 	        Channel incoming = ctx.channel();  
-	  
-	        logger.info("[SERVER] - " + incoming.remoteAddress() + " 离开\n");  
-	  
+	        logger.info("用户:" + incoming.remoteAddress() + " 离开\n");  
+	        Globals.removeNettyClientSessionMap(incoming.remoteAddress().toString());
 	    }  
 	  
 	    @Override  
@@ -36,12 +41,18 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Message> {
 	            throws Exception {  
 	    	SubcribeReqProto.SubcribeReq req = (SubcribeReqProto.SubcribeReq)msg;
 	    	
-	    	logger.info("来了。。。      。。。 ");
-	    	logger.info("ID --------- "+req.getSubReqID());
-	    	logger.info("Server accept client subcribe req: ["+req.toString()+"]");
-			
-				
-			ctx.writeAndFlush(resp(req.getSubReqID()));
+	    	
+	    	String jsonBody = req.getJsonBody();
+	    	if(StringUtils.isEmpty(jsonBody)){
+	    		logger.info("当前消息为空：消息 reqID:"+req.getSubReqID()+" --- 消息体:"+req.getJsonBody());
+	    		return;
+	    	}
+	    	logger.info("当前消息 reqID:"+req.getSubReqID()+" --- 消息体:"+req.getJsonBody());
+	    	NettyClientSession nettyClientSession = Globals.getNettyClientSessionMap(ctx.channel().remoteAddress().toString());
+	    	Globals.getMessageRecognizer().recognize(req.getSubReqID(),jsonBody,nettyClientSession);
+	    	
+	    	
+//			ctx.writeAndFlush(resp(req.getSubReqID()));
 		}
 		
 	    

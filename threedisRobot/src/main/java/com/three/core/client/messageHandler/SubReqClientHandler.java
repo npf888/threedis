@@ -10,6 +10,7 @@ import com.three.core.msg.transform.MsgTransform;
 import com.three.core.protobuf.SubcribeReqProto;
 import com.three.core.protobuf.SubcribeRespProto;
 import com.three.gift.msg.CGSendGift;
+import com.three.player.msg.CGLoginIn;
 
 public class SubReqClientHandler extends SimpleChannelInboundHandler<Message>{
 	
@@ -20,7 +21,14 @@ public class SubReqClientHandler extends SimpleChannelInboundHandler<Message>{
 	@Override
 	public void channelActive(ChannelHandlerContext ctx){
 		logger.info("Œ“∏’…œœﬂ£∫"+ctx.channel().remoteAddress());
-		ctx.write(subReq(100000000));
+		ctx.write(subReq(1));
+		ctx.flush();
+		try {
+			Thread.currentThread().sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		ctx.write(subReq(2));
 		ctx.flush();
 	}
 	
@@ -51,7 +59,11 @@ public class SubReqClientHandler extends SimpleChannelInboundHandler<Message>{
 		builder.setUserName("lilinfeng");
 		builder.setProductName("Netty book for protobuf");
 		builder.setAddress("street street");
-		builder.setJsonBody(MsgTransform.toJSONString(new CGSendGift()));
+		if(i ==1){
+			builder.setJsonBody(MsgTransform.toJSONString(new CGLoginIn()));
+		}else if(i == 2){
+			builder.setJsonBody(MsgTransform.toJSONString(new CGSendGift()));
+		}
 		return builder.build();
 		
 	}

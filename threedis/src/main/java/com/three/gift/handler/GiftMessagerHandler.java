@@ -1,5 +1,7 @@
 package com.three.gift.handler;
 
+import org.apache.log4j.Logger;
+
 import com.three.core.handler.MessagerHandler;
 import com.three.core.msg.inter.IMessage;
 import com.three.gift.msg.CGSendGift;
@@ -7,7 +9,7 @@ import com.three.player.playerObj.Player;
 
 public class GiftMessagerHandler implements MessagerHandler{
 
-
+	Logger logger = Logger.getLogger(GiftMessagerHandler.class);
 
 	/**
 	 * 每个handler的 统一入口
@@ -28,6 +30,6 @@ public class GiftMessagerHandler implements MessagerHandler{
 
 
 	private void sendGift(){
-		
+		logger.info("现在 正在调用 sendGift");
 	};
 }

@@ -67,3 +67,146 @@ jsonBody: "{\"msgType\":3001}"
 +--------+-------------------------------------------------+----------------+
 2018-04-19 11:27:18 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x45c829be, L:/192.168.1.41:8080 - R:/192.168.1.41:53413] FLUSH
 2018-04-19 11:27:18 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x45c829be, L:/192.168.1.41:8080 - R:/192.168.1.41:53413] READ COMPLETE
+2018-04-19 18:04:21 [INFO]-[com.three.core.server.NettyServer] [ChatServer 启动了]
+2018-04-19 18:04:32 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x54a927a3, L:/192.168.1.41:8080 - R:/192.168.1.41:62497] REGISTERED
+2018-04-19 18:04:32 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x54a927a3, L:/192.168.1.41:8080 - R:/192.168.1.41:62497] ACTIVE
+2018-04-19 18:04:32 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 用户:/192.168.1.41:62497上线
+2018-04-19 18:04:32 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x54a927a3, L:/192.168.1.41:8080 - R:/192.168.1.41:62497] READ: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 01 12 09 6c 69 6c 69 6e 66 65 6e 67 1a 17 |G....lilinfeng..|
+|00000010| 4e 65 74 74 79 20 62 6f 6f 6b 20 66 6f 72 20 70 |Netty book for p|
+|00000020| 72 6f 74 6f 62 75 66 22 0d 73 74 72 65 65 74 20 |rotobuf".street |
+|00000030| 73 74 72 65 65 74 2a 10 7b 22 6d 73 67 54 79 70 |street*.{"msgTyp|
+|00000040| 65 22 3a 32 30 30 31 7d                         |e":2001}        |
++--------+-------------------------------------------------+----------------+
+2018-04-19 18:04:32 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 当前消息 reqID:1 --- 消息体:{"msgType":2001}
+2018-04-19 18:04:32 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x54a927a3, L:/192.168.1.41:8080 - R:/192.168.1.41:62497] READ COMPLETE
+2018-04-19 18:04:37 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x54a927a3, L:/192.168.1.41:8080 - R:/192.168.1.41:62497] READ: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 02 12 09 6c 69 6c 69 6e 66 65 6e 67 1a 17 |G....lilinfeng..|
+|00000010| 4e 65 74 74 79 20 62 6f 6f 6b 20 66 6f 72 20 70 |Netty book for p|
+|00000020| 72 6f 74 6f 62 75 66 22 0d 73 74 72 65 65 74 20 |rotobuf".street |
+|00000030| 73 74 72 65 65 74 2a 10 7b 22 6d 73 67 54 79 70 |street*.{"msgTyp|
+|00000040| 65 22 3a 33 30 30 31 7d                         |e":3001}        |
++--------+-------------------------------------------------+----------------+
+2018-04-19 18:04:37 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 当前消息 reqID:2 --- 消息体:{"msgType":3001}
+2018-04-19 18:04:37 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x54a927a3, L:/192.168.1.41:8080 - R:/192.168.1.41:62497] READ COMPLETE
+2018-04-19 18:05:00 [INFO]-[com.three.core.server.NettyServer] [ChatServer 启动了]
+2018-04-19 18:05:06 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x7d8a801f, L:/192.168.1.41:8080 - R:/192.168.1.41:62635] REGISTERED
+2018-04-19 18:05:06 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x7d8a801f, L:/192.168.1.41:8080 - R:/192.168.1.41:62635] ACTIVE
+2018-04-19 18:05:06 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 用户:/192.168.1.41:62635上线
+2018-04-19 18:05:06 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x7d8a801f, L:/192.168.1.41:8080 - R:/192.168.1.41:62635] READ: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 01 12 09 6c 69 6c 69 6e 66 65 6e 67 1a 17 |G....lilinfeng..|
+|00000010| 4e 65 74 74 79 20 62 6f 6f 6b 20 66 6f 72 20 70 |Netty book for p|
+|00000020| 72 6f 74 6f 62 75 66 22 0d 73 74 72 65 65 74 20 |rotobuf".street |
+|00000030| 73 74 72 65 65 74 2a 10 7b 22 6d 73 67 54 79 70 |street*.{"msgTyp|
+|00000040| 65 22 3a 32 30 30 31 7d                         |e":2001}        |
++--------+-------------------------------------------------+----------------+
+2018-04-19 18:05:06 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 当前消息 reqID:1 --- 消息体:{"msgType":2001}
+2018-04-19 18:05:06 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x7d8a801f, L:/192.168.1.41:8080 - R:/192.168.1.41:62635] READ COMPLETE
+2018-04-19 18:05:11 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x7d8a801f, L:/192.168.1.41:8080 - R:/192.168.1.41:62635] READ: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 02 12 09 6c 69 6c 69 6e 66 65 6e 67 1a 17 |G....lilinfeng..|
+|00000010| 4e 65 74 74 79 20 62 6f 6f 6b 20 66 6f 72 20 70 |Netty book for p|
+|00000020| 72 6f 74 6f 62 75 66 22 0d 73 74 72 65 65 74 20 |rotobuf".street |
+|00000030| 73 74 72 65 65 74 2a 10 7b 22 6d 73 67 54 79 70 |street*.{"msgTyp|
+|00000040| 65 22 3a 33 30 30 31 7d                         |e":3001}        |
++--------+-------------------------------------------------+----------------+
+2018-04-19 18:05:11 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 当前消息 reqID:2 --- 消息体:{"msgType":3001}
+2018-04-19 18:05:11 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x7d8a801f, L:/192.168.1.41:8080 - R:/192.168.1.41:62635] READ COMPLETE
+2018-04-19 18:06:28 [INFO]-[com.three.core.server.NettyServer] [ChatServer 启动了]
+2018-04-19 18:06:32 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2c414294, L:/192.168.1.41:8080 - R:/192.168.1.41:62918] REGISTERED
+2018-04-19 18:06:32 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2c414294, L:/192.168.1.41:8080 - R:/192.168.1.41:62918] ACTIVE
+2018-04-19 18:06:32 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 用户:/192.168.1.41:62918上线
+2018-04-19 18:06:33 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2c414294, L:/192.168.1.41:8080 - R:/192.168.1.41:62918] READ: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 01 12 09 6c 69 6c 69 6e 66 65 6e 67 1a 17 |G....lilinfeng..|
+|00000010| 4e 65 74 74 79 20 62 6f 6f 6b 20 66 6f 72 20 70 |Netty book for p|
+|00000020| 72 6f 74 6f 62 75 66 22 0d 73 74 72 65 65 74 20 |rotobuf".street |
+|00000030| 73 74 72 65 65 74 2a 10 7b 22 6d 73 67 54 79 70 |street*.{"msgTyp|
+|00000040| 65 22 3a 32 30 30 31 7d                         |e":2001}        |
++--------+-------------------------------------------------+----------------+
+2018-04-19 18:06:33 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 当前消息 reqID:1 --- 消息体:{"msgType":2001}
+2018-04-19 18:06:33 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2c414294, L:/192.168.1.41:8080 - R:/192.168.1.41:62918] READ COMPLETE
+2018-04-19 18:06:38 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2c414294, L:/192.168.1.41:8080 - R:/192.168.1.41:62918] READ: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 02 12 09 6c 69 6c 69 6e 66 65 6e 67 1a 17 |G....lilinfeng..|
+|00000010| 4e 65 74 74 79 20 62 6f 6f 6b 20 66 6f 72 20 70 |Netty book for p|
+|00000020| 72 6f 74 6f 62 75 66 22 0d 73 74 72 65 65 74 20 |rotobuf".street |
+|00000030| 73 74 72 65 65 74 2a 10 7b 22 6d 73 67 54 79 70 |street*.{"msgTyp|
+|00000040| 65 22 3a 33 30 30 31 7d                         |e":3001}        |
++--------+-------------------------------------------------+----------------+
+2018-04-19 18:06:38 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 当前消息 reqID:2 --- 消息体:{"msgType":3001}
+2018-04-19 18:06:38 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x2c414294, L:/192.168.1.41:8080 - R:/192.168.1.41:62918] READ COMPLETE
+2018-04-19 18:07:23 [INFO]-[com.three.core.server.NettyServer] [ChatServer 启动了]
+2018-04-19 18:07:28 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x77efc6ed, L:/192.168.1.41:8080 - R:/192.168.1.41:63110] REGISTERED
+2018-04-19 18:07:28 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x77efc6ed, L:/192.168.1.41:8080 - R:/192.168.1.41:63110] ACTIVE
+2018-04-19 18:07:28 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 用户:/192.168.1.41:63110上线
+2018-04-19 18:07:28 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0x77efc6ed, L:/192.168.1.41:8080 - R:/192.168.1.41:63110] READ: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 01 12 09 6c 69 6c 69 6e 66 65 6e 67 1a 17 |G....lilinfeng..|
+|00000010| 4e 65 74 74 79 20 62 6f 6f 6b 20 66 6f 72 20 70 |Netty book for p|
+|00000020| 72 6f 74 6f 62 75 66 22 0d 73 74 72 65 65 74 20 |rotobuf".street |
+|00000030| 73 74 72 65 65 74 2a 10 7b 22 6d 73 67 54 79 70 |street*.{"msgTyp|
+|00000040| 65 22 3a 32 30 30 31 7d                         |e":2001}        |
++--------+-------------------------------------------------+----------------+
+2018-04-19 18:07:28 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 当前消息 reqID:1 --- 消息体:{"msgType":2001}
+2018-04-19 18:11:14 [INFO]-[com.three.core.server.NettyServer] [ChatServer 启动了]
+2018-04-19 18:11:17 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xff5175c8, L:/192.168.1.41:8080 - R:/192.168.1.41:63743] REGISTERED
+2018-04-19 18:11:17 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xff5175c8, L:/192.168.1.41:8080 - R:/192.168.1.41:63743] ACTIVE
+2018-04-19 18:11:17 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 用户:/192.168.1.41:63743上线
+2018-04-19 18:11:17 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xff5175c8, L:/192.168.1.41:8080 - R:/192.168.1.41:63743] READ: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 01 12 09 6c 69 6c 69 6e 66 65 6e 67 1a 17 |G....lilinfeng..|
+|00000010| 4e 65 74 74 79 20 62 6f 6f 6b 20 66 6f 72 20 70 |Netty book for p|
+|00000020| 72 6f 74 6f 62 75 66 22 0d 73 74 72 65 65 74 20 |rotobuf".street |
+|00000030| 73 74 72 65 65 74 2a 10 7b 22 6d 73 67 54 79 70 |street*.{"msgTyp|
+|00000040| 65 22 3a 32 30 30 31 7d                         |e":2001}        |
++--------+-------------------------------------------------+----------------+
+2018-04-19 18:11:17 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 当前消息 reqID:1 --- 消息体:{"msgType":2001}
+2018-04-19 18:11:18 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] ChatClient:/192.168.1.41:63743异常,已被服务器关闭
+2018-04-19 18:11:18 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xff5175c8, L:/192.168.1.41:8080 - R:/192.168.1.41:63743] CLOSE
+2018-04-19 18:11:18 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xff5175c8, L:/192.168.1.41:8080 ! R:/192.168.1.41:63743] READ COMPLETE
+2018-04-19 18:11:18 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xff5175c8, L:/192.168.1.41:8080 ! R:/192.168.1.41:63743] INACTIVE
+2018-04-19 18:11:18 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xff5175c8, L:/192.168.1.41:8080 ! R:/192.168.1.41:63743] UNREGISTERED
+2018-04-19 18:11:18 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 用户:/192.168.1.41:63743 离开
+
+2018-04-19 18:11:29 [INFO]-[com.three.core.server.NettyServer] [ChatServer 启动了]
+2018-04-19 18:11:41 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xf8873e1c, L:/192.168.1.41:8080 - R:/192.168.1.41:63855] REGISTERED
+2018-04-19 18:11:41 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xf8873e1c, L:/192.168.1.41:8080 - R:/192.168.1.41:63855] ACTIVE
+2018-04-19 18:11:41 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 用户:/192.168.1.41:63855上线
+2018-04-19 18:11:41 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xf8873e1c, L:/192.168.1.41:8080 - R:/192.168.1.41:63855] READ: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 01 12 09 6c 69 6c 69 6e 66 65 6e 67 1a 17 |G....lilinfeng..|
+|00000010| 4e 65 74 74 79 20 62 6f 6f 6b 20 66 6f 72 20 70 |Netty book for p|
+|00000020| 72 6f 74 6f 62 75 66 22 0d 73 74 72 65 65 74 20 |rotobuf".street |
+|00000030| 73 74 72 65 65 74 2a 10 7b 22 6d 73 67 54 79 70 |street*.{"msgTyp|
+|00000040| 65 22 3a 32 30 30 31 7d                         |e":2001}        |
++--------+-------------------------------------------------+----------------+
+2018-04-19 18:11:41 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 当前消息 reqID:1 --- 消息体:{"msgType":2001}
+2018-04-19 18:11:47 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] ChatClient:/192.168.1.41:63855异常,已被服务器关闭
+2018-04-19 18:11:47 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xf8873e1c, L:/192.168.1.41:8080 - R:/192.168.1.41:63855] CLOSE
+2018-04-19 18:11:47 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xf8873e1c, L:/192.168.1.41:8080 ! R:/192.168.1.41:63855] READ COMPLETE
+2018-04-19 18:11:47 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xf8873e1c, L:/192.168.1.41:8080 ! R:/192.168.1.41:63855] INACTIVE
+2018-04-19 18:11:47 [INFO]-[io.netty.handler.logging.LoggingHandler] [id: 0xf8873e1c, L:/192.168.1.41:8080 ! R:/192.168.1.41:63855] UNREGISTERED
+2018-04-19 18:11:47 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler] 用户:/192.168.1.41:63855 离开
+
