@@ -29,7 +29,7 @@ public class MessageRecognizer implements InitService{
 	 * 识别消息
 	 */
 	public void recognize(Integer msgcode, String jsonMsg,NettyClientSession nettyClientSession){
-		IMessage message = this.msgProvider.getByMsgType(msgcode);
+		IMessage message =getByMsgType(msgcode);
 		IMessage msg =MsgTransform.fromJSONString(jsonMsg,message);
 		if(msg.getMsgType() == IMessage.CG_MSG_TYPE){//请求消息
 			msg.setNettyClientSession(nettyClientSession);
@@ -39,6 +39,12 @@ public class MessageRecognizer implements InitService{
 		}
 	}
 
+
+
+
+	public IMessage getByMsgType(int msgcode){
+		return this.msgProvider.getByMsgType(msgcode);
+	}
 
 
 

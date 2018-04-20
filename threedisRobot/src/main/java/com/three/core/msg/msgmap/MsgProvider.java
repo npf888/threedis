@@ -1,4 +1,4 @@
-package com.three.core.msg.msgMap;
+package com.three.core.msg.msgmap;
 
 import java.util.HashMap;
 import java.util.Map;

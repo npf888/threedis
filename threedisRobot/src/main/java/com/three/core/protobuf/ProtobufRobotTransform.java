@@ -8,7 +8,6 @@ import org.apache.log4j.Logger;
 import com.google.protobuf.Message;
 import com.three.core.msg.inter.IMessage;
 import com.three.core.msg.transform.MsgTransform;
-import com.three.core.session.NettyClientSession;
 import com.three.globals.Globals;
 
 
@@ -33,9 +32,9 @@ public class ProtobufRobotTransform {
     		return;
     	}
     	logger.info("[解析消息]当前消息 reqID:"+resp.getMsgCode()+" --- 消息体:"+resp.getJsonBody());
-    	
-    	NettyClientSession nettyClientSession = Globals.getNettyClientSessionMap(ctx.channel().remoteAddress().toString());
-    	Globals.getMessageRecognizer().recognize(resp.getMsgCode(),jsonBody,nettyClientSession);
+    	IMessage message = Globals.getMessageRecognizer().getByMsgType(resp.getMsgCode());
+    	IMessage GCMsg = MsgTransform.fromJSONString(jsonBody, message);
+    	logger.info("GC消息："+GCMsg);
 	}
 	
 	

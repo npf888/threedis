@@ -19,11 +19,9 @@ import com.three.core.protobuf.SubcribeRespProto;
 
 public class NettyClient {
 
-	public static void main(String args[]) throws InterruptedException{
-		clientStart();
-	}
 	
-	public static void clientStart() throws InterruptedException{
+	
+	public  void clientStart() throws InterruptedException{
 		EventLoopGroup group  =new NioEventLoopGroup();
 		try{
 			

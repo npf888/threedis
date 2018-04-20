@@ -13,3 +13,31 @@
 2018-04-20 17:28:35 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
 2018-04-20 17:50:52 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
 2018-04-20 17:51:29 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:31:33 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:31:38 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:34:07 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:34:15 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:35:07 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:35:28 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:37:56 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:38:01 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:38:34 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:38:39 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:39:39 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:39:44 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:43:52 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:43:57 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:45:38 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:45:43 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:49:18 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:49:23 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:49:39 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:49:44 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:51:15 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:51:20 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 18:51:37 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 18:51:43 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 19:00:50 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 19:00:55 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}
+2018-04-20 19:03:47 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-20 19:03:52 [INFO]-[com.three.core.protobuf.ProtobufRobotTransform.toReadMsg] [解析消息]当前消息 reqID:3002 --- 消息体:{"age":18,"height":180,"msgCode":3002,"msgType":2,"name":"小明"}

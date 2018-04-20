@@ -413,3 +413,686 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2018-04-20 17:51:29 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19824d55, L:/192.168.1.41:8080 ! R:/192.168.1.41:50360] UNREGISTERED
 2018-04-20 17:51:29 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:50360 离开
 
+2018-04-20 18:31:22 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:31:33 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 - R:/192.168.1.41:56390] REGISTERED
+2018-04-20 18:31:33 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 - R:/192.168.1.41:56390] ACTIVE
+2018-04-20 18:31:33 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:56390上线
+2018-04-20 18:31:33 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 - R:/192.168.1.41:56390] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:31:33 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:31:33 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 - R:/192.168.1.41:56390] READ COMPLETE
+2018-04-20 18:31:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 - R:/192.168.1.41:56390] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:31:38 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:31:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 - R:/192.168.1.41:56390] READ COMPLETE
+2018-04-20 18:31:38 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:31:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 - R:/192.168.1.41:56390] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:31:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 - R:/192.168.1.41:56390] FLUSH
+2018-04-20 18:31:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 - R:/192.168.1.41:56390] READ COMPLETE
+2018-04-20 18:31:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 ! R:/192.168.1.41:56390] INACTIVE
+2018-04-20 18:31:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb9133e3a, L:/192.168.1.41:8080 ! R:/192.168.1.41:56390] UNREGISTERED
+2018-04-20 18:31:38 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:56390 离开
+
+2018-04-20 18:34:00 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:34:07 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 - R:/192.168.1.41:56802] REGISTERED
+2018-04-20 18:34:07 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 - R:/192.168.1.41:56802] ACTIVE
+2018-04-20 18:34:07 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:56802上线
+2018-04-20 18:34:07 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 - R:/192.168.1.41:56802] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:34:07 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:34:07 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 - R:/192.168.1.41:56802] READ COMPLETE
+2018-04-20 18:34:12 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 - R:/192.168.1.41:56802] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:34:12 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:34:15 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 - R:/192.168.1.41:56802] READ COMPLETE
+2018-04-20 18:34:15 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:34:15 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 - R:/192.168.1.41:56802] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:34:15 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 - R:/192.168.1.41:56802] FLUSH
+2018-04-20 18:34:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 - R:/192.168.1.41:56802] READ COMPLETE
+2018-04-20 18:34:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 ! R:/192.168.1.41:56802] INACTIVE
+2018-04-20 18:34:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x37bb7c6b, L:/192.168.1.41:8080 ! R:/192.168.1.41:56802] UNREGISTERED
+2018-04-20 18:34:20 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:56802 离开
+
+2018-04-20 18:34:32 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:34:43 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:34:46 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 关闭了]
+2018-04-20 18:35:03 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:35:07 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] REGISTERED
+2018-04-20 18:35:07 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] ACTIVE
+2018-04-20 18:35:07 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:57062上线
+2018-04-20 18:35:07 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:35:07 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:35:07 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] READ COMPLETE
+2018-04-20 18:35:12 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:35:12 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:35:12 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] READ COMPLETE
+2018-04-20 18:35:12 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:35:12 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:35:12 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] FLUSH
+2018-04-20 18:36:05 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] READ COMPLETE
+2018-04-20 18:36:05 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-20 18:36:05 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.exceptionCaught] ChatClient:/192.168.1.41:57062异常,已被服务器关闭
+2018-04-20 18:36:05 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 - R:/192.168.1.41:57062] CLOSE
+2018-04-20 18:36:05 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 ! R:/192.168.1.41:57062] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@38b6188f
+2018-04-20 18:36:05 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 ! R:/192.168.1.41:57062] INACTIVE
+2018-04-20 18:36:05 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x85f613c0, L:/192.168.1.41:8080 ! R:/192.168.1.41:57062] UNREGISTERED
+2018-04-20 18:36:05 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:57062 离开
+
+2018-04-20 18:37:52 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:37:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 - R:/192.168.1.41:63320] REGISTERED
+2018-04-20 18:37:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 - R:/192.168.1.41:63320] ACTIVE
+2018-04-20 18:37:56 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:63320上线
+2018-04-20 18:37:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 - R:/192.168.1.41:63320] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:37:56 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:38:00 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 - R:/192.168.1.41:63320] READ COMPLETE
+2018-04-20 18:38:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 - R:/192.168.1.41:63320] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:38:01 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:38:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 - R:/192.168.1.41:63320] READ COMPLETE
+2018-04-20 18:38:01 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:38:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 - R:/192.168.1.41:63320] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:38:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 - R:/192.168.1.41:63320] FLUSH
+2018-04-20 18:38:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 - R:/192.168.1.41:63320] READ COMPLETE
+2018-04-20 18:38:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 ! R:/192.168.1.41:63320] INACTIVE
+2018-04-20 18:38:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe09812ae, L:/192.168.1.41:8080 ! R:/192.168.1.41:63320] UNREGISTERED
+2018-04-20 18:38:01 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:63320 离开
+
+2018-04-20 18:38:30 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:38:34 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 - R:/192.168.1.41:63461] REGISTERED
+2018-04-20 18:38:34 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 - R:/192.168.1.41:63461] ACTIVE
+2018-04-20 18:38:34 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:63461上线
+2018-04-20 18:38:34 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 - R:/192.168.1.41:63461] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:38:34 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:38:34 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 - R:/192.168.1.41:63461] READ COMPLETE
+2018-04-20 18:38:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 - R:/192.168.1.41:63461] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:38:39 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:38:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 - R:/192.168.1.41:63461] READ COMPLETE
+2018-04-20 18:38:39 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:38:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 - R:/192.168.1.41:63461] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:38:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 - R:/192.168.1.41:63461] FLUSH
+2018-04-20 18:38:57 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 - R:/192.168.1.41:63461] READ COMPLETE
+2018-04-20 18:38:57 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 ! R:/192.168.1.41:63461] INACTIVE
+2018-04-20 18:38:57 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3b515e0d, L:/192.168.1.41:8080 ! R:/192.168.1.41:63461] UNREGISTERED
+2018-04-20 18:38:57 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:63461 离开
+
+2018-04-20 18:39:35 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:39:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 - R:/192.168.1.41:63665] REGISTERED
+2018-04-20 18:39:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 - R:/192.168.1.41:63665] ACTIVE
+2018-04-20 18:39:39 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:63665上线
+2018-04-20 18:39:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 - R:/192.168.1.41:63665] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:39:39 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:39:44 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 - R:/192.168.1.41:63665] READ COMPLETE
+2018-04-20 18:39:44 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 - R:/192.168.1.41:63665] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:39:44 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:39:44 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 - R:/192.168.1.41:63665] READ COMPLETE
+2018-04-20 18:39:44 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:39:44 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 - R:/192.168.1.41:63665] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:39:44 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 - R:/192.168.1.41:63665] FLUSH
+2018-04-20 18:40:33 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 - R:/192.168.1.41:63665] READ COMPLETE
+2018-04-20 18:40:33 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 ! R:/192.168.1.41:63665] INACTIVE
+2018-04-20 18:40:33 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xef1d9256, L:/192.168.1.41:8080 ! R:/192.168.1.41:63665] UNREGISTERED
+2018-04-20 18:40:33 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:63665 离开
+
+2018-04-20 18:43:46 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:43:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] REGISTERED
+2018-04-20 18:43:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] ACTIVE
+2018-04-20 18:43:52 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:64326上线
+2018-04-20 18:43:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:43:52 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:43:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] READ COMPLETE
+2018-04-20 18:43:57 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:43:57 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:43:57 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] READ COMPLETE
+2018-04-20 18:43:57 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:43:57 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:43:57 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] FLUSH
+2018-04-20 18:44:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] READ COMPLETE
+2018-04-20 18:44:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-20 18:44:20 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.exceptionCaught] ChatClient:/192.168.1.41:64326异常,已被服务器关闭
+2018-04-20 18:44:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 - R:/192.168.1.41:64326] CLOSE
+2018-04-20 18:44:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 ! R:/192.168.1.41:64326] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@52ed58c4
+2018-04-20 18:44:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 ! R:/192.168.1.41:64326] INACTIVE
+2018-04-20 18:44:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x19ef0164, L:/192.168.1.41:8080 ! R:/192.168.1.41:64326] UNREGISTERED
+2018-04-20 18:44:20 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:64326 离开
+
+2018-04-20 18:45:34 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:45:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 - R:/192.168.1.41:64648] REGISTERED
+2018-04-20 18:45:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 - R:/192.168.1.41:64648] ACTIVE
+2018-04-20 18:45:38 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:64648上线
+2018-04-20 18:45:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 - R:/192.168.1.41:64648] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:45:38 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:45:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 - R:/192.168.1.41:64648] READ COMPLETE
+2018-04-20 18:45:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 - R:/192.168.1.41:64648] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:45:43 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:45:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 - R:/192.168.1.41:64648] READ COMPLETE
+2018-04-20 18:45:43 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:45:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 - R:/192.168.1.41:64648] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:45:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 - R:/192.168.1.41:64648] FLUSH
+2018-04-20 18:45:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 - R:/192.168.1.41:64648] READ COMPLETE
+2018-04-20 18:45:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 ! R:/192.168.1.41:64648] INACTIVE
+2018-04-20 18:45:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x057c7f12, L:/192.168.1.41:8080 ! R:/192.168.1.41:64648] UNREGISTERED
+2018-04-20 18:45:56 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:64648 离开
+
+2018-04-20 18:49:14 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:49:18 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 - R:/192.168.1.41:65222] REGISTERED
+2018-04-20 18:49:18 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 - R:/192.168.1.41:65222] ACTIVE
+2018-04-20 18:49:18 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:65222上线
+2018-04-20 18:49:18 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 - R:/192.168.1.41:65222] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:49:18 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:49:18 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 - R:/192.168.1.41:65222] READ COMPLETE
+2018-04-20 18:49:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 - R:/192.168.1.41:65222] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:49:23 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:49:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 - R:/192.168.1.41:65222] READ COMPLETE
+2018-04-20 18:49:23 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:49:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 - R:/192.168.1.41:65222] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:49:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 - R:/192.168.1.41:65222] FLUSH
+2018-04-20 18:49:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 - R:/192.168.1.41:65222] READ COMPLETE
+2018-04-20 18:49:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 ! R:/192.168.1.41:65222] INACTIVE
+2018-04-20 18:49:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb603054, L:/192.168.1.41:8080 ! R:/192.168.1.41:65222] UNREGISTERED
+2018-04-20 18:49:23 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:65222 离开
+
+2018-04-20 18:49:35 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:49:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] REGISTERED
+2018-04-20 18:49:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] ACTIVE
+2018-04-20 18:49:39 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:65356上线
+2018-04-20 18:49:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:49:39 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:49:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] READ COMPLETE
+2018-04-20 18:49:44 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:49:44 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:49:44 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] READ COMPLETE
+2018-04-20 18:49:44 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:49:44 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:49:44 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] FLUSH
+2018-04-20 18:50:32 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] READ COMPLETE
+2018-04-20 18:50:32 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-20 18:50:32 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.exceptionCaught] ChatClient:/192.168.1.41:65356异常,已被服务器关闭
+2018-04-20 18:50:32 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 - R:/192.168.1.41:65356] CLOSE
+2018-04-20 18:50:32 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 ! R:/192.168.1.41:65356] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@758ccdac
+2018-04-20 18:50:32 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 ! R:/192.168.1.41:65356] INACTIVE
+2018-04-20 18:50:32 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3114d2cb, L:/192.168.1.41:8080 ! R:/192.168.1.41:65356] UNREGISTERED
+2018-04-20 18:50:32 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:65356 离开
+
+2018-04-20 18:51:11 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:51:15 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 - R:/192.168.1.41:49264] REGISTERED
+2018-04-20 18:51:15 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 - R:/192.168.1.41:49264] ACTIVE
+2018-04-20 18:51:15 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:49264上线
+2018-04-20 18:51:15 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 - R:/192.168.1.41:49264] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:51:15 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:51:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 - R:/192.168.1.41:49264] READ COMPLETE
+2018-04-20 18:51:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 - R:/192.168.1.41:49264] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:51:20 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:51:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 - R:/192.168.1.41:49264] READ COMPLETE
+2018-04-20 18:51:20 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:51:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 - R:/192.168.1.41:49264] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:51:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 - R:/192.168.1.41:49264] FLUSH
+2018-04-20 18:51:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 - R:/192.168.1.41:49264] READ COMPLETE
+2018-04-20 18:51:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 ! R:/192.168.1.41:49264] INACTIVE
+2018-04-20 18:51:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x27ca4f7e, L:/192.168.1.41:8080 ! R:/192.168.1.41:49264] UNREGISTERED
+2018-04-20 18:51:20 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:49264 离开
+
+2018-04-20 18:51:33 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 18:51:37 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] REGISTERED
+2018-04-20 18:51:37 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] ACTIVE
+2018-04-20 18:51:37 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:49372上线
+2018-04-20 18:51:37 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:51:37 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 18:51:38 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] READ COMPLETE
+2018-04-20 18:51:42 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:51:42 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 18:51:42 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] READ COMPLETE
+2018-04-20 18:51:42 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 18:51:42 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 18:51:42 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] FLUSH
+2018-04-20 18:52:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] READ COMPLETE
+2018-04-20 18:52:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-20 18:52:11 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.exceptionCaught] ChatClient:/192.168.1.41:49372异常,已被服务器关闭
+2018-04-20 18:52:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 - R:/192.168.1.41:49372] CLOSE
+2018-04-20 18:52:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 ! R:/192.168.1.41:49372] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@386945ca
+2018-04-20 18:52:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 ! R:/192.168.1.41:49372] INACTIVE
+2018-04-20 18:52:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3722a604, L:/192.168.1.41:8080 ! R:/192.168.1.41:49372] UNREGISTERED
+2018-04-20 18:52:11 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:49372 离开
+
+2018-04-20 19:00:42 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 19:00:50 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 - R:/192.168.1.41:50773] REGISTERED
+2018-04-20 19:00:50 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 - R:/192.168.1.41:50773] ACTIVE
+2018-04-20 19:00:50 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:50773上线
+2018-04-20 19:00:50 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 - R:/192.168.1.41:50773] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 19:00:50 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 19:00:50 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 - R:/192.168.1.41:50773] READ COMPLETE
+2018-04-20 19:00:55 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 - R:/192.168.1.41:50773] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 19:00:55 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 19:00:55 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 - R:/192.168.1.41:50773] READ COMPLETE
+2018-04-20 19:00:55 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 19:00:55 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 - R:/192.168.1.41:50773] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 19:00:55 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 - R:/192.168.1.41:50773] FLUSH
+2018-04-20 19:00:55 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 - R:/192.168.1.41:50773] READ COMPLETE
+2018-04-20 19:00:55 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 ! R:/192.168.1.41:50773] INACTIVE
+2018-04-20 19:00:55 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcb888dcc, L:/192.168.1.41:8080 ! R:/192.168.1.41:50773] UNREGISTERED
+2018-04-20 19:00:55 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:50773 离开
+
+2018-04-20 19:03:43 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-20 19:03:47 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] REGISTERED
+2018-04-20 19:03:47 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] ACTIVE
+2018-04-20 19:03:47 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:51266上线
+2018-04-20 19:03:47 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 19:03:47 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-20 19:03:47 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] READ COMPLETE
+2018-04-20 19:03:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 b9 17 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 33 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:3001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-20 19:03:52 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:3001 --- 消息体:{"msgCode":3001,"msgType":1}
+2018-04-20 19:03:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] READ COMPLETE
+2018-04-20 19:03:52 [INFO]-[com.three.gift.handler.GiftMessagerHandler.sendGift] 现在 正在调用 sendGift
+2018-04-20 19:03:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] WRITE: 72B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 47 08 ba 17 1a 42 7b 22 61 67 65 22 3a 31 38 2c |G....B{"age":18,|
+|00000010| 22 68 65 69 67 68 74 22 3a 31 38 30 2c 22 6d 73 |"height":180,"ms|
+|00000020| 67 43 6f 64 65 22 3a 33 30 30 32 2c 22 6d 73 67 |gCode":3002,"msg|
+|00000030| 54 79 70 65 22 3a 32 2c 22 6e 61 6d 65 22 3a 22 |Type":2,"name":"|
+|00000040| e5 b0 8f e6 98 8e 22 7d                         |......"}        |
++--------+-------------------------------------------------+----------------+
+2018-04-20 19:03:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] FLUSH
+2018-04-20 19:04:10 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] READ COMPLETE
+2018-04-20 19:04:10 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-20 19:04:10 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.exceptionCaught] ChatClient:/192.168.1.41:51266异常,已被服务器关闭
+2018-04-20 19:04:10 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 - R:/192.168.1.41:51266] CLOSE
+2018-04-20 19:04:10 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 ! R:/192.168.1.41:51266] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@1d052d37
+2018-04-20 19:04:10 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 ! R:/192.168.1.41:51266] INACTIVE
+2018-04-20 19:04:10 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa9a96fed, L:/192.168.1.41:8080 ! R:/192.168.1.41:51266] UNREGISTERED
+2018-04-20 19:04:10 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:51266 离开
+
+2018-04-20 19:06:06 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
