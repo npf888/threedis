@@ -6,14 +6,20 @@ import com.three.player.playerObj.Player;
 
 public abstract class BaseMessage implements IMessage{
 
+	private int msgCode;//消息的编号 NetMessageType 相当于消息的ID
 	private int msgType;//消息的编号 NetMessageType 相当于消息的ID
 	private NettyClientSession nettyClientSession;
 	
-	protected BaseMessage(int msgType){
+	protected BaseMessage(int msgCode,int msgType){
+		this.msgCode=msgCode;
 		this.msgType=msgType;
 	}
 	
-	
+	@Override
+	public int getMsgCode(){
+		return this.msgCode;
+	}
+	@Override
 	public int getMsgType(){
 		return this.msgType;
 	}

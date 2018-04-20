@@ -8,6 +8,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import org.apache.log4j.Logger;
 
 import com.three.core.msg.inter.IMessage;
+import com.three.core.session.NettyClientSession;
 import com.three.globals.InitService;
 
 /**
@@ -17,6 +18,9 @@ import com.three.globals.InitService;
  */
 public class GCBlockingMsgService implements InitService{
 	Logger logger = Logger.getLogger(GCBlockingMsgService.class);
+	
+	
+	private NettyClientSession nettyClientSession;
 	// 用户消息执行完 之后 返回给用户的消息 放到这个缓存
 	private List<IMessage> messageCache = new ArrayList<IMessage>();
 	
@@ -52,9 +56,11 @@ public class GCBlockingMsgService implements InitService{
 	
 	/**
 	 * 收到的用户的消息放到 缓存中
+	 * @param nettyClientSession 
 	 */
-	public void putMsgIntoCache(IMessage msg){
+	public void putMsgIntoCache(IMessage msg, NettyClientSession nettyClientSession){
 		messageCache.add(msg);
+		this.nettyClientSession=nettyClientSession;
 	}
 	
 	/**
@@ -76,7 +82,7 @@ public class GCBlockingMsgService implements InitService{
 	private void process(){
 		IMessage msg = gcQueue.poll();
 		if(msg != null){//这个消息直接返回给用户
-			
+			nettyClientSession.sendMessageToCtx(msg);
 		}
 		
 	}

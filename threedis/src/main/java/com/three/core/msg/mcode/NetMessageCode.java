@@ -1,4 +1,4 @@
-package com.three.core.msg.mtype;
+package com.three.core.msg.mcode;
 
 
 /**
@@ -6,7 +6,7 @@ package com.three.core.msg.mtype;
  * @author JavaServer
  *
  */
-public class NetMessageType {
+public class NetMessageCode {
 
 	
 	// ////////////

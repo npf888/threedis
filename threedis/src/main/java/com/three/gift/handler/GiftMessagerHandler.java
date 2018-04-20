@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import com.three.core.handler.MessagerHandler;
 import com.three.core.msg.inter.IMessage;
 import com.three.gift.msg.CGSendGift;
+import com.three.gift.msg.GCSendGift;
 import com.three.player.playerObj.Player;
 
 public class GiftMessagerHandler implements MessagerHandler{
@@ -22,14 +23,16 @@ public class GiftMessagerHandler implements MessagerHandler{
 		}
 		
 		if(curMessage instanceof CGSendGift){
-			sendGift();
+			sendGift(player);
 		}
 		
 	};
 
 
 
-	private void sendGift(){
+	private void sendGift(Player player){
 		logger.info("现在 正在调用 sendGift");
+		GCSendGift gCSendGift = new GCSendGift();
+		player.sendMessage(gCSendGift);
 	};
 }

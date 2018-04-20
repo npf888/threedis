@@ -1,6 +1,7 @@
 package com.three.gift.msg;
 
-import com.three.core.msg.mtype.perType.GiftType;
+import com.three.core.msg.inter.IMessage;
+import com.three.core.msg.mcode.percode.GiftCode;
 import com.three.core.msg.obj.BaseMessageJSON;
 import com.three.gift.handler.GiftHandlerFactory;
 import com.three.player.playerObj.Player;
@@ -15,7 +16,7 @@ public class CGSendGift extends BaseMessageJSON{
 
 
 	public CGSendGift(){
-		super(GiftType.CG_SEND_GIFT);
+		super(GiftCode.CG_SEND_GIFT,IMessage.CG_MSG_TYPE);
 	}
 
 	

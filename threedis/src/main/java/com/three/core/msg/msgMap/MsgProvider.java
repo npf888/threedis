@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.three.core.msg.inter.IMessage;
-import com.three.core.msg.mtype.perType.GiftType;
-import com.three.core.msg.mtype.perType.PlayerType;
+import com.three.core.msg.mcode.percode.GiftCode;
+import com.three.core.msg.mcode.percode.PlayerCode;
 import com.three.gift.msg.CGSendGift;
 import com.three.globals.InitService;
 import com.three.player.msg.CGLoginIn;
@@ -25,12 +25,12 @@ public class MsgProvider implements InitService{
 	 */
 	@Override
 	public void init() {
-		msgMap.put(GiftType.CG_SEND_GIFT,new CGSendGift());
-		msgMap.put(PlayerType.CG_LOGIN_IN,new CGLoginIn());
-		
+		msgMap.put(GiftCode.CG_SEND_GIFT,new CGSendGift());
+		msgMap.put(PlayerCode.CG_LOGIN_IN,new CGLoginIn());
 	}
 	
-	
+
+
 	/**
 	 * 获取消息
 	 * @param msgType

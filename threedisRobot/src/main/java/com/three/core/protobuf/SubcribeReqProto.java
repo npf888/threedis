@@ -19,66 +19,24 @@ public final class SubcribeReqProto {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 subReqID = 1;</code>
+     * <code>required int32 msgCode = 1;</code>
      */
-    boolean hasSubReqID();
+    boolean hasMsgCode();
     /**
-     * <code>required int32 subReqID = 1;</code>
+     * <code>required int32 msgCode = 1;</code>
      */
-    int getSubReqID();
+    int getMsgCode();
 
     /**
-     * <code>required string userName = 2;</code>
-     */
-    boolean hasUserName();
-    /**
-     * <code>required string userName = 2;</code>
-     */
-    java.lang.String getUserName();
-    /**
-     * <code>required string userName = 2;</code>
-     */
-    com.google.protobuf.ByteString
-        getUserNameBytes();
-
-    /**
-     * <code>required string productName = 3;</code>
-     */
-    boolean hasProductName();
-    /**
-     * <code>required string productName = 3;</code>
-     */
-    java.lang.String getProductName();
-    /**
-     * <code>required string productName = 3;</code>
-     */
-    com.google.protobuf.ByteString
-        getProductNameBytes();
-
-    /**
-     * <code>required string address = 4;</code>
-     */
-    boolean hasAddress();
-    /**
-     * <code>required string address = 4;</code>
-     */
-    java.lang.String getAddress();
-    /**
-     * <code>required string address = 4;</code>
-     */
-    com.google.protobuf.ByteString
-        getAddressBytes();
-
-    /**
-     * <code>required string jsonBody = 5;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     boolean hasJsonBody();
     /**
-     * <code>required string jsonBody = 5;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     java.lang.String getJsonBody();
     /**
-     * <code>required string jsonBody = 5;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     com.google.protobuf.ByteString
         getJsonBodyBytes();
@@ -96,10 +54,7 @@ public final class SubcribeReqProto {
       super(builder);
     }
     private SubcribeReq() {
-      subReqID_ = 0;
-      userName_ = "";
-      productName_ = "";
-      address_ = "";
+      msgCode_ = 0;
       jsonBody_ = "";
     }
 
@@ -133,30 +88,12 @@ public final class SubcribeReqProto {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              subReqID_ = input.readInt32();
-              break;
-            }
-            case 18: {
-              com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000002;
-              userName_ = bs;
+              msgCode_ = input.readInt32();
               break;
             }
             case 26: {
               com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000004;
-              productName_ = bs;
-              break;
-            }
-            case 34: {
-              com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000008;
-              address_ = bs;
-              break;
-            }
-            case 42: {
-              com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000010;
+              bitField0_ |= 0x00000002;
               jsonBody_ = bs;
               break;
             }
@@ -185,157 +122,31 @@ public final class SubcribeReqProto {
     }
 
     private int bitField0_;
-    public static final int SUBREQID_FIELD_NUMBER = 1;
-    private int subReqID_;
+    public static final int MSGCODE_FIELD_NUMBER = 1;
+    private int msgCode_;
     /**
-     * <code>required int32 subReqID = 1;</code>
+     * <code>required int32 msgCode = 1;</code>
      */
-    public boolean hasSubReqID() {
+    public boolean hasMsgCode() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 subReqID = 1;</code>
+     * <code>required int32 msgCode = 1;</code>
      */
-    public int getSubReqID() {
-      return subReqID_;
+    public int getMsgCode() {
+      return msgCode_;
     }
 
-    public static final int USERNAME_FIELD_NUMBER = 2;
-    private volatile java.lang.Object userName_;
+    public static final int JSONBODY_FIELD_NUMBER = 3;
+    private volatile java.lang.Object jsonBody_;
     /**
-     * <code>required string userName = 2;</code>
+     * <code>required string jsonBody = 3;</code>
      */
-    public boolean hasUserName() {
+    public boolean hasJsonBody() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required string userName = 2;</code>
-     */
-    public java.lang.String getUserName() {
-      java.lang.Object ref = userName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          userName_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string userName = 2;</code>
-     */
-    public com.google.protobuf.ByteString
-        getUserNameBytes() {
-      java.lang.Object ref = userName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        userName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int PRODUCTNAME_FIELD_NUMBER = 3;
-    private volatile java.lang.Object productName_;
-    /**
-     * <code>required string productName = 3;</code>
-     */
-    public boolean hasProductName() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>required string productName = 3;</code>
-     */
-    public java.lang.String getProductName() {
-      java.lang.Object ref = productName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          productName_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string productName = 3;</code>
-     */
-    public com.google.protobuf.ByteString
-        getProductNameBytes() {
-      java.lang.Object ref = productName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        productName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int ADDRESS_FIELD_NUMBER = 4;
-    private volatile java.lang.Object address_;
-    /**
-     * <code>required string address = 4;</code>
-     */
-    public boolean hasAddress() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>required string address = 4;</code>
-     */
-    public java.lang.String getAddress() {
-      java.lang.Object ref = address_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          address_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string address = 4;</code>
-     */
-    public com.google.protobuf.ByteString
-        getAddressBytes() {
-      java.lang.Object ref = address_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        address_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int JSONBODY_FIELD_NUMBER = 5;
-    private volatile java.lang.Object jsonBody_;
-    /**
-     * <code>required string jsonBody = 5;</code>
-     */
-    public boolean hasJsonBody() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>required string jsonBody = 5;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     public java.lang.String getJsonBody() {
       java.lang.Object ref = jsonBody_;
@@ -352,7 +163,7 @@ public final class SubcribeReqProto {
       }
     }
     /**
-     * <code>required string jsonBody = 5;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     public com.google.protobuf.ByteString
         getJsonBodyBytes() {
@@ -374,19 +185,7 @@ public final class SubcribeReqProto {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasSubReqID()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasUserName()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasProductName()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasAddress()) {
+      if (!hasMsgCode()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -401,19 +200,10 @@ public final class SubcribeReqProto {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, subReqID_);
+        output.writeInt32(1, msgCode_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, userName_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, productName_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, address_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, jsonBody_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, jsonBody_);
       }
       unknownFields.writeTo(output);
     }
@@ -425,19 +215,10 @@ public final class SubcribeReqProto {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, subReqID_);
+          .computeInt32Size(1, msgCode_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, userName_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, productName_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, address_);
-      }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, jsonBody_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, jsonBody_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -455,25 +236,10 @@ public final class SubcribeReqProto {
       com.three.core.protobuf.SubcribeReqProto.SubcribeReq other = (com.three.core.protobuf.SubcribeReqProto.SubcribeReq) obj;
 
       boolean result = true;
-      result = result && (hasSubReqID() == other.hasSubReqID());
-      if (hasSubReqID()) {
-        result = result && (getSubReqID()
-            == other.getSubReqID());
-      }
-      result = result && (hasUserName() == other.hasUserName());
-      if (hasUserName()) {
-        result = result && getUserName()
-            .equals(other.getUserName());
-      }
-      result = result && (hasProductName() == other.hasProductName());
-      if (hasProductName()) {
-        result = result && getProductName()
-            .equals(other.getProductName());
-      }
-      result = result && (hasAddress() == other.hasAddress());
-      if (hasAddress()) {
-        result = result && getAddress()
-            .equals(other.getAddress());
+      result = result && (hasMsgCode() == other.hasMsgCode());
+      if (hasMsgCode()) {
+        result = result && (getMsgCode()
+            == other.getMsgCode());
       }
       result = result && (hasJsonBody() == other.hasJsonBody());
       if (hasJsonBody()) {
@@ -491,21 +257,9 @@ public final class SubcribeReqProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasSubReqID()) {
-        hash = (37 * hash) + SUBREQID_FIELD_NUMBER;
-        hash = (53 * hash) + getSubReqID();
-      }
-      if (hasUserName()) {
-        hash = (37 * hash) + USERNAME_FIELD_NUMBER;
-        hash = (53 * hash) + getUserName().hashCode();
-      }
-      if (hasProductName()) {
-        hash = (37 * hash) + PRODUCTNAME_FIELD_NUMBER;
-        hash = (53 * hash) + getProductName().hashCode();
-      }
-      if (hasAddress()) {
-        hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
-        hash = (53 * hash) + getAddress().hashCode();
+      if (hasMsgCode()) {
+        hash = (37 * hash) + MSGCODE_FIELD_NUMBER;
+        hash = (53 * hash) + getMsgCode();
       }
       if (hasJsonBody()) {
         hash = (37 * hash) + JSONBODY_FIELD_NUMBER;
@@ -640,16 +394,10 @@ public final class SubcribeReqProto {
       }
       public Builder clear() {
         super.clear();
-        subReqID_ = 0;
+        msgCode_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        userName_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
-        productName_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
-        address_ = "";
-        bitField0_ = (bitField0_ & ~0x00000008);
         jsonBody_ = "";
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -677,21 +425,9 @@ public final class SubcribeReqProto {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.subReqID_ = subReqID_;
+        result.msgCode_ = msgCode_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
-        }
-        result.userName_ = userName_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.productName_ = productName_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.address_ = address_;
-        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
-          to_bitField0_ |= 0x00000010;
         }
         result.jsonBody_ = jsonBody_;
         result.bitField0_ = to_bitField0_;
@@ -736,26 +472,11 @@ public final class SubcribeReqProto {
 
       public Builder mergeFrom(com.three.core.protobuf.SubcribeReqProto.SubcribeReq other) {
         if (other == com.three.core.protobuf.SubcribeReqProto.SubcribeReq.getDefaultInstance()) return this;
-        if (other.hasSubReqID()) {
-          setSubReqID(other.getSubReqID());
-        }
-        if (other.hasUserName()) {
-          bitField0_ |= 0x00000002;
-          userName_ = other.userName_;
-          onChanged();
-        }
-        if (other.hasProductName()) {
-          bitField0_ |= 0x00000004;
-          productName_ = other.productName_;
-          onChanged();
-        }
-        if (other.hasAddress()) {
-          bitField0_ |= 0x00000008;
-          address_ = other.address_;
-          onChanged();
+        if (other.hasMsgCode()) {
+          setMsgCode(other.getMsgCode());
         }
         if (other.hasJsonBody()) {
-          bitField0_ |= 0x00000010;
+          bitField0_ |= 0x00000002;
           jsonBody_ = other.jsonBody_;
           onChanged();
         }
@@ -765,16 +486,7 @@ public final class SubcribeReqProto {
       }
 
       public final boolean isInitialized() {
-        if (!hasSubReqID()) {
-          return false;
-        }
-        if (!hasUserName()) {
-          return false;
-        }
-        if (!hasProductName()) {
-          return false;
-        }
-        if (!hasAddress()) {
+        if (!hasMsgCode()) {
           return false;
         }
         if (!hasJsonBody()) {
@@ -802,275 +514,47 @@ public final class SubcribeReqProto {
       }
       private int bitField0_;
 
-      private int subReqID_ ;
+      private int msgCode_ ;
       /**
-       * <code>required int32 subReqID = 1;</code>
+       * <code>required int32 msgCode = 1;</code>
        */
-      public boolean hasSubReqID() {
+      public boolean hasMsgCode() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 subReqID = 1;</code>
+       * <code>required int32 msgCode = 1;</code>
        */
-      public int getSubReqID() {
-        return subReqID_;
+      public int getMsgCode() {
+        return msgCode_;
       }
       /**
-       * <code>required int32 subReqID = 1;</code>
+       * <code>required int32 msgCode = 1;</code>
        */
-      public Builder setSubReqID(int value) {
+      public Builder setMsgCode(int value) {
         bitField0_ |= 0x00000001;
-        subReqID_ = value;
+        msgCode_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 subReqID = 1;</code>
+       * <code>required int32 msgCode = 1;</code>
        */
-      public Builder clearSubReqID() {
+      public Builder clearMsgCode() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        subReqID_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object userName_ = "";
-      /**
-       * <code>required string userName = 2;</code>
-       */
-      public boolean hasUserName() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required string userName = 2;</code>
-       */
-      public java.lang.String getUserName() {
-        java.lang.Object ref = userName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            userName_ = s;
-          }
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string userName = 2;</code>
-       */
-      public com.google.protobuf.ByteString
-          getUserNameBytes() {
-        java.lang.Object ref = userName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          userName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string userName = 2;</code>
-       */
-      public Builder setUserName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        userName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string userName = 2;</code>
-       */
-      public Builder clearUserName() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        userName_ = getDefaultInstance().getUserName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string userName = 2;</code>
-       */
-      public Builder setUserNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000002;
-        userName_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object productName_ = "";
-      /**
-       * <code>required string productName = 3;</code>
-       */
-      public boolean hasProductName() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>required string productName = 3;</code>
-       */
-      public java.lang.String getProductName() {
-        java.lang.Object ref = productName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            productName_ = s;
-          }
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string productName = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getProductNameBytes() {
-        java.lang.Object ref = productName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          productName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string productName = 3;</code>
-       */
-      public Builder setProductName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        productName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string productName = 3;</code>
-       */
-      public Builder clearProductName() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        productName_ = getDefaultInstance().getProductName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string productName = 3;</code>
-       */
-      public Builder setProductNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        productName_ = value;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object address_ = "";
-      /**
-       * <code>required string address = 4;</code>
-       */
-      public boolean hasAddress() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>required string address = 4;</code>
-       */
-      public java.lang.String getAddress() {
-        java.lang.Object ref = address_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            address_ = s;
-          }
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string address = 4;</code>
-       */
-      public com.google.protobuf.ByteString
-          getAddressBytes() {
-        java.lang.Object ref = address_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          address_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string address = 4;</code>
-       */
-      public Builder setAddress(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        address_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string address = 4;</code>
-       */
-      public Builder clearAddress() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        address_ = getDefaultInstance().getAddress();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string address = 4;</code>
-       */
-      public Builder setAddressBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        address_ = value;
+        msgCode_ = 0;
         onChanged();
         return this;
       }
 
       private java.lang.Object jsonBody_ = "";
       /**
-       * <code>required string jsonBody = 5;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public boolean hasJsonBody() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
+        return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required string jsonBody = 5;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public java.lang.String getJsonBody() {
         java.lang.Object ref = jsonBody_;
@@ -1087,7 +571,7 @@ public final class SubcribeReqProto {
         }
       }
       /**
-       * <code>required string jsonBody = 5;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public com.google.protobuf.ByteString
           getJsonBodyBytes() {
@@ -1103,36 +587,36 @@ public final class SubcribeReqProto {
         }
       }
       /**
-       * <code>required string jsonBody = 5;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public Builder setJsonBody(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000010;
+  bitField0_ |= 0x00000002;
         jsonBody_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string jsonBody = 5;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public Builder clearJsonBody() {
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000002);
         jsonBody_ = getDefaultInstance().getJsonBody();
         onChanged();
         return this;
       }
       /**
-       * <code>required string jsonBody = 5;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public Builder setJsonBodyBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000010;
+  bitField0_ |= 0x00000002;
         jsonBody_ = value;
         onChanged();
         return this;
@@ -1200,11 +684,9 @@ public final class SubcribeReqProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021SubcribeReq.proto\"i\n\013SubcribeReq\022\020\n\010su" +
-      "bReqID\030\001 \002(\005\022\020\n\010userName\030\002 \002(\t\022\023\n\013produc" +
-      "tName\030\003 \002(\t\022\017\n\007address\030\004 \002(\t\022\020\n\010jsonBody" +
-      "\030\005 \002(\tB+\n\027com.three.core.protobufB\020Subcr" +
-      "ibeReqProto"
+      "\n\021SubcribeReq.proto\"0\n\013SubcribeReq\022\017\n\007ms" +
+      "gCode\030\001 \002(\005\022\020\n\010jsonBody\030\003 \002(\tB+\n\027com.thr" +
+      "ee.core.protobufB\020SubcribeReqProto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1223,7 +705,7 @@ public final class SubcribeReqProto {
     internal_static_SubcribeReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SubcribeReq_descriptor,
-        new java.lang.String[] { "SubReqID", "UserName", "ProductName", "Address", "JsonBody", });
+        new java.lang.String[] { "MsgCode", "JsonBody", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

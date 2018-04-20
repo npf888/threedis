@@ -2,6 +2,9 @@ package com.three.core.session;
 
 import io.netty.channel.ChannelHandlerContext;
 
+import com.three.core.msg.inter.IMessage;
+import com.three.core.msg.transform.MsgTransform;
+import com.three.core.protobuf.ProtobufTransform;
 import com.three.player.playerObj.Player;
 
 /**
@@ -34,6 +37,10 @@ public class NettyClientSession {
 		this.player = player;
 	}
 	
+	
+	public void sendMessageToCtx(IMessage msg){
+		ctx.writeAndFlush(ProtobufTransform.toWriteMsg(msg));
+	}
 	
 	
 }

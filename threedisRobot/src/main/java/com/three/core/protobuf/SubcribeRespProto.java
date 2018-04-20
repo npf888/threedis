@@ -19,47 +19,24 @@ public final class SubcribeRespProto {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 subRespID = 1;</code>
+     * <code>required int32 msgCode = 1;</code>
      */
-    boolean hasSubRespID();
+    boolean hasMsgCode();
     /**
-     * <code>required int32 subRespID = 1;</code>
+     * <code>required int32 msgCode = 1;</code>
      */
-    int getSubRespID();
+    int getMsgCode();
 
     /**
-     * <code>required int32 respCode = 2;</code>
-     */
-    boolean hasRespCode();
-    /**
-     * <code>required int32 respCode = 2;</code>
-     */
-    int getRespCode();
-
-    /**
-     * <code>required string desc = 3;</code>
-     */
-    boolean hasDesc();
-    /**
-     * <code>required string desc = 3;</code>
-     */
-    java.lang.String getDesc();
-    /**
-     * <code>required string desc = 3;</code>
-     */
-    com.google.protobuf.ByteString
-        getDescBytes();
-
-    /**
-     * <code>required string jsonBody = 4;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     boolean hasJsonBody();
     /**
-     * <code>required string jsonBody = 4;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     java.lang.String getJsonBody();
     /**
-     * <code>required string jsonBody = 4;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     com.google.protobuf.ByteString
         getJsonBodyBytes();
@@ -77,9 +54,7 @@ public final class SubcribeRespProto {
       super(builder);
     }
     private SubcribeResp() {
-      subRespID_ = 0;
-      respCode_ = 0;
-      desc_ = "";
+      msgCode_ = 0;
       jsonBody_ = "";
     }
 
@@ -113,23 +88,12 @@ public final class SubcribeRespProto {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              subRespID_ = input.readInt32();
-              break;
-            }
-            case 16: {
-              bitField0_ |= 0x00000002;
-              respCode_ = input.readInt32();
+              msgCode_ = input.readInt32();
               break;
             }
             case 26: {
               com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000004;
-              desc_ = bs;
-              break;
-            }
-            case 34: {
-              com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000008;
+              bitField0_ |= 0x00000002;
               jsonBody_ = bs;
               break;
             }
@@ -158,88 +122,31 @@ public final class SubcribeRespProto {
     }
 
     private int bitField0_;
-    public static final int SUBRESPID_FIELD_NUMBER = 1;
-    private int subRespID_;
+    public static final int MSGCODE_FIELD_NUMBER = 1;
+    private int msgCode_;
     /**
-     * <code>required int32 subRespID = 1;</code>
+     * <code>required int32 msgCode = 1;</code>
      */
-    public boolean hasSubRespID() {
+    public boolean hasMsgCode() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required int32 subRespID = 1;</code>
+     * <code>required int32 msgCode = 1;</code>
      */
-    public int getSubRespID() {
-      return subRespID_;
+    public int getMsgCode() {
+      return msgCode_;
     }
 
-    public static final int RESPCODE_FIELD_NUMBER = 2;
-    private int respCode_;
+    public static final int JSONBODY_FIELD_NUMBER = 3;
+    private volatile java.lang.Object jsonBody_;
     /**
-     * <code>required int32 respCode = 2;</code>
+     * <code>required string jsonBody = 3;</code>
      */
-    public boolean hasRespCode() {
+    public boolean hasJsonBody() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     /**
-     * <code>required int32 respCode = 2;</code>
-     */
-    public int getRespCode() {
-      return respCode_;
-    }
-
-    public static final int DESC_FIELD_NUMBER = 3;
-    private volatile java.lang.Object desc_;
-    /**
-     * <code>required string desc = 3;</code>
-     */
-    public boolean hasDesc() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>required string desc = 3;</code>
-     */
-    public java.lang.String getDesc() {
-      java.lang.Object ref = desc_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          desc_ = s;
-        }
-        return s;
-      }
-    }
-    /**
-     * <code>required string desc = 3;</code>
-     */
-    public com.google.protobuf.ByteString
-        getDescBytes() {
-      java.lang.Object ref = desc_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        desc_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int JSONBODY_FIELD_NUMBER = 4;
-    private volatile java.lang.Object jsonBody_;
-    /**
-     * <code>required string jsonBody = 4;</code>
-     */
-    public boolean hasJsonBody() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>required string jsonBody = 4;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     public java.lang.String getJsonBody() {
       java.lang.Object ref = jsonBody_;
@@ -256,7 +163,7 @@ public final class SubcribeRespProto {
       }
     }
     /**
-     * <code>required string jsonBody = 4;</code>
+     * <code>required string jsonBody = 3;</code>
      */
     public com.google.protobuf.ByteString
         getJsonBodyBytes() {
@@ -278,15 +185,7 @@ public final class SubcribeRespProto {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasSubRespID()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasRespCode()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasDesc()) {
+      if (!hasMsgCode()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -301,16 +200,10 @@ public final class SubcribeRespProto {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, subRespID_);
+        output.writeInt32(1, msgCode_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeInt32(2, respCode_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, desc_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, jsonBody_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, jsonBody_);
       }
       unknownFields.writeTo(output);
     }
@@ -322,17 +215,10 @@ public final class SubcribeRespProto {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, subRespID_);
+          .computeInt32Size(1, msgCode_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, respCode_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, desc_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, jsonBody_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, jsonBody_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -350,20 +236,10 @@ public final class SubcribeRespProto {
       com.three.core.protobuf.SubcribeRespProto.SubcribeResp other = (com.three.core.protobuf.SubcribeRespProto.SubcribeResp) obj;
 
       boolean result = true;
-      result = result && (hasSubRespID() == other.hasSubRespID());
-      if (hasSubRespID()) {
-        result = result && (getSubRespID()
-            == other.getSubRespID());
-      }
-      result = result && (hasRespCode() == other.hasRespCode());
-      if (hasRespCode()) {
-        result = result && (getRespCode()
-            == other.getRespCode());
-      }
-      result = result && (hasDesc() == other.hasDesc());
-      if (hasDesc()) {
-        result = result && getDesc()
-            .equals(other.getDesc());
+      result = result && (hasMsgCode() == other.hasMsgCode());
+      if (hasMsgCode()) {
+        result = result && (getMsgCode()
+            == other.getMsgCode());
       }
       result = result && (hasJsonBody() == other.hasJsonBody());
       if (hasJsonBody()) {
@@ -381,17 +257,9 @@ public final class SubcribeRespProto {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasSubRespID()) {
-        hash = (37 * hash) + SUBRESPID_FIELD_NUMBER;
-        hash = (53 * hash) + getSubRespID();
-      }
-      if (hasRespCode()) {
-        hash = (37 * hash) + RESPCODE_FIELD_NUMBER;
-        hash = (53 * hash) + getRespCode();
-      }
-      if (hasDesc()) {
-        hash = (37 * hash) + DESC_FIELD_NUMBER;
-        hash = (53 * hash) + getDesc().hashCode();
+      if (hasMsgCode()) {
+        hash = (37 * hash) + MSGCODE_FIELD_NUMBER;
+        hash = (53 * hash) + getMsgCode();
       }
       if (hasJsonBody()) {
         hash = (37 * hash) + JSONBODY_FIELD_NUMBER;
@@ -526,14 +394,10 @@ public final class SubcribeRespProto {
       }
       public Builder clear() {
         super.clear();
-        subRespID_ = 0;
+        msgCode_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        respCode_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000002);
-        desc_ = "";
-        bitField0_ = (bitField0_ & ~0x00000004);
         jsonBody_ = "";
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
 
@@ -561,17 +425,9 @@ public final class SubcribeRespProto {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.subRespID_ = subRespID_;
+        result.msgCode_ = msgCode_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
-        }
-        result.respCode_ = respCode_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        result.desc_ = desc_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
         }
         result.jsonBody_ = jsonBody_;
         result.bitField0_ = to_bitField0_;
@@ -616,19 +472,11 @@ public final class SubcribeRespProto {
 
       public Builder mergeFrom(com.three.core.protobuf.SubcribeRespProto.SubcribeResp other) {
         if (other == com.three.core.protobuf.SubcribeRespProto.SubcribeResp.getDefaultInstance()) return this;
-        if (other.hasSubRespID()) {
-          setSubRespID(other.getSubRespID());
-        }
-        if (other.hasRespCode()) {
-          setRespCode(other.getRespCode());
-        }
-        if (other.hasDesc()) {
-          bitField0_ |= 0x00000004;
-          desc_ = other.desc_;
-          onChanged();
+        if (other.hasMsgCode()) {
+          setMsgCode(other.getMsgCode());
         }
         if (other.hasJsonBody()) {
-          bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000002;
           jsonBody_ = other.jsonBody_;
           onChanged();
         }
@@ -638,13 +486,7 @@ public final class SubcribeRespProto {
       }
 
       public final boolean isInitialized() {
-        if (!hasSubRespID()) {
-          return false;
-        }
-        if (!hasRespCode()) {
-          return false;
-        }
-        if (!hasDesc()) {
+        if (!hasMsgCode()) {
           return false;
         }
         if (!hasJsonBody()) {
@@ -672,155 +514,47 @@ public final class SubcribeRespProto {
       }
       private int bitField0_;
 
-      private int subRespID_ ;
+      private int msgCode_ ;
       /**
-       * <code>required int32 subRespID = 1;</code>
+       * <code>required int32 msgCode = 1;</code>
        */
-      public boolean hasSubRespID() {
+      public boolean hasMsgCode() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required int32 subRespID = 1;</code>
+       * <code>required int32 msgCode = 1;</code>
        */
-      public int getSubRespID() {
-        return subRespID_;
+      public int getMsgCode() {
+        return msgCode_;
       }
       /**
-       * <code>required int32 subRespID = 1;</code>
+       * <code>required int32 msgCode = 1;</code>
        */
-      public Builder setSubRespID(int value) {
+      public Builder setMsgCode(int value) {
         bitField0_ |= 0x00000001;
-        subRespID_ = value;
+        msgCode_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 subRespID = 1;</code>
+       * <code>required int32 msgCode = 1;</code>
        */
-      public Builder clearSubRespID() {
+      public Builder clearMsgCode() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        subRespID_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int respCode_ ;
-      /**
-       * <code>required int32 respCode = 2;</code>
-       */
-      public boolean hasRespCode() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required int32 respCode = 2;</code>
-       */
-      public int getRespCode() {
-        return respCode_;
-      }
-      /**
-       * <code>required int32 respCode = 2;</code>
-       */
-      public Builder setRespCode(int value) {
-        bitField0_ |= 0x00000002;
-        respCode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required int32 respCode = 2;</code>
-       */
-      public Builder clearRespCode() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        respCode_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object desc_ = "";
-      /**
-       * <code>required string desc = 3;</code>
-       */
-      public boolean hasDesc() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>required string desc = 3;</code>
-       */
-      public java.lang.String getDesc() {
-        java.lang.Object ref = desc_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            desc_ = s;
-          }
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>required string desc = 3;</code>
-       */
-      public com.google.protobuf.ByteString
-          getDescBytes() {
-        java.lang.Object ref = desc_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          desc_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>required string desc = 3;</code>
-       */
-      public Builder setDesc(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        desc_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string desc = 3;</code>
-       */
-      public Builder clearDesc() {
-        bitField0_ = (bitField0_ & ~0x00000004);
-        desc_ = getDefaultInstance().getDesc();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>required string desc = 3;</code>
-       */
-      public Builder setDescBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000004;
-        desc_ = value;
+        msgCode_ = 0;
         onChanged();
         return this;
       }
 
       private java.lang.Object jsonBody_ = "";
       /**
-       * <code>required string jsonBody = 4;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public boolean hasJsonBody() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
+        return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       /**
-       * <code>required string jsonBody = 4;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public java.lang.String getJsonBody() {
         java.lang.Object ref = jsonBody_;
@@ -837,7 +571,7 @@ public final class SubcribeRespProto {
         }
       }
       /**
-       * <code>required string jsonBody = 4;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public com.google.protobuf.ByteString
           getJsonBodyBytes() {
@@ -853,36 +587,36 @@ public final class SubcribeRespProto {
         }
       }
       /**
-       * <code>required string jsonBody = 4;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public Builder setJsonBody(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000008;
+  bitField0_ |= 0x00000002;
         jsonBody_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string jsonBody = 4;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public Builder clearJsonBody() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000002);
         jsonBody_ = getDefaultInstance().getJsonBody();
         onChanged();
         return this;
       }
       /**
-       * <code>required string jsonBody = 4;</code>
+       * <code>required string jsonBody = 3;</code>
        */
       public Builder setJsonBodyBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000008;
+  bitField0_ |= 0x00000002;
         jsonBody_ = value;
         onChanged();
         return this;
@@ -950,10 +684,9 @@ public final class SubcribeRespProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023SubscribeResp.proto\"S\n\014SubcribeResp\022\021\n" +
-      "\tsubRespID\030\001 \002(\005\022\020\n\010respCode\030\002 \002(\005\022\014\n\004de" +
-      "sc\030\003 \002(\t\022\020\n\010jsonBody\030\004 \002(\tB,\n\027com.three." +
-      "core.protobufB\021SubcribeRespProto"
+      "\n\023SubscribeResp.proto\"1\n\014SubcribeResp\022\017\n" +
+      "\007msgCode\030\001 \002(\005\022\020\n\010jsonBody\030\003 \002(\tB,\n\027com." +
+      "three.core.protobufB\021SubcribeRespProto"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -972,7 +705,7 @@ public final class SubcribeRespProto {
     internal_static_SubcribeResp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SubcribeResp_descriptor,
-        new java.lang.String[] { "SubRespID", "RespCode", "Desc", "JsonBody", });
+        new java.lang.String[] { "MsgCode", "JsonBody", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

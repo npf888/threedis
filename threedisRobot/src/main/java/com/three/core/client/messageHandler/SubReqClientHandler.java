@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 
 import com.google.protobuf.Message;
 import com.three.core.msg.transform.MsgTransform;
+import com.three.core.protobuf.ProtobufRobotTransform;
 import com.three.core.protobuf.SubcribeReqProto;
 import com.three.core.protobuf.SubcribeRespProto;
 import com.three.gift.msg.CGSendGift;
@@ -21,15 +22,13 @@ public class SubReqClientHandler extends SimpleChannelInboundHandler<Message>{
 	@Override
 	public void channelActive(ChannelHandlerContext ctx){
 		logger.info("Œ“∏’…œœﬂ£∫"+ctx.channel().remoteAddress());
-		ctx.write(subReq(2001));
-		ctx.flush();
+		ctx.writeAndFlush(ProtobufRobotTransform.toWriteMsg(new CGLoginIn()));
 		try {
 			Thread.currentThread().sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		ctx.write(subReq(3001));
-		ctx.flush();
+		ctx.writeAndFlush(ProtobufRobotTransform.toWriteMsg(new CGSendGift()));
 	}
 	
 	
@@ -38,37 +37,10 @@ public class SubReqClientHandler extends SimpleChannelInboundHandler<Message>{
 	protected void channelRead0(ChannelHandlerContext ctx, Message msg)
 			throws Exception {
 			
-		logger.info("channelRead0£∫"+ctx.channel().remoteAddress());
-		
-		SubcribeRespProto.SubcribeResp subcribeResp = (SubcribeRespProto.SubcribeResp)msg;
-		
-		subcribeResp.getSubRespID();
-//		IMessage transMsg = MsgTransform.fromJSONString(subcribeResp.getJsonBody());
-		logger.info(subcribeResp.getJsonBody());
+		ProtobufRobotTransform.toReadMsg(msg, ctx);
 		
 		
 	}
-	
-	
-	
-	
-
-	private SubcribeReqProto.SubcribeReq subReq(int i){
-		SubcribeReqProto.SubcribeReq.Builder builder = SubcribeReqProto.SubcribeReq.newBuilder();
-		builder.setSubReqID(i);
-		builder.setUserName("lilinfeng");
-		builder.setProductName("Netty book for protobuf");
-		builder.setAddress("street street");
-		if(i ==2001){
-			builder.setJsonBody(MsgTransform.toJSONString(new CGLoginIn()));
-		}else if(i == 3001){
-			builder.setJsonBody(MsgTransform.toJSONString(new CGSendGift()));
-		}
-		return builder.build();
-		
-	}
-	
-	
 	
 	@Override
 	public void channelReadComplete(ChannelHandlerContext ctx){

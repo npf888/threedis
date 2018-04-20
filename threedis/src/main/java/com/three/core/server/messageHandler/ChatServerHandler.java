@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 
 import com.google.protobuf.Message;
 import com.three.core.msg.transform.MsgTransform;
+import com.three.core.protobuf.ProtobufTransform;
 import com.three.core.protobuf.SubcribeReqProto;
 import com.three.core.protobuf.SubcribeRespProto;
 import com.three.core.session.NettyClientSession;
@@ -39,33 +40,10 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Message> {
 	    @Override  
 	    protected void channelRead0(ChannelHandlerContext ctx, Message msg)  
 	            throws Exception {  
-	    	SubcribeReqProto.SubcribeReq req = (SubcribeReqProto.SubcribeReq)msg;
 	    	
+	    	ProtobufTransform.toReadMsg(msg,ctx);
 	    	
-	    	String jsonBody = req.getJsonBody();
-	    	if(StringUtils.isEmpty(jsonBody)){
-	    		logger.info("当前消息为空：消息 reqID:"+req.getSubReqID()+" --- 消息体:"+req.getJsonBody());
-	    		return;
-	    	}
-	    	logger.info("当前消息 reqID:"+req.getSubReqID()+" --- 消息体:"+req.getJsonBody());
-	    	NettyClientSession nettyClientSession = Globals.getNettyClientSessionMap(ctx.channel().remoteAddress().toString());
-	    	Globals.getMessageRecognizer().recognize(req.getSubReqID(),jsonBody,nettyClientSession);
-	    	
-	    	
-//			ctx.writeAndFlush(resp(req.getSubReqID()));
 		}
-		
-	    
-		public SubcribeRespProto.SubcribeResp resp(int subReqID){
-			SubcribeRespProto.SubcribeResp.Builder builder = SubcribeRespProto.SubcribeResp.newBuilder();
-			builder.setSubRespID(subReqID);
-			builder.setRespCode(10);
-			builder.setDesc("dddd");
-			builder.setJsonBody(MsgTransform.toJSONString(new CGSendGift()));
-			return builder.build();
-		} 
-	  
-	    
 		
 	  
 	    @Override  

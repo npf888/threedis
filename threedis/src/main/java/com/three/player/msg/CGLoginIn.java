@@ -1,6 +1,7 @@
 package com.three.player.msg;
 
-import com.three.core.msg.mtype.perType.PlayerType;
+import com.three.core.msg.inter.IMessage;
+import com.three.core.msg.mcode.percode.PlayerCode;
 import com.three.core.msg.obj.BaseMessageJSON;
 import com.three.player.playerObj.Player;
 
@@ -12,7 +13,7 @@ import com.three.player.playerObj.Player;
 public class CGLoginIn extends BaseMessageJSON{
 
 	public CGLoginIn() {
-		super(PlayerType.CG_LOGIN_IN);
+		super(PlayerCode.CG_LOGIN_IN,IMessage.CG_MSG_TYPE);
 	}
 
 	
@@ -24,6 +25,7 @@ public class CGLoginIn extends BaseMessageJSON{
 		 */
 		
 		Player player = new Player();
+		player.setNettyClientSession(this.getNettyClientSession());
 		this.getNettyClientSession().setPlayer(player);
 	}
 }
