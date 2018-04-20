@@ -26,8 +26,8 @@ public class MessageRecognizer implements InitService{
 	 * 识别消息
 	 */
 	public void recognize(Integer code,String jsonMsg,NettyClientSession nettyClientSession){
-		Class<?> clazz = this.msgProvider.getByMsgType(code);
-		IMessage msg =MsgTransform.fromJSONString(jsonMsg,clazz);
+		IMessage message = this.msgProvider.getByMsgType(code);
+		IMessage msg =MsgTransform.fromJSONString(jsonMsg,message);
 		msg.setNettyClientSession(nettyClientSession);
 		Globals.getCgBlockingMsgService().putMsgIntoCache(msg);
 	}

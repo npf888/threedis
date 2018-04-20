@@ -3,6 +3,7 @@ package com.three.core.msg.msgMap;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.three.core.msg.inter.IMessage;
 import com.three.core.msg.mtype.perType.GiftType;
 import com.three.core.msg.mtype.perType.PlayerType;
 import com.three.gift.msg.CGSendGift;
@@ -16,7 +17,7 @@ import com.three.player.msg.CGLoginIn;
  */
 public class MsgProvider implements InitService{
 	
-	private  Map<Integer,Class<?>> msgMap = new HashMap<Integer,Class<?>>();
+	private  Map<Integer,IMessage> msgMap = new HashMap<Integer,IMessage>();
 	
 	
 	/**
@@ -24,8 +25,8 @@ public class MsgProvider implements InitService{
 	 */
 	@Override
 	public void init() {
-		msgMap.put(GiftType.CG_SEND_GIFT,CGSendGift.class);
-		msgMap.put(PlayerType.CG_LOGIN_IN,CGLoginIn.class);
+		msgMap.put(GiftType.CG_SEND_GIFT,new CGSendGift());
+		msgMap.put(PlayerType.CG_LOGIN_IN,new CGLoginIn());
 		
 	}
 	
@@ -35,7 +36,7 @@ public class MsgProvider implements InitService{
 	 * @param msgType
 	 * @return
 	 */
-	public Class<?> getByMsgType(int msgType){
+	public IMessage getByMsgType(int msgType){
 		return msgMap.get(msgType);
 	}
 	

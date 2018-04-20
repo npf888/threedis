@@ -21,14 +21,14 @@ public class SubReqClientHandler extends SimpleChannelInboundHandler<Message>{
 	@Override
 	public void channelActive(ChannelHandlerContext ctx){
 		logger.info("Œ“∏’…œœﬂ£∫"+ctx.channel().remoteAddress());
-		ctx.write(subReq(1));
+		ctx.write(subReq(2001));
 		ctx.flush();
 		try {
 			Thread.currentThread().sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		ctx.write(subReq(2));
+		ctx.write(subReq(3001));
 		ctx.flush();
 	}
 	
@@ -59,9 +59,9 @@ public class SubReqClientHandler extends SimpleChannelInboundHandler<Message>{
 		builder.setUserName("lilinfeng");
 		builder.setProductName("Netty book for protobuf");
 		builder.setAddress("street street");
-		if(i ==1){
+		if(i ==2001){
 			builder.setJsonBody(MsgTransform.toJSONString(new CGLoginIn()));
-		}else if(i == 2){
+		}else if(i == 3001){
 			builder.setJsonBody(MsgTransform.toJSONString(new CGSendGift()));
 		}
 		return builder.build();

@@ -1,13 +1,8 @@
 package com.three.core.msg.transform;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
-import org.apache.commons.lang3.StringUtils;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.three.core.msg.inter.IMessage;
 
 /**
@@ -29,7 +24,13 @@ public class MsgTransform {
 	}
 	
 	
-	public static IMessage fromJSONString(String jsonMsg,Class<?> clazz){
+	public static IMessage fromJSONString(String jsonMsg,IMessage message){
+		IMessage subMessage = JSON.parseObject(jsonMsg,message.getClass());
+		return subMessage;
+	}
+	
+	
+	/*public static IMessage fromJSONString(String jsonMsg,Class<?> clazz){
 		Method[] methods = clazz.getMethods();
 		Field[] fields = clazz.getFields();
 		JSONObject jb = JSONObject.parseObject(jsonMsg);
@@ -72,7 +73,7 @@ public class MsgTransform {
 		}
 		
 		return null;
-	}
+	}*/
 
 
 	private static String getMethodStr(String methodName) {
