@@ -1,0 +1,8 @@
+syntax = "proto2";
+option java_package = "com.three.core.protobuf";   
+option java_outer_classname = "SubcribeRespProto";   
+message SubcribeResp  {   
+  required int32 msgCode = 1;
+  required string jsonBody = 3;
+
+}  

@@ -1,0 +1,10 @@
+PS C:\WINDOWS\system32> protoc.exe -I=C:\protobuf\aa\  --java_out=C:\protobuf\aa\target  C:\protobuf\aa\*.proto
+
+
+
+在  C:\protobuf\bin 下边
+
+
+生成文件的命令
+
+protoc.exe -I=C:\gitThree\protobuf\source\  --java_out=C:\gitThree\protobuf\target  C:\gitThree\protobuf\source\*.proto
