@@ -15,33 +15,27 @@ import com.three.globals.Globals;
 public class ChatServerHandler extends SimpleChannelInboundHandler<Message> {  
 		Logger logger = Logger.getLogger(ChatServerHandler.class);
 		
-		private Globals globals;  
-		
-	    public ChatServerHandler(Globals globals) {
-			this.globals=globals;
-		}
 
 		@Override  
 	    public void channelActive(ChannelHandlerContext ctx) throws Exception { // (5)  
 	        Channel incoming = ctx.channel();  
 	        logger.info("用户:" + incoming.remoteAddress() + "上线");  
 	        NettyClientSession clientSession = new NettyClientSession(ctx);
-	        clientSession.setGlobals(globals);
-	        globals.setNettyClientSessionMap(clientSession);
+	        Globals.setNettyClientSessionMap(clientSession);
 	    } 
 	    
 	    @Override  
 	    public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {  
 	        Channel incoming = ctx.channel();  
 	        logger.info("用户:" + incoming.remoteAddress() + " 离开\n");  
-	        globals.removeNettyClientSessionMap(incoming.remoteAddress().toString());
+	        Globals.removeNettyClientSessionMap(incoming.remoteAddress().toString());
 	    }  
 	  
 	    @Override  
 	    protected void channelRead0(ChannelHandlerContext ctx, Message msg)  
 	            throws Exception {  
 	    	
-	    	globals.getMessageRecognizer().getProtobufTransform().toReadMsg(globals,msg,ctx);
+	    	Globals.getMessageRecognizer().toReadMsg(msg,ctx);
 	    	
 		}
 		

@@ -19,6 +19,6 @@ public class Player {
 	
 	
 	public void sendMessage(IMessage msg){
-		nettyClientSession.getGlobals().getMessageRecognizer().getGcBlockingMsgService().putMsgIntoCache(msg);
+		Globals.getMessageRecognizer().getGcBlockingMsgService().putMsgIntoCache(msg);
 	}
 }

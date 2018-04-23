@@ -21,11 +21,10 @@ import com.three.core.session.NettyClientSession;
 public class Globals {
 
 	
-	//消息识别器
-	@Autowired
-	private MessageRecognizer messageRecognizer;
+	//消息识别器 (再set方法中注入)
+	private static MessageRecognizer messageRecognizer;
 	//session 集合
-	private Map<String,NettyClientSession>  nettyClientSessionMap = new HashMap<String,NettyClientSession>();
+	private static Map<String,NettyClientSession>  nettyClientSessionMap = new HashMap<String,NettyClientSession>();
 	
 	public  void init(){
 		
@@ -37,31 +36,24 @@ public class Globals {
 	
 	
 	
-	
-	
-	//处理要返回的消息
-	public void handlerGCMsg(IMessage msg){
-		getMessageRecognizer().handlerGCMsg(msg);
+	@Autowired
+	public void setMessageRecognizer(MessageRecognizer messageRecognizer) {
+		Globals.messageRecognizer = messageRecognizer;
 	}
-	
-	
-	
-	
-	
-	
+
 	
 	
 
-	public  MessageRecognizer getMessageRecognizer() {
+	public static  MessageRecognizer getMessageRecognizer() {
 		return messageRecognizer;
 	}
-	public  NettyClientSession getNettyClientSessionMap(String ip) {
+	public  static NettyClientSession getNettyClientSessionMap(String ip) {
 		return nettyClientSessionMap.get(ip);
 	}
-	public  NettyClientSession setNettyClientSessionMap(NettyClientSession clientSession) {
+	public static NettyClientSession setNettyClientSessionMap(NettyClientSession clientSession) {
 		return nettyClientSessionMap.put(clientSession.getClientIp(), clientSession);
 	}
-	public  void removeNettyClientSessionMap(String clientIp) {
+	public static void removeNettyClientSessionMap(String clientIp) {
 		nettyClientSessionMap.remove(clientIp);
 	}
 

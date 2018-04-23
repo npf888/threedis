@@ -19,6 +19,7 @@ public class RobotGlobals {
 	public static void init(){
 		messageRecognizer.init();
 		robotMessageProcesser.init();
+		robotMessageProcesser.start();
 	}
 	
 	

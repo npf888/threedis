@@ -67,3 +67,131 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2018-04-23 16:02:09 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
 2018-04-23 16:02:09 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2018-04-23 16:02:09 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-23 16:06:17 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-23 16:06:18 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-23 16:06:18 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-23 16:06:30 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x0e7cbb54, L:/192.168.1.41:8080 - R:/192.168.1.41:51354] REGISTERED
+2018-04-23 16:06:30 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x0e7cbb54, L:/192.168.1.41:8080 - R:/192.168.1.41:51354] ACTIVE
+2018-04-23 16:06:30 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:51354上线
+2018-04-23 16:08:04 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-23 16:08:04 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-23 16:08:04 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-23 16:08:12 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xf89e061d, L:/192.168.1.41:8080 - R:/192.168.1.41:51646] REGISTERED
+2018-04-23 16:08:12 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xf89e061d, L:/192.168.1.41:8080 - R:/192.168.1.41:51646] ACTIVE
+2018-04-23 16:08:12 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:51646上线
+2018-04-23 16:08:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xf89e061d, L:/192.168.1.41:8080 - R:/192.168.1.41:51646] READ COMPLETE
+2018-04-23 16:08:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xf89e061d, L:/192.168.1.41:8080 - R:/192.168.1.41:51646] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-23 16:08:56 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.exceptionCaught] ChatClient:/192.168.1.41:51646异常,已被服务器关闭
+2018-04-23 16:08:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xf89e061d, L:/192.168.1.41:8080 - R:/192.168.1.41:51646] CLOSE
+2018-04-23 16:08:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xf89e061d, L:/192.168.1.41:8080 ! R:/192.168.1.41:51646] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@69b71404
+2018-04-23 16:08:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xf89e061d, L:/192.168.1.41:8080 ! R:/192.168.1.41:51646] INACTIVE
+2018-04-23 16:08:56 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xf89e061d, L:/192.168.1.41:8080 ! R:/192.168.1.41:51646] UNREGISTERED
+2018-04-23 16:08:56 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:51646 离开
+
+2018-04-23 16:09:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x94d09a3f, L:/192.168.1.41:8080 - R:/192.168.1.41:51788] REGISTERED
+2018-04-23 16:09:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x94d09a3f, L:/192.168.1.41:8080 - R:/192.168.1.41:51788] ACTIVE
+2018-04-23 16:09:01 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:51788上线
+2018-04-23 16:09:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x94d09a3f, L:/192.168.1.41:8080 - R:/192.168.1.41:51788] READ COMPLETE
+2018-04-23 16:09:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x94d09a3f, L:/192.168.1.41:8080 - R:/192.168.1.41:51788] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-23 16:09:36 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.exceptionCaught] ChatClient:/192.168.1.41:51788异常,已被服务器关闭
+2018-04-23 16:09:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x94d09a3f, L:/192.168.1.41:8080 - R:/192.168.1.41:51788] CLOSE
+2018-04-23 16:09:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x94d09a3f, L:/192.168.1.41:8080 ! R:/192.168.1.41:51788] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@69b71404
+2018-04-23 16:09:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x94d09a3f, L:/192.168.1.41:8080 ! R:/192.168.1.41:51788] INACTIVE
+2018-04-23 16:09:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x94d09a3f, L:/192.168.1.41:8080 ! R:/192.168.1.41:51788] UNREGISTERED
+2018-04-23 16:09:36 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:51788 离开
+
+2018-04-23 16:09:41 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-23 16:09:41 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-23 16:09:42 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-23 16:21:53 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-23 16:21:53 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-23 16:21:53 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-23 16:21:59 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 - R:/192.168.1.41:54127] REGISTERED
+2018-04-23 16:21:59 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 - R:/192.168.1.41:54127] ACTIVE
+2018-04-23 16:21:59 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:54127上线
+2018-04-23 16:21:59 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 - R:/192.168.1.41:54127] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-23 16:21:59 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-23 16:21:59 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 - R:/192.168.1.41:54127] READ COMPLETE
+2018-04-23 16:22:25 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 - R:/192.168.1.41:54127] READ COMPLETE
+2018-04-23 16:22:26 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 - R:/192.168.1.41:54127] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-23 16:22:26 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.exceptionCaught] ChatClient:/192.168.1.41:54127异常,已被服务器关闭
+2018-04-23 16:22:26 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 - R:/192.168.1.41:54127] CLOSE
+2018-04-23 16:22:26 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 ! R:/192.168.1.41:54127] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@6c5332c0
+2018-04-23 16:22:26 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 ! R:/192.168.1.41:54127] INACTIVE
+2018-04-23 16:22:26 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc885983e, L:/192.168.1.41:8080 ! R:/192.168.1.41:54127] UNREGISTERED
+2018-04-23 16:22:26 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:54127 离开
+
+2018-04-23 16:26:33 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-23 16:26:33 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-23 16:26:33 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer 启动了]
+2018-04-23 16:26:40 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa39e27b5, L:/192.168.1.41:8080 - R:/192.168.1.41:55095] REGISTERED
+2018-04-23 16:26:40 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa39e27b5, L:/192.168.1.41:8080 - R:/192.168.1.41:55095] ACTIVE
+2018-04-23 16:26:40 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 用户:/192.168.1.41:55095上线
+2018-04-23 16:26:40 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa39e27b5, L:/192.168.1.41:8080 - R:/192.168.1.41:55095] READ: 34B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 21 08 d1 0f 1a 1c 7b 22 6d 73 67 43 6f 64 65 22 |!.....{"msgCode"|
+|00000010| 3a 32 30 30 31 2c 22 6d 73 67 54 79 70 65 22 3a |:2001,"msgType":|
+|00000020| 31 7d                                           |1}              |
++--------+-------------------------------------------------+----------------+
+2018-04-23 16:26:40 [INFO]-[com.three.core.protobuf.ProtobufTransform.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
+2018-04-23 16:26:40 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xa39e27b5, L:/192.168.1.41:8080 - R:/192.168.1.41:55095] READ COMPLETE

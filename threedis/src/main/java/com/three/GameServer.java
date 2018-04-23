@@ -1,6 +1,5 @@
 package com.three;
 
-import com.three.core.msg.msgMap.MsgProvider;
 import com.three.core.server.NettyServer;
 import com.three.core.spring.SpringContextUtils;
 import com.three.globals.Globals;
@@ -18,7 +17,7 @@ public class GameServer {
 	 	globals.init();
 	 	
 	 	//netty·þÎñ
-    	NettyServer server = new NettyServer(8080,globals);
+    	NettyServer server = new NettyServer(8080);
     	try{
     		server.run();
     	}catch(Exception e){

@@ -3,6 +3,7 @@ package com.three.core.robot;
 import io.netty.channel.ChannelHandlerContext;
 
 import com.three.core.msg.inter.IMessage;
+import com.three.core.protobuf.ProtobufRobotTransform;
 
 /**
  * »úÆ÷ÈËµÄsession
@@ -20,6 +21,6 @@ public class RobotSession {
 	
 	
 	public void put(IMessage msg){
-		ctx.writeAndFlush(msg);
+		ctx.writeAndFlush(ProtobufRobotTransform.toWriteMsg(msg));
 	}
 }

@@ -15,7 +15,6 @@ public class NettyClientSession {
 	
 	private ChannelHandlerContext ctx = null;
 	private Player player;
-	private Globals globals;
 	
 	public NettyClientSession(ChannelHandlerContext ctx){
 		this.ctx=ctx;
@@ -38,18 +37,12 @@ public class NettyClientSession {
 		this.player = player;
 	}
 	
-	public Globals getGlobals() {
-		return globals;
-	}
-	public void setGlobals(Globals globals) {
-		this.globals = globals;
-	}
 
 
 
 
 	public void sendMessageToCtx(IMessage msg){
-		ctx.writeAndFlush(globals.getMessageRecognizer().getProtobufTransform().toWriteMsg(msg));
+		ctx.writeAndFlush(Globals.getMessageRecognizer().toWriteMsg(msg));
 	}
 	
 	
