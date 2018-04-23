@@ -3,8 +3,8 @@ package com.three.core.session;
 import io.netty.channel.ChannelHandlerContext;
 
 import com.three.core.msg.inter.IMessage;
-import com.three.core.msg.transform.MsgTransform;
 import com.three.core.protobuf.ProtobufTransform;
+import com.three.globals.Globals;
 import com.three.player.playerObj.Player;
 
 /**
@@ -15,6 +15,7 @@ public class NettyClientSession {
 	
 	private ChannelHandlerContext ctx = null;
 	private Player player;
+	private Globals globals;
 	
 	public NettyClientSession(ChannelHandlerContext ctx){
 		this.ctx=ctx;
@@ -37,9 +38,18 @@ public class NettyClientSession {
 		this.player = player;
 	}
 	
-	
+	public Globals getGlobals() {
+		return globals;
+	}
+	public void setGlobals(Globals globals) {
+		this.globals = globals;
+	}
+
+
+
+
 	public void sendMessageToCtx(IMessage msg){
-		ctx.writeAndFlush(ProtobufTransform.toWriteMsg(msg));
+		ctx.writeAndFlush(globals.getMessageRecognizer().getProtobufTransform().toWriteMsg(msg));
 	}
 	
 	

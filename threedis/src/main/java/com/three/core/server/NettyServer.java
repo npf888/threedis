@@ -21,9 +21,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 
+import com.three.core.blocking.CGBlockingMsgService;
 import com.three.core.protobuf.SubcribeReqProto;
 import com.three.core.server.messageHandler.ChatServerHandler;
 import com.three.core.server.messageHandler.HeartBeatServerHandler;
+import com.three.globals.Globals;
 
 /**
  * server 启动类
@@ -33,8 +35,10 @@ import com.three.core.server.messageHandler.HeartBeatServerHandler;
 public class NettyServer {
 	Logger logger = Logger.getLogger(NettyServer.class);
 	private int port;  
-    public NettyServer(int port) {  
+	private Globals globals;  
+    public NettyServer(int port, Globals globals) {  
         this.port = port;  
+        this.globals = globals;  
     } 
     
     public void run() throws Exception {  
@@ -63,7 +67,7 @@ public class NettyServer {
 						        pipeline.addLast("protobufEncoder", new ProtobufEncoder());  
 						        // ----Protobuf处理器END----  
 						  
-						        pipeline.addLast("handler", new ChatServerHandler());//自己定义的消息处理器，接收消息会在这个类处理  
+						        pipeline.addLast("handler", new ChatServerHandler(globals));//自己定义的消息处理器，接收消息会在这个类处理  
 //						        pipeline.addLast("ackHandler", new AckServerHandler());//处理ACK  
 						        pipeline.addLast("timeout", new IdleStateHandler(100, 0, 0,  
 						                TimeUnit.SECONDS));// //此两项为添加心跳机制,60秒查看一次在线的客户端channel是否空闲  

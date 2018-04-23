@@ -3,8 +3,10 @@ package com.three.globals;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.three.core.blocking.CGBlockingMsgService;
-import com.three.core.blocking.GCBlockingMsgService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.three.core.msg.inter.IMessage;
 import com.three.core.msg.transform.MessageRecognizer;
 import com.three.core.session.NettyClientSession;
 
@@ -15,21 +17,18 @@ import com.three.core.session.NettyClientSession;
  * @author JavaServer
  *
  */
+@Service
 public class Globals {
 
-	//接收 消息的 service 初始化
-	private static CGBlockingMsgService cgBlockingMsgService = new CGBlockingMsgService();
-	//发送 消息的 service 初始化
-	private static GCBlockingMsgService gcBlockingMsgService = new GCBlockingMsgService();
 	
 	//消息识别器
-	private static MessageRecognizer messageRecognizer = new MessageRecognizer();
+	@Autowired
+	private MessageRecognizer messageRecognizer;
 	//session 集合
-	private static Map<String,NettyClientSession>  nettyClientSessionMap = new HashMap<String,NettyClientSession>();
+	private Map<String,NettyClientSession>  nettyClientSessionMap = new HashMap<String,NettyClientSession>();
 	
-	public static void init(){
-		cgBlockingMsgService.init();
-		gcBlockingMsgService.init();
+	public  void init(){
+		
 		messageRecognizer.init();
 	}
 
@@ -38,24 +37,31 @@ public class Globals {
 	
 	
 	
-	public static CGBlockingMsgService getCgBlockingMsgService() {
-		return cgBlockingMsgService;
+	
+	
+	//处理要返回的消息
+	public void handlerGCMsg(IMessage msg){
+		getMessageRecognizer().handlerGCMsg(msg);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 
-	public static GCBlockingMsgService getGcBlockingMsgService() {
-		return gcBlockingMsgService;
-	}
-
-	public static MessageRecognizer getMessageRecognizer() {
+	public  MessageRecognizer getMessageRecognizer() {
 		return messageRecognizer;
 	}
-	public static NettyClientSession getNettyClientSessionMap(String ip) {
+	public  NettyClientSession getNettyClientSessionMap(String ip) {
 		return nettyClientSessionMap.get(ip);
 	}
-	public static NettyClientSession setNettyClientSessionMap(NettyClientSession clientSession) {
+	public  NettyClientSession setNettyClientSessionMap(NettyClientSession clientSession) {
 		return nettyClientSessionMap.put(clientSession.getClientIp(), clientSession);
 	}
-	public static void removeNettyClientSessionMap(String clientIp) {
+	public  void removeNettyClientSessionMap(String clientIp) {
 		nettyClientSessionMap.remove(clientIp);
 	}
 

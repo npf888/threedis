@@ -6,12 +6,9 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import org.apache.log4j.Logger;
 
 import com.google.protobuf.Message;
-import com.three.core.msg.transform.MsgTransform;
 import com.three.core.protobuf.ProtobufRobotTransform;
-import com.three.core.protobuf.SubcribeReqProto;
-import com.three.core.protobuf.SubcribeRespProto;
-import com.three.gift.msg.CGSendGift;
-import com.three.player.msg.CGLoginIn;
+import com.three.core.robot.RobotSession;
+import com.three.globals.RobotGlobals;
 
 public class SubReqClientHandler extends SimpleChannelInboundHandler<Message>{
 	
@@ -22,13 +19,10 @@ public class SubReqClientHandler extends SimpleChannelInboundHandler<Message>{
 	@Override
 	public void channelActive(ChannelHandlerContext ctx){
 		logger.info("Œ“∏’…œœﬂ£∫"+ctx.channel().remoteAddress());
-		ctx.writeAndFlush(ProtobufRobotTransform.toWriteMsg(new CGLoginIn()));
-		try {
-			Thread.currentThread().sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		ctx.writeAndFlush(ProtobufRobotTransform.toWriteMsg(new CGSendGift()));
+		
+		RobotSession tRobotSession = new RobotSession(ctx);
+		RobotGlobals.setRobotSession(tRobotSession);
+		
 	}
 	
 	

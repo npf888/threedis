@@ -8,7 +8,7 @@ import org.apache.log4j.Logger;
 import com.google.protobuf.Message;
 import com.three.core.msg.inter.IMessage;
 import com.three.core.msg.transform.MsgTransform;
-import com.three.globals.Globals;
+import com.three.globals.RobotGlobals;
 
 
 public class ProtobufRobotTransform {
@@ -32,9 +32,10 @@ public class ProtobufRobotTransform {
     		return;
     	}
     	logger.info("[解析消息]当前消息 reqID:"+resp.getMsgCode()+" --- 消息体:"+resp.getJsonBody());
-    	IMessage message = Globals.getMessageRecognizer().getByMsgType(resp.getMsgCode());
+    	IMessage message = RobotGlobals.getMessageRecognizer().getByMsgType(resp.getMsgCode());
     	IMessage GCMsg = MsgTransform.fromJSONString(jsonBody, message);
     	logger.info("GC消息："+GCMsg);
+    	RobotGlobals.getRobotMessageProcesser().putMsg(GCMsg);
 	}
 	
 	

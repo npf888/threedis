@@ -16,7 +16,7 @@ import com.three.player.msg.CGLoginIn;
  * @author JavaServer
  *
  */
-public class MsgProvider implements InitService{
+public class RobotMsgProvider implements InitService{
 	
 	private  Map<Integer,IMessage> msgMap = new HashMap<Integer,IMessage>();
 	

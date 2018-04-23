@@ -2,6 +2,7 @@ package com.three.core.msg.recogizer;
 
 import com.three.core.msg.inter.IMessage;
 import com.three.core.msg.msgMap.MsgProvider;
+import com.three.core.msg.msgmap.RobotMsgProvider;
 import com.three.globals.InitService;
 
 /**
@@ -9,10 +10,10 @@ import com.three.globals.InitService;
  * @author JavaServer
  *
  */
-public class MessageRecognizer implements InitService{
+public class RobotMessageRecognizer implements InitService{
 
 	//这个消息提供器   目前没有什么用  先放到这里
-	private MsgProvider msgProvider = new MsgProvider();
+	private RobotMsgProvider msgProvider = new RobotMsgProvider();
 	@Override
 	public void init() {
 		msgProvider.init();

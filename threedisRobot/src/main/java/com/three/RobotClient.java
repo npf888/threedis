@@ -1,15 +1,14 @@
 package com.three;
 
-import com.three.core.client.NettyClient;
-import com.three.globals.Globals;
+import com.three.core.robot.Robot;
 
 public class RobotClient {
 
 	
 	public static void main(String args[]) throws InterruptedException{
-		Globals.init();
-		/*NettyClient nettyClient = new NettyClient();
-		nettyClient.clientStart();*/
+		Robot robot = new Robot();
+		robot.init();
+		robot.start();
 		
 	}
 }

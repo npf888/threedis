@@ -6,10 +6,10 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Service;
 
 import com.three.core.msg.inter.IMessage;
 import com.three.globals.InitService;
-import com.three.player.msg.CGLoginIn;
 
 
 /**
@@ -17,6 +17,7 @@ import com.three.player.msg.CGLoginIn;
  * @author JavaServer
  *
  */
+@Service
 public class CGBlockingMsgService implements InitService{
 
 	Logger logger = Logger.getLogger(CGBlockingMsgService.class);

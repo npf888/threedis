@@ -3,6 +3,8 @@ package com.three.core.msg.msgMap;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
+
 import com.three.core.msg.inter.IMessage;
 import com.three.core.msg.mcode.percode.GiftCode;
 import com.three.core.msg.mcode.percode.PlayerCode;
@@ -16,6 +18,8 @@ import com.three.player.msg.CGLoginIn;
  * @author JavaServer
  *
  */
+
+@Service
 public class MsgProvider implements InitService{
 	
 	private  Map<Integer,IMessage> msgMap = new HashMap<Integer,IMessage>();
