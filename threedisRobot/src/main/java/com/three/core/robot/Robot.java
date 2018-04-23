@@ -1,20 +1,24 @@
 package com.three.core.robot;
 
+import org.springframework.stereotype.Component;
+
 import com.three.core.client.NettyClient;
-import com.three.globals.RobotGlobals;
 
 /**
  * 机器人实体
  * @author JavaServer
  *
  */
+@Component
 public class Robot {
 
+	
+	private String handlerType;
+	
 	private NettyClient nettyClient = new NettyClient();
 	
-	//初始化
-	public void init(){
-		RobotGlobals.init();
+	public void init(String handlerType){
+		this.handlerType=handlerType;
 	}
 	
 	
@@ -25,4 +29,18 @@ public class Robot {
 			e.printStackTrace();
 		}
 	}
+
+
+	public String getHandlerType() {
+		return handlerType;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

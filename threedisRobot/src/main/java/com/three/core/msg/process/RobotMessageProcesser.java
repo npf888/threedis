@@ -3,12 +3,18 @@ package com.three.core.msg.process;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.three.core.msg.inter.IMessage;
 import com.three.globals.InitService;
+import com.three.globals.RobotGlobals;
 
+@Component
 public class RobotMessageProcesser extends Thread  implements InitService{
 
-	RobotMessageHandler msgHandler = new RobotMessageHandler();
+	@Autowired
+	private RobotMessageHandlerFactory robotMessageHandlerFactory;
 	
 	private BlockingQueue<IMessage> robotMsgQueue = new LinkedBlockingDeque<IMessage>();
 	
@@ -30,7 +36,7 @@ public class RobotMessageProcesser extends Thread  implements InitService{
 	private void processMsg() {
 		try {
 			IMessage msg = robotMsgQueue.take();
-			this.msgHandler.handler(msg);
+			this.robotMessageHandlerFactory.getHandler(RobotGlobals.getRobot().getHandlerType()).handler(msg);;
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

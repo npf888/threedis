@@ -1,43 +1,66 @@
 package com.three.globals;
 
-import com.three.core.msg.process.RobotMessageProcesser;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.three.core.msg.recogizer.RobotMessageRecognizer;
+import com.three.core.robot.Robot;
 import com.three.core.robot.RobotSession;
 import com.three.player.msg.CGLoginIn;
 
-
+@Component
 public class RobotGlobals {
 
+	private static Robot robot;
+	
 	
 	//消息识别器
-	private static RobotMessageRecognizer messageRecognizer = new RobotMessageRecognizer();
-	//消息识别器
-	private static RobotMessageProcesser robotMessageProcesser = new RobotMessageProcesser();
+	private static RobotMessageRecognizer robotMessageRecognizer ;
+	
 	//机器人session
 	private static RobotSession robotSession = null;
 
-	public static void init(){
-		messageRecognizer.init();
-		robotMessageProcesser.init();
-		robotMessageProcesser.start();
-	}
-	
-	
-	
-	public static RobotMessageRecognizer getMessageRecognizer() {
-		return messageRecognizer;
-	}
+	public  void init(){
+		robotMessageRecognizer.init();
 		
-	
-	public static RobotMessageProcesser getRobotMessageProcesser() {
-		return robotMessageProcesser;
 	}
 	
 	
+	
+	
+	
+
+	@Autowired
+	public void setRobot(Robot robot) {
+		RobotGlobals.robot = robot;
+	}
+	
+	public static Robot getRobot() {
+		return robot;
+	}
+
+	
+	
+	
+	
+	public static RobotMessageRecognizer getRobotMessageRecognizer() {
+		return robotMessageRecognizer;
+	}
+	@Autowired
+	public void setRobotMessageRecognizer(
+			RobotMessageRecognizer robotMessageRecognizer) {
+		RobotGlobals.robotMessageRecognizer = robotMessageRecognizer;
+	}
+
+
+
+
+
+
 	public static void setRobotSession(RobotSession tRobotSession){
 		robotSession=tRobotSession;
 		//第一次连接上 要放一个 消息
-		robotMessageProcesser.putMsg(new CGLoginIn());
+		robotMessageRecognizer.putMsg(new CGLoginIn());
 	}
 
 	public static RobotSession getRobotSession() {

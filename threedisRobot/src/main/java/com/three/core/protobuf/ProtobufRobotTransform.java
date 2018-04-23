@@ -32,10 +32,10 @@ public class ProtobufRobotTransform {
     		return;
     	}
     	logger.info("[解析消息]当前消息 reqID:"+resp.getMsgCode()+" --- 消息体:"+resp.getJsonBody());
-    	IMessage message = RobotGlobals.getMessageRecognizer().getByMsgType(resp.getMsgCode());
+    	IMessage message = RobotGlobals.getRobotMessageRecognizer().getByMsgType(resp.getMsgCode());
     	IMessage GCMsg = MsgTransform.fromJSONString(jsonBody, message);
     	logger.info("GC消息："+GCMsg);
-    	RobotGlobals.getRobotMessageProcesser().putMsg(GCMsg);
+    	RobotGlobals.getRobotMessageRecognizer().putMsg(GCMsg);
 	}
 	
 	
