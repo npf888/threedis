@@ -62,5 +62,8 @@ public class CGLoginIn extends BaseMessageJSON{
 		}
 		player.setHuman(human);
 		this.getNettyClientSession().setPlayer(player);
+		//放入redis
+		Globals.getOnLineService().setOnlinePlayer(player);
+		
 	}
 }

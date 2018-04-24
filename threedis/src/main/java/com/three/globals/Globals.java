@@ -8,9 +8,8 @@ import org.springframework.stereotype.Service;
 
 import com.three.core.msg.transform.MessageRecognizer;
 import com.three.core.session.NettyClientSession;
-import com.three.database.persist.EntityServiceMapper;
 import com.three.database.persist.PersistService;
-import com.three.database.persist.PersistentThread;
+import com.three.player.service.OnLineService;
 
 
 /**
@@ -29,11 +28,16 @@ public class Globals {
 	private static Map<String,NettyClientSession>  nettyClientSessionMap = new HashMap<String,NettyClientSession>();
 	//持久化的服务
 	private static PersistService persistService;
+	//在线用户 service
+	private static OnLineService onLineService;
+	
+	
 	
 	public  void init(){
 		
 		messageRecognizer.init();
 		persistService.init();
+		onLineService.init();
 	}
 
 	
@@ -41,6 +45,19 @@ public class Globals {
 	
 	
 	
+	public static OnLineService getOnLineService() {
+		return onLineService;
+	}
+
+	@Autowired
+	public  void setOnLineService(OnLineService onLineService) {
+		Globals.onLineService = onLineService;
+	}
+
+
+
+
+
 	@Autowired
 	public void setMessageRecognizer(MessageRecognizer messageRecognizer) {
 		Globals.messageRecognizer = messageRecognizer;

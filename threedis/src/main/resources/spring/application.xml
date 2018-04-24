@@ -12,45 +12,9 @@
 	<!-- 自动扫描 -->
 	<context:component-scan base-package="com.three" />
 	<!-- 引入配置文件 -->
-	<bean id="propertyConfigurer"
-		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="classpath:spring/jdbc.properties" />
-	</bean>
-
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"  destroy-method="close"> 
-	 		<property name="driverClass" value="${driverClass}" /> 
-	 		<property name="jdbcUrl" value="${jdbcUrl}" /> 
-	 		<property name="user" value="${user}" /> 
-	 		<property name="password" value="${password}" /> 
-	 		
-	 		
-	 		
-			<!-- 初始化连接大小 -->
-	 		<property name="minPoolSize" value="${minPoolSize}"></property> 
-			<!-- 连接池最大数量 -->
-	 		<property name="maxPoolSize" value="${maxPoolSize}"></property> 
-			<!-- 连接池最大空闲 -->
-	 		<property name="initialPoolSize" value="${initialPoolSize}"></property> 
-			<!-- 连接池最小空闲 -->
-	 		<property name="maxIdleTime" value="${maxIdleTime}"></property> 
-			<!-- 获取连接最大等待时间 -->
-			
-	 		<property name="acquireIncrement" value="${acquireIncrement}"></property> 
-	 		<property name="maxStatements" value="${maxStatements}"></property> 
-	 		<property name="idleConnectionTestPeriod" value="${idleConnectionTestPeriod}"></property> 
-	 		<property name="acquireRetryAttempts" value="${acquireRetryAttempts}"></property> 
-	 		<property name="breakAfterAcquireFailure" value="${breakAfterAcquireFailure}"></property> 
-	 		<property name="testConnectionOnCheckout" value="${testConnectionOnCheckout}"></property> 
-	 </bean> 
-	
-	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-			<property name="dataSource" ref="dataSource"></property>
-	</bean>
-	<!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
-	<bean id="transactionManager"
-		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="dataSource" />
-	</bean>
+	<context:property-placeholder location="classpath:spring/redis.properties,classpath:spring/jdbc.properties" />
+	<import resource="application-db.xml"/>
+	<import resource="application-redis.xml"/>
 	
 	
 
