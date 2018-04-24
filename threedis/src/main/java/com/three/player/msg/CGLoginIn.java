@@ -51,16 +51,9 @@ public class CGLoginIn extends BaseMessageJSON{
 //			player.sendMessage(msg);//提示 deviceMac 为空
 			return;
 		}
-		
-		PHuman humanEntity = (PHuman)Globals.getPersistService().getDBService(Human.class).findByDeviceMac(deviceMac);
-		Human human = new Human();
-		if(humanEntity == null){//等于空 就去创建用户 ，然后进入游戏
-			human.setDeviceMac(deviceMac);
-			human.setModified();
-		}else{//不等于空 就进入游戏
-			human.fromEntity(humanEntity);
-		}
+		Human human =Globals.getPersistService().initHuman(deviceMac);
 		player.setHuman(human);
+		
 		this.getNettyClientSession().setPlayer(player);
 		//放入redis
 		Globals.getOnLineService().setOnlinePlayer(player);
