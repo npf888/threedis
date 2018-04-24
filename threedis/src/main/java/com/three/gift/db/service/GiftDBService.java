@@ -3,9 +3,9 @@ package com.three.gift.db.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.three.database.inter.BaseEntity;
 import com.three.database.inter.DBService;
 import com.three.database.inter.PersistanceObject;
+import com.three.gift.db.Gift;
 import com.three.gift.db.dao.GiftDao;
 import com.three.gift.db.entity.GiftEntity;
 
@@ -24,9 +24,25 @@ public class GiftDBService implements DBService{
 
 
 	@Override
-	public void saveOrUpdate(PersistanceObject<BaseEntity> base) {
-		GiftEntity entity = (GiftEntity)base.toEntity();
-		giftDao.update(entity);
+	public void saveOrUpdate(PersistanceObject base) {
+		Gift gift = (Gift)base.toEntity();
+		giftDao.update(gift.toEntity());
+	}
+
+
+
+
+	@Override
+	public GiftEntity findById(int id) {
+		return null;
+	}
+
+
+
+
+	@Override
+	public GiftEntity findByDeviceMac(String deviceMac) {
+		return null;
 	}
 	
 }

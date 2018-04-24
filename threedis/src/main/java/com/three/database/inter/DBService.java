@@ -1,9 +1,10 @@
 package com.three.database.inter;
 
 
-public interface DBService {
+public interface DBService<T extends BaseEntity> {
 
-	void saveOrUpdate(PersistanceObject<BaseEntity> base);
+	void saveOrUpdate(PersistanceObject<T> base);
 
-
+	T findById(int id);
+	T findByDeviceMac(String deviceMac);
 }

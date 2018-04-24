@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 
 import com.three.core.msg.transform.MessageRecognizer;
 import com.three.core.session.NettyClientSession;
-import com.three.database.PersistentThread;
+import com.three.database.persist.EntityServiceMapper;
+import com.three.database.persist.PersistService;
+import com.three.database.persist.PersistentThread;
 
 
 /**
@@ -25,12 +27,14 @@ public class Globals {
 	private static MessageRecognizer messageRecognizer;
 	//session 
 	private static Map<String,NettyClientSession>  nettyClientSessionMap = new HashMap<String,NettyClientSession>();
-	//数据库处理的线程
-	private static PersistentThread persistentThread;
+	
+	
+	private static PersistService persistService;
+	
 	public  void init(){
 		
 		messageRecognizer.init();
-		persistentThread.init();
+		persistService.init();
 	}
 
 	
@@ -43,15 +47,23 @@ public class Globals {
 		Globals.messageRecognizer = messageRecognizer;
 	}
 
+
+	public static PersistService getPersistService() {
+		return persistService;
+	}
+	
 	@Autowired
-	public static void setPersistentThread(PersistentThread persistentThread) {
-		Globals.persistentThread = persistentThread;
+	public static void setPersistService(PersistService persistService) {
+		Globals.persistService = persistService;
 	}
 
 
 	public static  MessageRecognizer getMessageRecognizer() {
 		return messageRecognizer;
 	}
+
+
+
 	public  static NettyClientSession getNettyClientSessionMap(String ip) {
 		return nettyClientSessionMap.get(ip);
 	}
@@ -61,6 +73,7 @@ public class Globals {
 	public static void removeNettyClientSessionMap(String clientIp) {
 		nettyClientSessionMap.remove(clientIp);
 	}
+
 
 	
 	

@@ -1,4 +1,4 @@
-package com.three.database;
+package com.three.database.persist;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 import com.three.database.inter.BaseEntity;
 import com.three.database.inter.DBService;
 import com.three.database.inter.PersistanceObject;
-import com.three.database.map.EntityServiceMapper;
 
 /**
  * 异步操作数据库的线程
@@ -21,7 +20,7 @@ public class PersistentThread extends Thread{
 
 	Logger logger = Logger.getLogger(PersistentThread.class);
 	
-	private BlockingQueue<PersistanceObject<BaseEntity>> entityQueue = new LinkedBlockingDeque<PersistanceObject<BaseEntity>>();
+	private BlockingQueue<PersistanceObject<?>> entityQueue = new LinkedBlockingDeque<PersistanceObject<?>>();
 	
 	
 	public void init(){
@@ -35,7 +34,7 @@ public class PersistentThread extends Thread{
 			
 			try {
 				while(true){
-					PersistanceObject<BaseEntity> base = entityQueue.poll();
+					PersistanceObject<?> base = entityQueue.poll();
 					if(base != null){
 						DBService dbService = EntityServiceMapper.getClassDBServiceMapByClass(base.getClass());
 						if(dbService != null){
@@ -52,7 +51,7 @@ public class PersistentThread extends Thread{
 	
 	
 	
-	public void persist(PersistanceObject<BaseEntity> base){
+	public void persist(PersistanceObject<?> base){
 		boolean successful = entityQueue.offer(base);
 		if(!successful){
 			logger.info("当前"+base.getClass()+": 插入队列的 将要保存到数据库的对象 没有保存进去 ，请查看");
