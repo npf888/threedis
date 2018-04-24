@@ -59,10 +59,10 @@ public class MessageRecognizer implements InitService{
 		SubcribeReqProto.SubcribeReq req = (SubcribeReqProto.SubcribeReq)msg;
     	String jsonBody = req.getJsonBody();
     	if(StringUtils.isEmpty(jsonBody)){
-    		logger.info("[������Ϣ]��ǰ��ϢΪ�գ���Ϣ reqID:"+req.getMsgCode()+" --- ��Ϣ��:"+req.getJsonBody());
+    		logger.info("[当前请求 的消息  reqID:"+req.getMsgCode()+" --- 消息体:"+req.getJsonBody());
     		return;
     	}
-    	logger.info("[������Ϣ]��ǰ��Ϣ reqID:"+req.getMsgCode()+" --- ��Ϣ��:"+req.getJsonBody());
+    	logger.info("[当前请求 的消息  reqID:"+req.getMsgCode()+" --- 消息体:"+req.getJsonBody());
 		NettyClientSession nettyClientSession = Globals.getNettyClientSessionMap(ctx.channel().remoteAddress().toString());
     	recognize(req.getMsgCode(),jsonBody,nettyClientSession);
 	}
@@ -70,11 +70,11 @@ public class MessageRecognizer implements InitService{
 	public void recognize(Integer msgcode, String jsonMsg,NettyClientSession nettyClientSession){
 		IMessage message =getByMsgType(msgcode);
 		IMessage msg =MsgTransform.fromJSONString(jsonMsg,message);
-		if(msg.getMsgType() == IMessage.CG_MSG_TYPE){//������Ϣ
+		if(msg.getMsgType() == IMessage.CG_MSG_TYPE){
 			msg.setNettyClientSession(nettyClientSession);
 			cgBlockingMsgService.putMsgIntoCache(msg);
-		}else if(msg.getMsgType() == IMessage.GC_MSG_TYPE){//������Ϣ
-			logger.info("GC��Ϣ��"+MsgTransform.toJSONString(msg));
+		}else if(msg.getMsgType() == IMessage.GC_MSG_TYPE){
+			logger.info("GC消息"+MsgTransform.toJSONString(msg));
 		}
 	}
 	

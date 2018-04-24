@@ -17,7 +17,6 @@ import org.springframework.util.CollectionUtils;
 @Component
 public class RedisCacheManager {
 	
-	@Autowired
 	private RedisTemplate<String, Object> redisTemplate;
 
     public void setRedisTemplate(RedisTemplate<String, Object> redisTemplate) {

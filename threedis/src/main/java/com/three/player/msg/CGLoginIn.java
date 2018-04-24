@@ -7,7 +7,6 @@ import com.three.core.msg.mcode.percode.PlayerCode;
 import com.three.core.msg.obj.BaseMessageJSON;
 import com.three.globals.Globals;
 import com.three.player.db.Human;
-import com.three.player.db.entity.PHuman;
 import com.three.player.playerObj.Player;
 
 /**
@@ -58,5 +57,8 @@ public class CGLoginIn extends BaseMessageJSON{
 		//放入redis
 		Globals.getOnLineService().setOnlinePlayer(player);
 		
+		Player redisPlayer = Globals.getOnLineService().getOnlinePlayer(player.getHuman().getId()+"");
+		
+		System.out.println(redisPlayer);
 	}
 }

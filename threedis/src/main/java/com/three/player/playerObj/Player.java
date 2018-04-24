@@ -7,6 +7,7 @@ import com.three.player.db.Human;
 
 public class Player {
 
+
 	private NettyClientSession nettyClientSession;
 	
 	private Human human;

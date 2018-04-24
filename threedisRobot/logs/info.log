@@ -42,3 +42,30 @@
 2018-04-24 15:53:11 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
 2018-04-24 15:53:11 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
 2018-04-24 15:53:13 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-24 18:43:04 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:43:05 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:45:23 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:45:24 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:47:05 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:47:05 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:49:46 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:49:47 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:49:49 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-24 18:52:40 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:52:42 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:52:43 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-24 18:55:18 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:55:18 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:55:20 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-24 18:56:35 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:56:35 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:56:36 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-24 18:59:33 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:59:33 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:59:36 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-24 19:02:51 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 19:02:51 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 19:02:53 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080
+2018-04-24 19:04:51 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 19:04:51 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 19:04:52 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] 我刚上线：/192.168.1.41:8080

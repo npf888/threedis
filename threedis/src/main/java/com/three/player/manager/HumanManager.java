@@ -5,15 +5,15 @@ import com.three.player.db.Human;
 
 public class HumanManager implements ManagerOfHuman{
 
-	private Human human;
+	private Human owner;
 	
 	public HumanManager(Human human) {
-		this.human=human;
+		this.owner=human;
 	}
 
 	@Override
 	public void load() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 	

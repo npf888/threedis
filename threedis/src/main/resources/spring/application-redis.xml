@@ -57,6 +57,8 @@
         <property name="enableTransactionSupport" value="true"></property>  
     </bean>
 	
-	
+	<bean id="redisCacheManager" class="com.three.redis.RedisCacheManager">
+		<property name="redisTemplate" ref="redisTemplate" />
+	</bean>
 
 </beans>

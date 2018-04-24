@@ -9,6 +9,7 @@ public class Human implements PersistanceObject<PHuman>{
 
 	
 	
+
 	
 	private Integer id;
 	
