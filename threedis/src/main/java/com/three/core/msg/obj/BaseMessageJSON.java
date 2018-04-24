@@ -2,7 +2,7 @@ package com.three.core.msg.obj;
 
 
 /**
- * json ½âÎöÊ±»áÓÃµ½
+ * json å±‚
  * @author JavaServer
  *
  */

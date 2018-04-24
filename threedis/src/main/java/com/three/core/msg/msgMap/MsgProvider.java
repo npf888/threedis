@@ -14,7 +14,7 @@ import com.three.globals.InitService;
 import com.three.player.msg.CGLoginIn;
 
 /**
- * ÏûÏ¢Ìá¹©Æ÷
+ * æ¶ˆæ¯ çš„ code å’Œ æ¶ˆæ¯æœ¬èº«çš„æ˜ å°„
  * @author JavaServer
  *
  */
@@ -25,9 +25,6 @@ public class MsgProvider implements InitService{
 	private  Map<Integer,IMessage> msgMap = new HashMap<Integer,IMessage>();
 	
 	
-	/**
-	 * ³õÊ¼»¯ÏûÏ¢
-	 */
 	@Override
 	public void init() {
 		msgMap.put(GiftCode.CG_SEND_GIFT,new CGSendGift());
@@ -37,11 +34,6 @@ public class MsgProvider implements InitService{
 	
 
 
-	/**
-	 * »ñÈ¡ÏûÏ¢
-	 * @param msgType
-	 * @return
-	 */
 	public IMessage getByMsgType(int msgType){
 		return msgMap.get(msgType);
 	}

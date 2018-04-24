@@ -13,7 +13,7 @@ import com.three.core.session.NettyClientSession;
 import com.three.globals.InitService;
 
 /**
- * ·¢ËÍ ¸øÓÃ»§ÏûÏ¢µÄ service  
+ * å¤„ç†è¿”å›ç»™ å®¢æˆ·ç«¯çš„  service  
  * @author JavaServer
  *
  */
@@ -22,28 +22,28 @@ public class GCBlockingMsgService implements InitService{
 	Logger logger = Logger.getLogger(GCBlockingMsgService.class);
 	
 	
-	// ÓÃ»§ÏûÏ¢Ö´ĞĞÍê Ö®ºó ·µ»Ø¸øÓÃ»§µÄÏûÏ¢ ·Åµ½Õâ¸ö»º´æ
+	//ç¼“å­˜
 	private List<IMessage> messageCache = new ArrayList<IMessage>();
 	
 	
 	
-	//×¨ÃÅ ÓÃÓÚ °Ñ  messageCache ÖĞµÄ ÏûÏ¢ ·Åµ½ cgQueue ÖĞ £¨×èÈûµÄ£© 
+	//å¤„ç†çº¿ç¨‹
 	private Thread thread = null;
 	
-	//½ÓÊÕÓÃ»§ÇëÇóµÄÏûÏ¢¶ÓÁĞ
+	// è¿”å›ç»™å®¢æˆ·ç«¯çš„æ¶ˆæ¯é˜Ÿåˆ—
 	private BlockingQueue<IMessage> gcQueue = new LinkedBlockingQueue<IMessage>();
 	
 	/**
-	 * ³õÊ¼»¯ Ïß³Ì
+	 * åˆå§‹åŒ–
 	 */
 	public void init(){
 		Runnable run = new Runnable() {
 			@Override
 			public void run() {
 				while(true){
-					if(messageCache.size()>0){// ·ÅÖÃÏûÏ¢
+					if(messageCache.size()>0){// æŠŠç¼“å­˜ æ”¾å…¥é˜Ÿåˆ—
 						put(messageCache.remove(0));
-					}else{//Ïû·ÑÏûÏ¢
+					}else{//è¿”å›æ¶ˆæ¯
 						process();
 					}
 				}
@@ -56,7 +56,7 @@ public class GCBlockingMsgService implements InitService{
 	
 	
 	/**
-	 * ÊÕµ½µÄÓÃ»§µÄÏûÏ¢·Åµ½ »º´æÖĞ
+	 * æ”¾å…¥ç¼“å­˜
 	 * @param nettyClientSession 
 	 */
 	public void putMsgIntoCache(IMessage msg){
@@ -64,24 +64,24 @@ public class GCBlockingMsgService implements InitService{
 	}
 	
 	/**
-	 * ·ÅÏûÏ¢
+	 * æ”¾å…¥é˜Ÿåˆ—
 	 * @param msg
 	 */
 	private  void put(IMessage msg){
 		try {
 			gcQueue.put(msg);
 		} catch (InterruptedException e) {
-			logger.error("ÓÃ»§ÏûÏ¢ ·ÅÈë×èÈû¶ÓÁĞÊ± ´íÎó£º",e);
+			logger.error("è¿”å›æ¶ˆæ¯æ”¾å…¥é˜Ÿåˆ—å¼‚å¸¸ï¼š",e);
 		}
 	}
 	
 	/**
-	 * Ïû·ÑÏûÏ¢
+	 * å¤„ç†æ¶ˆæ¯
 	 * @param msg
 	 */
 	private void process(){
 		IMessage msg = gcQueue.poll();
-		if(msg != null){//Õâ¸öÏûÏ¢Ö±½Ó·µ»Ø¸øÓÃ»§
+		if(msg != null){
 			msg.getNettyClientSession().sendMessageToCtx(msg);
 		}
 		

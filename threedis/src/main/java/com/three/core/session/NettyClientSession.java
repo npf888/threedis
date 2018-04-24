@@ -8,7 +8,7 @@ import com.three.globals.Globals;
 import com.three.player.playerObj.Player;
 
 /**
- * 用户进入游戏之后 创建 的session
+ * 鐢ㄦ埛Session
  */
 public class NettyClientSession {
 

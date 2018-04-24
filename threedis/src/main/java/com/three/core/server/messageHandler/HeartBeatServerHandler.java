@@ -16,11 +16,10 @@ public class HeartBeatServerHandler extends ChannelInboundHandlerAdapter {
             IdleStateEvent event = (IdleStateEvent) evt;  
             if (event.state() == IdleState.READER_IDLE) {  
                 loss_connect_time++;  
-                System.out.println("[60 ÃëÃ»ÓĞ½ÓÊÕµ½¿Í»§¶Ë" + ctx.channel().id()  
-                        + "µÄĞÅÏ¢ÁË]");  
+                System.out.println("[60 æ—¶é—´åˆ°" + ctx.channel().id()  
+                        + "åˆ°äº†]");  
                 if (loss_connect_time > 2) {  
-                    // ³¬¹ı20ÃëÃ»ÓĞĞÄÌø¾Í¹Ø±ÕÕâ¸öÁ¬½Ó  
-                    System.out.println("[¹Ø±ÕÕâ¸ö²»»îÔ¾µÄchannel:" + ctx.channel().id()  
+                    System.out.println("[é€€å‡º channel:" + ctx.channel().id()  
                             + "]");  
                     ctx.channel().close();  
                 }  

@@ -12,13 +12,11 @@ public class GiftMessagerHandler implements MessagerHandler{
 
 	Logger logger = Logger.getLogger(GiftMessagerHandler.class);
 
-	/**
-	 * Ã¿¸öhandlerµÄ Í³Ò»Èë¿Ú
-	 */
+	
 	@Override
 	public void execute(Player player, IMessage curMessage) {
-		boolean open = true;//ÔÚÅäÖÃÎÄ¼şÖĞ ÅäÖÃ
-		if(!open){//¿ª¹Ø Èç¹û Õû¸öÄ£¿é²»ÓÃµÄ»° ¾Í»á¹Ø±Õ
+		boolean open = true;
+		if(!open){
 			return;
 		}
 		
@@ -31,7 +29,7 @@ public class GiftMessagerHandler implements MessagerHandler{
 
 
 	private void sendGift(Player player){
-		logger.info("ÏÖÔÚ ÕıÔÚµ÷ÓÃ sendGift");
+		logger.info("å‘é€ sendGift");
 		GCSendGift gCSendGift = new GCSendGift();
 		player.sendMessage(gCSendGift);
 	};

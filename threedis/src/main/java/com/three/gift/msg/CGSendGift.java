@@ -8,7 +8,7 @@ import com.three.player.playerObj.Player;
 
 /**
  * 
- * ·¢ËÍÀñÎï
+ * å‘é€ç¤¼ç‰©
  * @author JavaServer
  *
  */

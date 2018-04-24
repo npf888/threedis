@@ -8,14 +8,14 @@ import com.three.player.playerObj.Player;
 
 /**
  * 
- * ·¢ËÍÀñÎï
+ * è¿”å›žç¤¼ç‰©å¯¹è±¡
  * @author JavaServer
  *
  */
 public class GCSendGift extends BaseMessageJSON{
 
 
-	private String name="Ð¡Ã÷";
+	private String name="Ð¡ï¿½ï¿½";
 	private int age=18;
 	private long height=180l;
 	

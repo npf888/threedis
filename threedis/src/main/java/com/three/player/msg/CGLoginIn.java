@@ -6,7 +6,7 @@ import com.three.core.msg.obj.BaseMessageJSON;
 import com.three.player.playerObj.Player;
 
 /**
- * 登录 第一次
+ * 鐢ㄦ埛鐧诲綍
  * @author JavaServer
  *
  */
@@ -21,7 +21,7 @@ public class CGLoginIn extends BaseMessageJSON{
 	public void execute(){
 		
 		/**
-		 * 创建用户
+		 * 鍒涘缓鐢ㄦ埛
 		 */
 		
 		Player player = new Player();

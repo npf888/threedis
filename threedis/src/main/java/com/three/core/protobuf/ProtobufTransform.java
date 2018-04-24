@@ -11,7 +11,7 @@ public class ProtobufTransform {
 	
 	
 	/**
-	 * Ïò protobuf Ğ´ÏûÏ¢
+	 * protobuf  è½¬æ¢æ¶ˆæ¯ 
 	 * @param msgType
 	 * @param jsonMsg
 	 * @return

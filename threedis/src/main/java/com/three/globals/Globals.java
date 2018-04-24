@@ -6,14 +6,14 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.three.core.msg.inter.IMessage;
 import com.three.core.msg.transform.MessageRecognizer;
 import com.three.core.session.NettyClientSession;
+import com.three.database.PersistentThread;
 
 
 /**
  * 
- * È«¾Ö±äÁ¿
+ * å…¨å±€å˜é‡
  * @author JavaServer
  *
  */
@@ -21,14 +21,16 @@ import com.three.core.session.NettyClientSession;
 public class Globals {
 
 	
-	//ÏûÏ¢Ê¶±ğÆ÷ (ÔÙset·½·¨ÖĞ×¢Èë)
+	//æ¶ˆæ¯è¯†åˆ«å™¨
 	private static MessageRecognizer messageRecognizer;
-	//session ¼¯ºÏ
+	//session 
 	private static Map<String,NettyClientSession>  nettyClientSessionMap = new HashMap<String,NettyClientSession>();
-	
+	//æ•°æ®åº“å¤„ç†çš„çº¿ç¨‹
+	private static PersistentThread persistentThread;
 	public  void init(){
 		
 		messageRecognizer.init();
+		persistentThread.init();
 	}
 
 	
@@ -41,8 +43,11 @@ public class Globals {
 		Globals.messageRecognizer = messageRecognizer;
 	}
 
-	
-	
+	@Autowired
+	public static void setPersistentThread(PersistentThread persistentThread) {
+		Globals.persistentThread = persistentThread;
+	}
+
 
 	public static  MessageRecognizer getMessageRecognizer() {
 		return messageRecognizer;

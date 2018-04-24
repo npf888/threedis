@@ -43,7 +43,9 @@
 	 		<property name="testConnectionOnCheckout" value="${testConnectionOnCheckout}"></property> 
 	 </bean> 
 	
-
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+			<property name="dataSource" ref="dataSource"></property>
+	</bean>
 	<!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
 	<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.three.core.msg.inter.IMessage;
 
 /**
- * 消息转换
+ * msg json 杞崲
  * @author JavaServer
  *
  */
@@ -12,11 +12,6 @@ public class MsgTransform {
 
 	
 	
-	/**
-	 * 消息转成字符串
-	 * @param msg
-	 * @return
-	 */
 	public static String toJSONString(IMessage msg){
 		return JSON.toJSONString(msg);
 	}

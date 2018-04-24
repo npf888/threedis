@@ -13,7 +13,7 @@ import com.three.globals.InitService;
 
 
 /**
- * ÓÃ»§ÇëÇóÏûÏ¢µÄ ´¦Àí service
+ * å¤„ç†æ¥å—æ¶ˆæ¯çš„   service
  * @author JavaServer
  *
  */
@@ -21,28 +21,28 @@ import com.three.globals.InitService;
 public class CGBlockingMsgService implements InitService{
 
 	Logger logger = Logger.getLogger(CGBlockingMsgService.class);
-	//netty ½ÓÊÕµ½ÓÃ»§µÄÏûÏ¢ºó µÚÒ»²½ÏÈ·Åµ½ÕâÀï
+	//netty ç¼“å­˜æ•°æ® ï¼ˆä¸­é—´çš„ä¸€å±‚ï¼‰
 	private List<IMessage> messageCache = new ArrayList<IMessage>();
 	
 	
 	
-	//×¨ÃÅ ÓÃÓÚ °Ñ  messageCache ÖĞµÄ ÏûÏ¢ ·Åµ½ cgQueue ÖĞ £¨×èÈûµÄ£© 
+	//æ‰§è¡Œçº¿ç¨‹
 	private Thread thread = null;
 	
-	//½ÓÊÕÓÃ»§ÇëÇóµÄÏûÏ¢¶ÓÁĞ
+	// æ¥æ”¶åˆ°æ¶ˆæ¯çš„é˜Ÿåˆ—
 	private BlockingQueue<IMessage> cgQueue = new LinkedBlockingQueue<IMessage>();
 	
 	/**
-	 * ³õÊ¼»¯ Ïß³Ì
+	 * åˆå§‹åŒ–çº¿ç¨‹ å¹¶å¼€å¯
 	 */
 	public void init(){
 		Runnable run = new Runnable() {
 			@Override
 			public void run() {
 				while(true){
-					if(messageCache.size()>0){// ·ÅÖÃÏûÏ¢
+					if(messageCache.size()>0){// æŠŠ ç¼“å­˜æ”¾å…¥é˜Ÿåˆ—
 						put(messageCache.remove(0));
-					}else{//Ïû·ÑÏûÏ¢
+					}else{//å¤„ç†æ¶ˆæ¯
 						process();
 					}
 				}
@@ -55,26 +55,26 @@ public class CGBlockingMsgService implements InitService{
 	
 	
 	/**
-	 * ÊÕµ½µÄÓÃ»§µÄÏûÏ¢·Åµ½ »º´æÖĞ
+	 * æŠŠæ¶ˆæ¯ å…ˆæ”¾å…¥ç¼“å­˜
 	 */
 	public void putMsgIntoCache(IMessage msg){
 		messageCache.add(msg);
 	}
 	
 	/**
-	 * ·ÅÏûÏ¢
+	 * å†æŠŠæ¶ˆæ¯æ”¾å…¥é˜Ÿåˆ—
 	 * @param msg
 	 */
 	private  void put(IMessage msg){
 		try {
 			cgQueue.put(msg);
 		} catch (InterruptedException e) {
-			logger.error("ÓÃ»§ÏûÏ¢ ·ÅÈë×èÈû¶ÓÁĞÊ± ´íÎó£º",e);
+			logger.error("å¤„ç† æ¥æ”¶æ¶ˆæ¯å¼‚å¸¸ï¼š",e);
 		}
 	}
 	
 	/**
-	 * Ïû·ÑÏûÏ¢
+	 * å¤„ç†æ¶ˆæ¯
 	 * 
 	 * @param msg
 	 */

@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.three.core.msg.msgMap.MsgProvider;
 
 /**
- * spring  ºËÐÄ
+ * spring  
  * @author JavaServer
  *
  */

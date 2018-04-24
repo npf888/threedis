@@ -19,7 +19,7 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Message> {
 		@Override  
 	    public void channelActive(ChannelHandlerContext ctx) throws Exception { // (5)  
 	        Channel incoming = ctx.channel();  
-	        logger.info("ÓÃ»§:" + incoming.remoteAddress() + "ÉÏÏß");  
+	        logger.info("å½“å‰ç”¨æˆ·:" + incoming.remoteAddress() + "è¿›å…¥");  
 	        NettyClientSession clientSession = new NettyClientSession(ctx);
 	        Globals.setNettyClientSessionMap(clientSession);
 	    } 
@@ -27,7 +27,7 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Message> {
 	    @Override  
 	    public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {  
 	        Channel incoming = ctx.channel();  
-	        logger.info("ÓÃ»§:" + incoming.remoteAddress() + " Àë¿ª\n");  
+	        logger.info("å½“å‰ç”¨æˆ·:" + incoming.remoteAddress() + " é€€å‡º\n");  
 	        Globals.removeNettyClientSessionMap(incoming.remoteAddress().toString());
 	    }  
 	  
@@ -43,8 +43,7 @@ public class ChatServerHandler extends SimpleChannelInboundHandler<Message> {
 	    @Override  
 	    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) { 
 	        Channel incoming = ctx.channel();  
-	        // µ±³öÏÖÒì³£¾Í¹Ø±ÕÁ¬½Ó  
-	        logger.info("ChatClient:" + incoming.remoteAddress()+ "Òì³£,ÒÑ±»·şÎñÆ÷¹Ø±Õ");  
+	        logger.info("ChatClient:" + incoming.remoteAddress()+ "å½“å‰ç”¨æˆ·å¼‚å¸¸é€€å‡º");  
 	        cause.printStackTrace();  
 	        ctx.close();  
 	    }  

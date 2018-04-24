@@ -214,3 +214,8 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 +--------+-------------------------------------------------+----------------+
 2018-04-23 18:40:27 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [解析消息]当前消息 reqID:2001 --- 消息体:{"msgCode":2001,"msgType":1}
 2018-04-23 18:40:28 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe6ad219a, L:/192.168.1.41:8080 - R:/192.168.1.41:60319] READ COMPLETE
+2018-04-23 18:45:27 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe6ad219a, L:/192.168.1.41:8080 - R:/192.168.1.41:60319] CLOSE
+2018-04-23 18:45:27 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe6ad219a, L:/192.168.1.41:8080 ! R:/192.168.1.41:60319] INACTIVE
+2018-04-23 18:45:27 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xe6ad219a, L:/192.168.1.41:8080 ! R:/192.168.1.41:60319] UNREGISTERED
+2018-04-23 18:45:27 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 用户:/192.168.1.41:60319 离开
+

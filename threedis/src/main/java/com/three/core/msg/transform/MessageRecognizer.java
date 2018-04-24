@@ -20,7 +20,7 @@ import com.three.globals.Globals;
 import com.three.globals.InitService;
 
 /**
- * ÏûÏ¢Ê¶±ğÆ÷
+ * æ¶ˆæ¯è¯†åˆ«å™¨
  * @author JavaServer
  *
  */
@@ -29,10 +29,10 @@ public class MessageRecognizer implements InitService{
 
 	private Logger logger = Logger.getLogger(MessageRecognizer.class);
 
-	//½ÓÊÕ ÏûÏ¢µÄ service ³õÊ¼»¯
+	//å¤„ç†  ä»protobufæ¥æ”¶ æ¶ˆæ¯
 	@Autowired
 	private CGBlockingMsgService cgBlockingMsgService;
-	//·¢ËÍ ÏûÏ¢µÄ service ³õÊ¼»¯
+	//å¤„ç†  protobuf è¿”å›å»æ¶ˆæ¯
 	@Autowired
 	private GCBlockingMsgService gcBlockingMsgService;
 	@Autowired
@@ -54,32 +54,32 @@ public class MessageRecognizer implements InitService{
 	
 
 
-	//½ÓÊÕ ¿Í»§¶ËÏûÏ¢ ²¢Ê¶±ğ
+	//è¯» protobuf çš„æ¶ˆæ¯ è½¬ json
 	public void toReadMsg(Message msg,ChannelHandlerContext ctx){
 		SubcribeReqProto.SubcribeReq req = (SubcribeReqProto.SubcribeReq)msg;
     	String jsonBody = req.getJsonBody();
     	if(StringUtils.isEmpty(jsonBody)){
-    		logger.info("[½âÎöÏûÏ¢]µ±Ç°ÏûÏ¢Îª¿Õ£ºÏûÏ¢ reqID:"+req.getMsgCode()+" --- ÏûÏ¢Ìå:"+req.getJsonBody());
+    		logger.info("[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢]ï¿½ï¿½Ç°ï¿½ï¿½Ï¢Îªï¿½Õ£ï¿½ï¿½ï¿½Ï¢ reqID:"+req.getMsgCode()+" --- ï¿½ï¿½Ï¢ï¿½ï¿½:"+req.getJsonBody());
     		return;
     	}
-    	logger.info("[½âÎöÏûÏ¢]µ±Ç°ÏûÏ¢ reqID:"+req.getMsgCode()+" --- ÏûÏ¢Ìå:"+req.getJsonBody());
+    	logger.info("[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢]ï¿½ï¿½Ç°ï¿½ï¿½Ï¢ reqID:"+req.getMsgCode()+" --- ï¿½ï¿½Ï¢ï¿½ï¿½:"+req.getJsonBody());
 		NettyClientSession nettyClientSession = Globals.getNettyClientSessionMap(ctx.channel().remoteAddress().toString());
     	recognize(req.getMsgCode(),jsonBody,nettyClientSession);
 	}
-	// Ê¶±ğÏûÏ¢
+	// è¯†åˆ«æ¶ˆæ¯
 	public void recognize(Integer msgcode, String jsonMsg,NettyClientSession nettyClientSession){
 		IMessage message =getByMsgType(msgcode);
 		IMessage msg =MsgTransform.fromJSONString(jsonMsg,message);
-		if(msg.getMsgType() == IMessage.CG_MSG_TYPE){//ÇëÇóÏûÏ¢
+		if(msg.getMsgType() == IMessage.CG_MSG_TYPE){//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 			msg.setNettyClientSession(nettyClientSession);
 			cgBlockingMsgService.putMsgIntoCache(msg);
-		}else if(msg.getMsgType() == IMessage.GC_MSG_TYPE){//·µ»ØÏûÏ¢
-			logger.info("GCÏûÏ¢£º"+MsgTransform.toJSONString(msg));
+		}else if(msg.getMsgType() == IMessage.GC_MSG_TYPE){//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+			logger.info("GCï¿½ï¿½Ï¢ï¿½ï¿½"+MsgTransform.toJSONString(msg));
 		}
 	}
 	
 	
-	//°Ñ Òª·¢ËÍ¸ø¿Í»§¶ËµÄÏûÏ¢ ×ª³É protobuf¸ñÊ½ ·µ»ØÈ¥
+	// å°†æ¶ˆæ¯ è½¬æˆ protobufçš„ æ ¼å¼
 	public SubcribeRespProto.SubcribeResp  toWriteMsg(IMessage msg){
 		return this.protobufTransform.toWriteMsg(msg);
 	}

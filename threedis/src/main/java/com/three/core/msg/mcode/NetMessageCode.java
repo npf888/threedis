@@ -2,7 +2,7 @@ package com.three.core.msg.mcode;
 
 
 /**
- * ÏûÏ¢µÄËùÓĞ±àºÅ
+ * æ¶ˆæ¯çš„ code 
  * @author JavaServer
  *
  */
@@ -14,13 +14,13 @@ public class NetMessageCode {
 		private static int BASE_NUMBER = 1000;
 		public static final int NUMBER_PER_SYS = 1000;
 
-		// ¸÷Ä£¿éÍ¨ÓÃµÄÏûÏ¢ 1000 - 2000 
+		// èŒƒå›´ 1000 - 2000 
 		public static int COMMON_BEGIN = BASE_NUMBER;
 
-		// Íæ¼ÒµÇÂ¼ÍË³öÄ£¿é 2000 - 3000
+		//èŒƒå›´ 2000 - 3000
 		public static int PLAYER_BEGIN = (BASE_NUMBER += NUMBER_PER_SYS);
 		
-		// ÀñÎïÄ£¿é
+		// èŒƒå›´ 3000 - 4000
 		public static int GIFT_BEGIN = (BASE_NUMBER += NUMBER_PER_SYS);
 
 }

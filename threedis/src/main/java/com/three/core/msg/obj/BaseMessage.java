@@ -6,8 +6,8 @@ import com.three.player.playerObj.Player;
 
 public abstract class BaseMessage implements IMessage{
 
-	private int msgCode;//ÏûÏ¢µÄ±àºÅ NetMessageType Ïàµ±ÓÚÏûÏ¢µÄID
-	private int msgType;//ÏûÏ¢µÄ±àºÅ NetMessageType Ïàµ±ÓÚÏûÏ¢µÄID
+	private int msgCode;//æ¶ˆæ¯çš„ç¼–ç   å”¯ä¸€ å¯¹åº”  NetMessageType 
+	private int msgType;//æ¶ˆæ¯ç±»å‹  NetMessageType  
 	private NettyClientSession nettyClientSession;
 	
 	protected BaseMessage(int msgCode,int msgType){
