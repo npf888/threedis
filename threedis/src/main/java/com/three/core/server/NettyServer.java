@@ -70,7 +70,7 @@ public class NettyServer {
             			
             		});
   
-            logger.info("[ChatServer ������]");  
+            logger.info("[ChatServer has started]");  
   
             ChannelFuture f = b.bind(port).sync();  
   

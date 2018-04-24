@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import com.three.database.inter.BaseEntity;
 import com.three.database.inter.DBService;
 import com.three.database.inter.PersistanceObject;
+import com.three.globals.Globals;
 
 /**
  * 异步操作数据库的线程
@@ -36,9 +37,13 @@ public class PersistentThread extends Thread{
 				while(true){
 					PersistanceObject<?> base = entityQueue.poll();
 					if(base != null){
-						DBService dbService = EntityServiceMapper.getClassDBServiceMapByClass(base.getClass());
+						DBService dbService = Globals.getPersistService().getDBService(base.getClass());
 						if(dbService != null){
-							dbService.saveOrUpdate(base);
+							try{
+								dbService.saveOrUpdate(base);
+							}catch(Exception e){
+								logger.error("当前操作数据库错误： 当前 实体类是："+base.getClass(),e);
+							}
 						}else{
 							logger.info("当前"+base.getClass()+": 对应的 DBService 不存在");
 						}

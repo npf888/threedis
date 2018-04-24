@@ -21,7 +21,11 @@ public class HumanDBService implements DBService{
 	@Override
 	public void saveOrUpdate(PersistanceObject base) {
 		Human  human = (Human)base;
-		humanDao.update(human.toEntity());
+		if(human.getId() == null || human.getId() == 0){ 
+			humanDao.insert(human.toEntity());
+		}else{
+			humanDao.update(human.toEntity());
+		}
 	}
 
 	@Override

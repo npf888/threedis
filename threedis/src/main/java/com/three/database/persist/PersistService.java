@@ -18,20 +18,18 @@ public class PersistService implements InitService{
 	//数据库处理的线程
 	@Autowired
 	private  PersistentThread persistentThread;
+	@Autowired
+	private  EntityServiceMapper entityServiceMapper;
 	
 	
 	@Override
 	public void init(){
 		persistentThread.init();
+		entityServiceMapper.init();
 	}
 	
 	
-	public  PersistentThread getPersistentThread() {
-		return persistentThread;
-	}
-	public  void setPersistentThread(PersistentThread persistentThread) {
-		this.persistentThread = persistentThread;
-	}
+	
 
 
 	/**
@@ -43,7 +41,7 @@ public class PersistService implements InitService{
 	}
 	
 	public DBService getDBService(Class<?> clazz){
-		return EntityServiceMapper.getClassDBServiceMapByClass(clazz);
+		return entityServiceMapper.getClassDBServiceMapByClass(clazz);
 	}
 	
 	

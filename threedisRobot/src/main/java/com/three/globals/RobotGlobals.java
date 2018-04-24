@@ -60,7 +60,9 @@ public class RobotGlobals {
 	public static void setRobotSession(RobotSession tRobotSession){
 		robotSession=tRobotSession;
 		//第一次连接上 要放一个 消息
-		robotMessageRecognizer.putMsg(new CGLoginIn());
+		CGLoginIn cgLigin = new CGLoginIn();
+		cgLigin.setDeviceMac("123456");
+		robotMessageRecognizer.putMsg(cgLigin);
 	}
 
 	public static RobotSession getRobotSession() {

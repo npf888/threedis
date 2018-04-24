@@ -14,7 +14,7 @@ public class SpringContextRobotUtils {
 	private  ApplicationContext ac = null;
 	
 	public SpringContextRobotUtils(){
-		ac = new ClassPathXmlApplicationContext("classpath:spring/application.xml");
+		ac = new ClassPathXmlApplicationContext("classpath:spring/robotApplication.xml");
 	}
 	
 	

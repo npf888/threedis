@@ -26,7 +26,12 @@ public class GiftDBService implements DBService{
 	@Override
 	public void saveOrUpdate(PersistanceObject base) {
 		Gift gift = (Gift)base.toEntity();
-		giftDao.update(gift.toEntity());
+		
+		if(gift == null || gift.getId() == 0){
+			giftDao.insert(gift.toEntity());
+		}else{
+			giftDao.update(gift.toEntity());
+		}
 	}
 
 

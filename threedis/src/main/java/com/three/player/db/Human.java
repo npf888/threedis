@@ -6,14 +6,14 @@ import com.three.player.db.entity.PHuman;
 
 public class Human implements PersistanceObject<PHuman>{
 
-	private int id;
+	private Integer id;
 	
 	private String deviceMac;
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -30,12 +30,13 @@ public class Human implements PersistanceObject<PHuman>{
 	@Override
 	public void fromEntity(PHuman entity) {
 		this.setId(entity.getId());
-		
+		this.setDeviceMac(entity.getDeviceMac());
 	}
 	@Override
 	public PHuman toEntity() {
 		PHuman entity = new PHuman();
 		entity.setId(this.getId());
+		entity.setDeviceMac(deviceMac);
 		return entity;
 	}
 

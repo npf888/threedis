@@ -8,17 +8,17 @@ import com.three.database.inter.BaseEntity;
  */
 public class PHuman implements BaseEntity{
 
-	private int id;
+	private Integer id;
 	private String deviceMac;
 	
 	
 	@Override
-	public int getId() {
+	public Integer getId() {
 		return this.id;
 	}
 
 	@Override
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id=id;
 	}
 

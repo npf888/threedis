@@ -1,0 +1,14 @@
+2018-04-24 15:37:42 [ERROR]-[com.mchange.v2.resourcepool.BasicResourcePool.run] A RESOURCE POOL IS PERMANENTLY BROKEN! [com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6ddfd09d] (because a series of 30 acquisition attempts failed.)
+2018-04-24 15:37:42 [ERROR]-[com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak] com.mchange.v2.resourcepool.BasicResourcePool@6ad2a9df -- Unexpectedly broken!!!
+com.mchange.v2.resourcepool.ResourcePoolException: Unexpected Break Stack Trace!
+	at com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak(BasicResourcePool.java:974)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$1000(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1927)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:37:42 [ERROR]-[com.mchange.v2.resourcepool.BasicResourcePool.run] A RESOURCE POOL IS PERMANENTLY BROKEN! [com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@70bb350f] (because a series of 30 acquisition attempts failed.)
+2018-04-24 15:37:42 [ERROR]-[com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak] com.mchange.v2.resourcepool.BasicResourcePool@6ad2a9df -- Unexpectedly broken!!!
+com.mchange.v2.resourcepool.ResourcePoolException: Unexpected Break Stack Trace!
+	at com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak(BasicResourcePool.java:974)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$1000(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1927)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)

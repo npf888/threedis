@@ -27,8 +27,7 @@ public class Globals {
 	private static MessageRecognizer messageRecognizer;
 	//session 
 	private static Map<String,NettyClientSession>  nettyClientSessionMap = new HashMap<String,NettyClientSession>();
-	
-	
+	//持久化的服务
 	private static PersistService persistService;
 	
 	public  void init(){
@@ -53,7 +52,7 @@ public class Globals {
 	}
 	
 	@Autowired
-	public static void setPersistService(PersistService persistService) {
+	public void setPersistService(PersistService persistService) {
 		Globals.persistService = persistService;
 	}
 
