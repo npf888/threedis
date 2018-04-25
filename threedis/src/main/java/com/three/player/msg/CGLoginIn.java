@@ -50,15 +50,14 @@ public class CGLoginIn extends BaseMessageJSON{
 //			player.sendMessage(msg);//提示 deviceMac 为空
 			return;
 		}
-		Human human =Globals.getPersistService().initHuman(deviceMac);
+		//先初始化 到 redis里
+		Human human =Globals.getRedisService().getRedisUserInfoService().initUserInfo(deviceMac);
 		player.setHuman(human);
-		
 		this.getNettyClientSession().setPlayer(player);
-		//放入redis
+		
+		//再放到 onlineService 中
 		Globals.getOnLineService().setOnlinePlayer(player);
 		
-		Player redisPlayer = Globals.getOnLineService().getOnlinePlayer(player.getHuman().getId()+"");
-		
-		System.out.println(redisPlayer);
+		System.out.println(player);
 	}
 }

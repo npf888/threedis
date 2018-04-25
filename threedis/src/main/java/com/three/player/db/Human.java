@@ -8,12 +8,17 @@ import com.three.player.service.HumanManagerService;
 public class Human implements PersistanceObject<PHuman>{
 
 	
-	
+	public static final int HUMAN_NEW=0;
+	public static final int HUMAN_IN=1;
 
 	
-	private Integer id;
-	
+	private Long id;
+	private Integer passportId;
 	private String deviceMac;
+	private String charId;
+	
+	private Integer status;//状态 不存入数据库，  0：刚加载进内存，1：还没有从内存中退出
+	
 	
 	
 	//用户 所有 的manager 的 服务
@@ -27,11 +32,18 @@ public class Human implements PersistanceObject<PHuman>{
 	}
 	
 	
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	public Integer getPassportId() {
+		return passportId;
+	}
+	public void setPassportId(Integer passportId) {
+		this.passportId = passportId;
 	}
 
 
@@ -42,18 +54,38 @@ public class Human implements PersistanceObject<PHuman>{
 		this.deviceMac = deviceMac;
 	}
 	
+	public String getCharId() {
+		return this.charId;
+	}
 	
-	
+	public void setCharId(String charId) {
+		this.charId = charId;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+
 	@Override
 	public void fromEntity(PHuman entity) {
 		this.setId(entity.getId());
 		this.setDeviceMac(entity.getDeviceMac());
+		this.setCharId(entity.getCharId());
+		this.setPassportId(entity.getPassportId());
 	}
 	@Override
 	public PHuman toEntity() {
 		PHuman entity = new PHuman();
 		entity.setId(this.getId());
-		entity.setDeviceMac(deviceMac);
+		entity.setDeviceMac(this.deviceMac);
+		entity.setCharId(this.charId);
+		entity.setPassportId(this.passportId);
 		return entity;
 	}
 
@@ -62,4 +94,7 @@ public class Human implements PersistanceObject<PHuman>{
 		Globals.getPersistService().persist(this);
 		
 	}
+
+
+	
 }

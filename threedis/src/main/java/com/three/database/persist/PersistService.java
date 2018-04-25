@@ -47,18 +47,5 @@ public class PersistService implements InitService{
 		return entityServiceMapper.getClassDBServiceMapByClass(clazz);
 	}
 	
-	public Human initHuman(String deviceMac){
-		PHuman humanEntity = (PHuman)this.getDBService(Human.class).findByDeviceMac(deviceMac);
-		Human human = new Human();
-		if(humanEntity == null){//等于空 就去创建用户 ，然后进入游戏
-			human.setDeviceMac(deviceMac);
-			human.setModified();
-		}else{//不等于空 就进入游戏
-			human.fromEntity(humanEntity);
-		}
-		human.init();//初始化 human 中的 manager
-		
-		return human;
-	}
 	
 }

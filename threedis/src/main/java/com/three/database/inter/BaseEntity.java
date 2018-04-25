@@ -1,6 +1,12 @@
 package com.three.database.inter;
 
-public interface BaseEntity {
-	public Integer getId();
-	public void setId(Integer id);
+import java.io.Serializable;
+
+public interface BaseEntity extends Serializable{
+	public Long getId();
+	public void setId(Long id);
+	
+	public String getCharId();
+	public void setCharId(String charId);
+	
 }

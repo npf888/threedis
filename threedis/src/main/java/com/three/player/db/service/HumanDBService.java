@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.three.database.inter.BaseEntity;
 import com.three.database.inter.DBService;
 import com.three.database.inter.PersistanceObject;
 import com.three.player.db.Human;
@@ -27,13 +28,19 @@ public class HumanDBService implements DBService{
 			humanDao.update(human.toEntity());
 		}
 	}
+	
+	//创建用户
+	@Override
+	public void create(BaseEntity base) {
+		humanDao.insert((PHuman)base);
+	}
 
 	@Override
 	public PHuman findById(int id) {
 		return humanDao.getById(id);
 	}
 
-	@Override
+	
 	public PHuman findByDeviceMac(String deviceMac) {
 		PHuman param = new PHuman();
 		param.setDeviceMac(deviceMac);
@@ -42,6 +49,13 @@ public class HumanDBService implements DBService{
 			return entityList.get(0);
 		}
 		return null;
+	}
+	
+	@Override
+	public int getNum(){
+		PHuman entity = new PHuman();
+		int num = humanDao.queryCount(entity);
+		return num+1;
 	}
 
 	

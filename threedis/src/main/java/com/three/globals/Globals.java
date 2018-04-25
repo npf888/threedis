@@ -8,8 +8,10 @@ import org.springframework.stereotype.Service;
 
 import com.three.core.msg.transform.MessageRecognizer;
 import com.three.core.session.NettyClientSession;
+import com.three.database.IDService;
 import com.three.database.persist.PersistService;
 import com.three.player.service.OnLineService;
+import com.three.redis.RedisService;
 
 
 /**
@@ -30,6 +32,11 @@ public class Globals {
 	private static PersistService persistService;
 	//在线用户 service
 	private static OnLineService onLineService;
+	//在线用户 service
+	private static IDService iDService;
+	
+	//在线用户 service
+	private static RedisService redisService;
 	
 	
 	
@@ -38,6 +45,8 @@ public class Globals {
 		messageRecognizer.init();
 		persistService.init();
 		onLineService.init();
+		iDService.init();
+		redisService.init();
 	}
 
 	
@@ -88,6 +97,29 @@ public class Globals {
 	}
 	public static void removeNettyClientSessionMap(String clientIp) {
 		nettyClientSessionMap.remove(clientIp);
+	}
+
+
+
+
+
+
+	public static IDService getiDService() {
+		return iDService;
+	}
+
+	@Autowired
+	public  void setiDService(IDService iDService) {
+		Globals.iDService = iDService;
+	}
+
+
+	public static RedisService getRedisService() {
+		return redisService;
+	}
+	@Autowired
+	public  void setRedisService(RedisService redisService) {
+		Globals.redisService = redisService;
 	}
 
 

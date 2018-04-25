@@ -1,23 +1,25 @@
-package com.three.player.db.entity;
+package com.three.gift.db.entity;
 
 import com.three.database.inter.BaseEntity;
+
 /**
- * 持久化 的 实体类
+ * 对应数据库 实体  字段一一对应
  * @author JavaServer
  *
  */
-public class PHuman implements BaseEntity{
-
+public class PGift implements BaseEntity{
+	
+	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -1132393016628107653L;
-	
+	private static final long serialVersionUID = 4554465270167466973L;
 	
 	private Long id;
+	private String name;
 	private Integer passportId;
-	private String deviceMac;
 	private String charId;
+	
 	
 	
 	@Override
@@ -30,6 +32,15 @@ public class PHuman implements BaseEntity{
 		this.id=id;
 	}
 
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public Integer getPassportId() {
 		return passportId;
 	}
@@ -38,14 +49,6 @@ public class PHuman implements BaseEntity{
 		this.passportId = passportId;
 	}
 
-	public String getDeviceMac() {
-		return deviceMac;
-	}
-
-	public void setDeviceMac(String deviceMac) {
-		this.deviceMac = deviceMac;
-	}
-	
 	@Override
 	public String getCharId() {
 		return charId;
@@ -54,6 +57,9 @@ public class PHuman implements BaseEntity{
 	public void setCharId(String charId) {
 		this.charId = charId;
 	}
+
+	
+	
 	
 	
 	
