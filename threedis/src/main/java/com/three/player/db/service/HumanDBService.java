@@ -31,8 +31,13 @@ public class HumanDBService implements DBService{
 	
 	//创建用户
 	@Override
-	public void create(BaseEntity base) {
-		humanDao.insert((PHuman)base);
+	public Long create(BaseEntity base) {
+		Long id = humanDao.insert((PHuman)base);
+		return id;
+	}
+	
+	public void update(BaseEntity base){
+		humanDao.update((PHuman)base);
 	}
 
 	@Override

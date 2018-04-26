@@ -13,9 +13,9 @@ import com.three.database.dbutils.name.NameHandler;
 import com.three.database.dbutils.util.ClassUtils;
 
 public class DefaultRowMapper implements RowMapper<Object> {
-    /** 转换的目标对�? */
+    /** 转换的目标对�? */
     private Class<?>    clazz;
-    /** 名称处理�? */
+    /** 名称处理�? */
     private NameHandler nameHandler;
     public DefaultRowMapper(Class<?> clazz, NameHandler nameHandler) {
         this.clazz = clazz;

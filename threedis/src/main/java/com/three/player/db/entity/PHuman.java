@@ -15,10 +15,9 @@ public class PHuman implements BaseEntity{
 	
 	
 	private Long id;
-	private Integer passportId;
 	private String deviceMac;
 	private String charId;
-	
+	private Integer status;//状态 ，  0：刚加载进内存，1：还没有从内存中退出(还存在redis中)
 	
 	@Override
 	public Long getId() {
@@ -30,13 +29,6 @@ public class PHuman implements BaseEntity{
 		this.id=id;
 	}
 
-	public Integer getPassportId() {
-		return passportId;
-	}
-
-	public void setPassportId(Integer passportId) {
-		this.passportId = passportId;
-	}
 
 	public String getDeviceMac() {
 		return deviceMac;
@@ -53,6 +45,14 @@ public class PHuman implements BaseEntity{
 	@Override
 	public void setCharId(String charId) {
 		this.charId = charId;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
 	}
 	
 	

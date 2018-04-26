@@ -2,6 +2,7 @@ package com.three.player.redis;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.three.database.IDService.PerType;
 import com.three.globals.Globals;
@@ -36,9 +37,18 @@ public class RedisHumanService {
 			humanEntity = createPHuman(deviceMac);
 		}else{
 			//先看看 redis 中是否存在
-			PHuman rhuman = (PHuman)redisCacheManager.hget(RedisEnum.HUMAN.toString(),humanEntity.getCharId());
-			if(rhuman != null){
-				return rhuman;
+			String key = RedisEnum.HUMAN.toString();
+			//先判断 是否存在
+			boolean has = redisCacheManager.hHasKey(key, humanEntity.getCharId());
+			if(has){
+				Object rObj = redisCacheManager.hget(key,humanEntity.getCharId());
+				if(rObj != null){
+					PHuman phuman = (PHuman)rObj;
+					phuman.setStatus(Human.HUMAN_IN);
+					//更新状态
+					redisCacheManager.hset(RedisEnum.HUMAN.toString(), humanEntity.getCharId(),phuman);
+					return phuman;
+				}
 			}
 		}
 		//加载到 redis
@@ -56,15 +66,16 @@ public class RedisHumanService {
 	 * @param deviceMac
 	 * @return
 	 */
+	@Transactional
 	private PHuman createPHuman(String deviceMac){
 		PHuman humanEntity = new PHuman();
-		humanEntity.setId(Globals.getiDService().getPriID(PerType.HUMAN));
-		HumanDBService dbService = (HumanDBService)Globals.getPersistService().getDBService(Human.class);
-		int passportId = dbService.getNum();
-		humanEntity.setPassportId(passportId);
-		humanEntity.setCharId(PHuman.class.getSimpleName()+":"+passportId);
 		humanEntity.setDeviceMac(deviceMac);
-		dbService.create(humanEntity);
+		humanEntity.setStatus(Human.HUMAN_NEW);
+		HumanDBService dbService = (HumanDBService)Globals.getPersistService().getDBService(Human.class);
+		Long id = dbService.create(humanEntity);
+		humanEntity.setId(id);
+		humanEntity.setCharId(PHuman.class.getSimpleName()+":"+id);
+		dbService.update(humanEntity);
 		return humanEntity;
 	}
 	

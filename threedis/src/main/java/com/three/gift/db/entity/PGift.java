@@ -17,7 +17,7 @@ public class PGift implements BaseEntity{
 	
 	private Long id;
 	private String name;
-	private Integer passportId;
+	private Long humanId;
 	private String charId;
 	
 	
@@ -41,12 +41,13 @@ public class PGift implements BaseEntity{
 		this.name = name;
 	}
 
-	public Integer getPassportId() {
-		return passportId;
-	}
+	
 
-	public void setPassportId(Integer passportId) {
-		this.passportId = passportId;
+	public Long getHumanId() {
+		return humanId;
+	}
+	public void setHumanId(Long humanId) {
+		this.humanId = humanId;
 	}
 
 	@Override

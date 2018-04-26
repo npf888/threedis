@@ -23,7 +23,7 @@ public class RedisService implements InitService{
 	
 	@Override
 	public void init() {
-		
+		redisGiftService.init();
 		
 	}
 

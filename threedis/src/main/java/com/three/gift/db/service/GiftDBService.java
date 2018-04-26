@@ -56,8 +56,8 @@ public class GiftDBService implements DBService{
 
 
 	@Override
-	public void create(BaseEntity entity) {
-		giftDao.insert((PGift)entity);
+	public Long create(BaseEntity entity) {
+		return giftDao.insert((PGift)entity);
 		
 	}
 

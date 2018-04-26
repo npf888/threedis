@@ -11,7 +11,9 @@ import com.three.gift.db.Gift;
 import com.three.gift.db.service.GiftDBService;
 import com.three.globals.InitService;
 import com.three.player.db.Human;
+import com.three.player.db.entity.PTest;
 import com.three.player.db.service.HumanDBService;
+import com.three.player.db.service.PTestDBService;
 
 /**
  * 建立实体 和  dbService 的关系
@@ -27,12 +29,15 @@ public class EntityServiceMapper  implements InitService{
 	private HumanDBService humanDBService;
 	@Autowired
 	private GiftDBService giftDBService;
+	@Autowired
+	private PTestDBService pTestDBService;
 	
 	
 	@Override
 	public void init(){
 		classDBServiceMap.put(Gift.class,giftDBService);
 		classDBServiceMap.put(Human.class,humanDBService);
+		classDBServiceMap.put(PTest.class,pTestDBService);
 		
 	}
 	

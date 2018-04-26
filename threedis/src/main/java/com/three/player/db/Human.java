@@ -13,11 +13,10 @@ public class Human implements PersistanceObject<PHuman>{
 
 	
 	private Long id;
-	private Integer passportId;
 	private String deviceMac;
 	private String charId;
 	
-	private Integer status;//状态 不存入数据库，  0：刚加载进内存，1：还没有从内存中退出
+	private Integer status;//状态 ，  0：刚加载进内存，1：还没有从内存中退出(还存在redis中)
 	
 	
 	
@@ -38,14 +37,6 @@ public class Human implements PersistanceObject<PHuman>{
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	public Integer getPassportId() {
-		return passportId;
-	}
-	public void setPassportId(Integer passportId) {
-		this.passportId = passportId;
-	}
-
 
 	public String getDeviceMac() {
 		return deviceMac;
@@ -77,15 +68,15 @@ public class Human implements PersistanceObject<PHuman>{
 		this.setId(entity.getId());
 		this.setDeviceMac(entity.getDeviceMac());
 		this.setCharId(entity.getCharId());
-		this.setPassportId(entity.getPassportId());
+		this.setStatus(entity.getStatus());
 	}
 	@Override
 	public PHuman toEntity() {
 		PHuman entity = new PHuman();
 		entity.setId(this.getId());
-		entity.setDeviceMac(this.deviceMac);
-		entity.setCharId(this.charId);
-		entity.setPassportId(this.passportId);
+		entity.setDeviceMac(this.getDeviceMac());
+		entity.setCharId(this.getCharId());
+		entity.setStatus(this.getStatus());
 		return entity;
 	}
 

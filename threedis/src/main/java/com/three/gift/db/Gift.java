@@ -13,7 +13,7 @@ public class Gift implements PersistanceObject<PGift>{
 
 	
 	private Long id;
-	private Integer passportId;
+	private Long humanId;
 	private String name;
 	
 
@@ -33,12 +33,11 @@ public class Gift implements PersistanceObject<PGift>{
 		this.name = name;
 	}
 
-	public Integer getPassportId() {
-		return passportId;
+	public Long getHumanId() {
+		return humanId;
 	}
-
-	public void setPassportId(Integer passportId) {
-		this.passportId = passportId;
+	public void setHumanId(Long humanId) {
+		this.humanId = humanId;
 	}
 
 	
@@ -48,7 +47,7 @@ public class Gift implements PersistanceObject<PGift>{
 	public void fromEntity(PGift entity){
 		this.setId(entity.getId());
 		this.setName(entity.getName());
-		this.setPassportId(entity.getPassportId());
+		this.setHumanId(entity.getHumanId());
 	}
 	
 	@Override
@@ -56,7 +55,7 @@ public class Gift implements PersistanceObject<PGift>{
 		PGift giftEntity = new PGift();
 		giftEntity.setId(this.getId());
 		giftEntity.setName(this.getName());
-		giftEntity.setPassportId(this.getPassportId());
+		giftEntity.setHumanId(this.getHumanId());
 		return giftEntity;
 	}
 	@Override

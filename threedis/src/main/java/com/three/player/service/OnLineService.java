@@ -17,7 +17,7 @@ import com.three.player.playerObj.Player;
 public class OnLineService implements InitService{
 
 	
-	private Map<Integer,Player> playerMap = new HashMap<Integer,Player>();
+	private Map<Long,Player> playerMap = new HashMap<Long,Player>();
 	
 	
 	
@@ -30,7 +30,7 @@ public class OnLineService implements InitService{
 	
 	//添加在线人数 到内存中
 	public void setOnlinePlayer(Player player){
-		playerMap.put(player.getHuman().getPassportId(), player);
+		playerMap.put(player.getHuman().getId(), player);
 	}
 	
 	

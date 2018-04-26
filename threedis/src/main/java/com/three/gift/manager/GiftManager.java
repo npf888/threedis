@@ -25,38 +25,35 @@ public class GiftManager implements ManagerOfHuman{
 		gifts = new ArrayList<Gift>();
 		//根据 human的 status 判断 是否 取 redis 取数据
 		List<PGift> rPgiftList = null;
-		if(owner.getStatus() == Human.HUMAN_IN){//说明 一直 在redis 中，所以 直接去redis 加载数据
+		if(owner.getStatus().intValue() == Human.HUMAN_IN){//说明 一直 在redis 中，所以 直接去redis 加载数据
 			rPgiftList = Globals.getRedisService().getRedisGiftService().getGift(owner.getCharId());
 			
-		}else if(owner.getStatus() == Human.HUMAN_NEW){
+		}else if(owner.getStatus().intValue() == Human.HUMAN_NEW){
 			GiftDBService dbService = (GiftDBService)Globals.getPersistService().getDBService(Gift.class);
 			/**
 			 * 下边 不是测试的 
 			 */
 			
 			PGift condition = new PGift();
-			condition.setPassportId(owner.getPassportId());
+			condition.setHumanId(owner.getId());
 			List<PGift> pgiftList = dbService.findAllByCondition(condition);
-			if(pgiftList == null || pgiftList.size() == 0){
-				
-				/**
-				 * 测试用的先 初始化几条数据， 以后再注释掉
-				 */
-				//----------测试------------
+			/*if(pgiftList == null || pgiftList.size() == 0){
+				// 测试用的先 初始化几条数据， 以后再注释掉
 				for(int i=0;i<10;i++){
 					PGift pGift = new PGift();
-					pGift.setId(Globals.getiDService().getPriID(PerType.GIFT));
 					int num = dbService.getNum();
 					pGift.setCharId(Globals.getiDService().getCharId(PGift.class, num));
-					pGift.setPassportId(owner.getPassportId());
+					pGift.setHumanId(owner.getId());
+					pGift.setName("name:"+(i+1));
 					dbService.create(pGift);
 					
 				}
 				pgiftList = dbService.findAllByCondition(condition);
-				//----------测试------------
+			}*/
+			if(pgiftList != null && pgiftList.size() > 0){
+				Globals.getRedisService().getRedisGiftService().setDataFromDatabaseToRedis(owner.getCharId(),pgiftList);
+				rPgiftList = Globals.getRedisService().getRedisGiftService().getGift(owner.getCharId());
 			}
-			Globals.getRedisService().getRedisGiftService().setDataFromDatabaseToRedis(owner.getCharId(),pgiftList);
-			rPgiftList = Globals.getRedisService().getRedisGiftService().getGift(owner.getCharId());
 		}
 		//转换
 		if(rPgiftList != null && rPgiftList.size()>0 ){

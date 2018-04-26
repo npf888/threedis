@@ -10,5 +10,5 @@ public interface DBService<T extends BaseEntity> {
 	
 	int getNum();
 	
-	void create(BaseEntity entity);
+	Long create(BaseEntity entity);
 }

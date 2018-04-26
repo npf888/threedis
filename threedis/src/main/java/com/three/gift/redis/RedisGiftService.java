@@ -21,7 +21,8 @@ public class RedisGiftService implements InitService{
 	
 	@Override
 	public void init() {
-		
+		//这步 的目的是为了 看看 game_server 启动的时候  验证  redis 有没有启动,没有启动 就会报错
+		Object obj = redisCacheManager.get("ok");
 		
 	}
 
