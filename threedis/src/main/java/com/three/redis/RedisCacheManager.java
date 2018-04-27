@@ -5,10 +5,15 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.listener.ChannelTopic;
+import org.springframework.data.redis.listener.RedisMessageListenerContainer;
+import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
+
+import com.three.redis.subscribe.RedisChangeDatebaseListener;
 /**
  * redis的 工具类
  * @author JavaServer
@@ -23,6 +28,21 @@ public class RedisCacheManager {
         this.redisTemplate = redisTemplate;
     }
 
+    
+    public RedisTemplate<String, Object> getRedisTemplate() {
+		return redisTemplate;
+	}
+
+
+
+	/**
+     * 向某个通道里发送消息
+     * @param listenerChannel
+     * @param message
+     */
+    public void publish(String listenerChannel,String message){
+    	redisTemplate.convertAndSend(listenerChannel, message);
+    }
     
     /**
      * 指定缓存失效时间
@@ -43,7 +63,10 @@ public class RedisCacheManager {
             e.printStackTrace();
             return false;
         }
+        
     }
+    
+    
 
     /**
      * 根据key 获取过期时间

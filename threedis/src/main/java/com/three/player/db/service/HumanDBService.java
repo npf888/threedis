@@ -7,8 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.three.database.inter.BaseEntity;
 import com.three.database.inter.DBService;
-import com.three.database.inter.PersistanceObject;
-import com.three.player.db.Human;
 import com.three.player.db.dao.HumanDao;
 import com.three.player.db.entity.PHuman;
 
@@ -19,16 +17,6 @@ public class HumanDBService implements DBService{
 	@Autowired
 	private HumanDao humanDao;
 	
-	@Override
-	public void saveOrUpdate(PersistanceObject base) {
-		Human  human = (Human)base;
-		if(human.getId() == null || human.getId() == 0){ 
-			humanDao.insert(human.toEntity());
-		}else{
-			humanDao.update(human.toEntity());
-		}
-	}
-	
 	//创建用户
 	@Override
 	public Long create(BaseEntity base) {
@@ -36,6 +24,8 @@ public class HumanDBService implements DBService{
 		return id;
 	}
 	
+	//更新
+	@Override
 	public void update(BaseEntity base){
 		humanDao.update((PHuman)base);
 	}

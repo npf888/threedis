@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.three.database.inter.DBService;
-import com.three.gift.db.Gift;
+import com.three.gift.db.entity.PGift;
 import com.three.gift.db.service.GiftDBService;
 import com.three.globals.InitService;
-import com.three.player.db.Human;
+import com.three.player.db.entity.PHuman;
 import com.three.player.db.entity.PTest;
 import com.three.player.db.service.HumanDBService;
 import com.three.player.db.service.PTestDBService;
@@ -20,6 +20,7 @@ import com.three.player.db.service.PTestDBService;
  * @author JavaServer
  *
  */
+@SuppressWarnings("rawtypes")
 @Component
 public class EntityServiceMapper  implements InitService{
 
@@ -35,8 +36,8 @@ public class EntityServiceMapper  implements InitService{
 	
 	@Override
 	public void init(){
-		classDBServiceMap.put(Gift.class,giftDBService);
-		classDBServiceMap.put(Human.class,humanDBService);
+		classDBServiceMap.put(PGift.class,giftDBService);
+		classDBServiceMap.put(PHuman.class,humanDBService);
 		classDBServiceMap.put(PTest.class,pTestDBService);
 		
 	}

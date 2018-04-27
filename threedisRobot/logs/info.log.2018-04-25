@@ -1,0 +1,5 @@
+2018-04-25 19:12:36 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-25 19:12:36 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-25 19:13:13 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-25 19:13:13 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-25 19:13:14 [INFO]-[com.three.core.client.messageHandler.SubReqClientHandler.channelActive] Œ“∏’…œœﬂ£∫/192.168.1.41:8080

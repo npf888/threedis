@@ -29,7 +29,7 @@ public class GiftManager implements ManagerOfHuman{
 			rPgiftList = Globals.getRedisService().getRedisGiftService().getGift(owner.getCharId());
 			
 		}else if(owner.getStatus().intValue() == Human.HUMAN_NEW){
-			GiftDBService dbService = (GiftDBService)Globals.getPersistService().getDBService(Gift.class);
+			GiftDBService dbService = (GiftDBService)Globals.getPersistService().getDBService(PGift.class);
 			/**
 			 * 下边 不是测试的 
 			 */

@@ -5,8 +5,8 @@ package com.three.redis;
  *
  */
 public enum RedisEnum {
-	HUMAN("在线人数", 1), 
-	GIFT("礼物", 2);  
+	HUMAN("Human", 1), 
+	GIFT("Gift", 2);  
     // 成员变量  
     private String name;  
     private int index;  

@@ -10,7 +10,7 @@ import com.three.player.db.dao.PTestDao;
 import com.three.player.db.entity.PHuman;
 import com.three.player.db.entity.PTest;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings("rawtypes")
 @Service
 public class PTestDBService implements DBService{
 
@@ -18,7 +18,7 @@ public class PTestDBService implements DBService{
 	private PTestDao pTestDao;
 	
 	@Override
-	public void saveOrUpdate(PersistanceObject base) {
+	public void update(BaseEntity base) {
 		
 	}
 	

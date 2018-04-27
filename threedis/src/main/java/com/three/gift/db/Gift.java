@@ -3,6 +3,7 @@ package com.three.gift.db;
 import com.three.database.inter.PersistanceObject;
 import com.three.gift.db.entity.PGift;
 import com.three.globals.Globals;
+import com.three.player.db.Human;
 
 /**
  * 存在于内存中
@@ -16,7 +17,7 @@ public class Gift implements PersistanceObject<PGift>{
 	private Long humanId;
 	private String name;
 	
-
+	@Override
 	public Long getId() {
 		return id;
 	}
@@ -59,9 +60,9 @@ public class Gift implements PersistanceObject<PGift>{
 		return giftEntity;
 	}
 	@Override
-	public void setModified() {
-		
-		Globals.getPersistService().persist(this);
+	public void setModified(Human human) {
+		Globals.getRedisService().updateRedis(human, this);
+//		Globals.getPersistService().persist(this);
 		
 	}
 	

@@ -16,12 +16,13 @@ import com.three.globals.Globals;
  * @author JavaServer
  *
  */
+@SuppressWarnings("rawtypes")
 @Component
 public class PersistentThread extends Thread{
 
 	Logger logger = Logger.getLogger(PersistentThread.class);
 	
-	private BlockingQueue<PersistanceObject<?>> entityQueue = new LinkedBlockingDeque<PersistanceObject<?>>();
+	private BlockingQueue<BaseEntity> entityQueue = new LinkedBlockingDeque<BaseEntity>();
 	
 	
 	public void init(){
@@ -35,12 +36,13 @@ public class PersistentThread extends Thread{
 			
 			try {
 				while(true){
-					PersistanceObject<?> base = entityQueue.poll();
+					BaseEntity base = entityQueue.take();
 					if(base != null){
+						
 						DBService dbService = Globals.getPersistService().getDBService(base.getClass());
 						if(dbService != null){
 							try{
-								dbService.saveOrUpdate(base);
+								dbService.update(base);
 							}catch(Exception e){
 								logger.error("当前操作数据库错误： 当前 实体类是："+base.getClass(),e);
 							}
@@ -56,7 +58,7 @@ public class PersistentThread extends Thread{
 	
 	
 	
-	public void persist(PersistanceObject<?> base){
+	public void persist(BaseEntity base){
 		boolean successful = entityQueue.offer(base);
 		if(!successful){
 			logger.info("当前"+base.getClass()+": 插入队列的 将要保存到数据库的对象 没有保存进去 ，请查看");

@@ -53,6 +53,10 @@ public class CGLoginIn extends BaseMessageJSON{
 		//先初始化 到 redis里
 		Human human =Globals.getRedisService().getRedisUserInfoService().initUserInfo(deviceMac);
 		player.setHuman(human);
+		
+		human.setNickname("呼啦啦啦");
+		
+		human.setModified(human);
 		this.getNettyClientSession().setPlayer(player);
 		
 		//再放到 onlineService 中

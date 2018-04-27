@@ -15,6 +15,16 @@ public class Player {
 	
 	
 	
+	
+	
+	
+	
+	public String getCharId(){
+		return this.human.getCharId();
+	}
+	
+	
+	
 	public Human getHuman() {
 		return human;
 	}

@@ -3,11 +3,10 @@ package com.three.player.redis;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.three.globals.Globals;
-import com.three.globals.InitService;
+import com.three.database.inter.PersistanceObject;
 import com.three.player.db.Human;
 import com.three.player.db.entity.PHuman;
-import com.three.redis.RedisCacheManager;
+import com.three.redis.inter.RedisService;
 
 /**
  * 负责处理 用户所属的表 的信息
@@ -15,7 +14,7 @@ import com.three.redis.RedisCacheManager;
  *
  */
 @Service 
-public class RedisUserInfoService implements InitService{
+public class RedisUserInfoService implements RedisService{
 
 	
 	
@@ -42,6 +41,18 @@ public class RedisUserInfoService implements InitService{
 		//初始化 human 中的 manager（相关的表 加载到redis）
 		human.init();
 		return human;
+	}
+	
+	
+	public void publish(String channel,String message){
+		redisHumanService.publish(channel,message);
+	}
+
+	@SuppressWarnings("rawtypes")
+	@Override
+	public void updateRedis(Human human, PersistanceObject base) {
+		redisHumanService.update(human);
+		
 	}
 	
 	

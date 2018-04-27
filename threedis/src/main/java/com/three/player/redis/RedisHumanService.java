@@ -31,7 +31,7 @@ public class RedisHumanService {
 	 */
 	public PHuman initUserInfo(String deviceMac) {
 		//先从数据库 中查出用户
-		HumanDBService dbService = (HumanDBService)Globals.getPersistService().getDBService(Human.class);
+		HumanDBService dbService = (HumanDBService)Globals.getPersistService().getDBService(PHuman.class);
 		PHuman humanEntity = (PHuman)dbService.findByDeviceMac(deviceMac);;
 		if(humanEntity == null){//等于空 说明是第一次登录， 就去创建用户 ，然后进入游戏
 			humanEntity = createPHuman(deviceMac);
@@ -71,12 +71,22 @@ public class RedisHumanService {
 		PHuman humanEntity = new PHuman();
 		humanEntity.setDeviceMac(deviceMac);
 		humanEntity.setStatus(Human.HUMAN_NEW);
-		HumanDBService dbService = (HumanDBService)Globals.getPersistService().getDBService(Human.class);
+		HumanDBService dbService = (HumanDBService)Globals.getPersistService().getDBService(PHuman.class);
 		Long id = dbService.create(humanEntity);
 		humanEntity.setId(id);
-		humanEntity.setCharId(PHuman.class.getSimpleName()+":"+id);
+		humanEntity.setCharId(Globals.getiDService().getCharId(PHuman.class, id.intValue()));
 		dbService.update(humanEntity);
 		return humanEntity;
+	}
+
+
+	public void update(Human human) {
+		redisCacheManager.hset(RedisEnum.HUMAN.getName(), human.getCharId(), human.toEntity());
+	}
+
+
+	public void publish(String listenerChannel, String message) {
+		redisCacheManager.publish(listenerChannel, message);
 	}
 	
 }

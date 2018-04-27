@@ -11,7 +11,7 @@ import com.three.core.session.NettyClientSession;
 import com.three.database.IDService;
 import com.three.database.persist.PersistService;
 import com.three.player.service.OnLineService;
-import com.three.redis.RedisService;
+import com.three.redis.RedisServiceImpl;
 
 
 /**
@@ -36,7 +36,7 @@ public class Globals {
 	private static IDService iDService;
 	
 	//在线用户 service
-	private static RedisService redisService;
+	private static RedisServiceImpl redisService;
 	
 	
 	
@@ -114,11 +114,11 @@ public class Globals {
 	}
 
 
-	public static RedisService getRedisService() {
+	public static RedisServiceImpl getRedisService() {
 		return redisService;
 	}
 	@Autowired
-	public  void setRedisService(RedisService redisService) {
+	public  void setRedisService(RedisServiceImpl redisService) {
 		Globals.redisService = redisService;
 	}
 

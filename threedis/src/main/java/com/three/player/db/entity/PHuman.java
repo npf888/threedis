@@ -17,6 +17,7 @@ public class PHuman implements BaseEntity{
 	private Long id;
 	private String deviceMac;
 	private String charId;
+	private String nickname;
 	private Integer status;//状态 ，  0：刚加载进内存，1：还没有从内存中退出(还存在redis中)
 	
 	@Override
@@ -53,6 +54,14 @@ public class PHuman implements BaseEntity{
 
 	public void setStatus(Integer status) {
 		this.status = status;
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 	
 	

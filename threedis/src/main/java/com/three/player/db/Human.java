@@ -13,8 +13,12 @@ public class Human implements PersistanceObject<PHuman>{
 
 	
 	private Long id;
+	//不能修改
 	private String deviceMac;
+	//不能修改
 	private String charId;
+
+	private String nickname;
 	
 	private Integer status;//状态 ，  0：刚加载进内存，1：还没有从内存中退出(还存在redis中)
 	
@@ -30,7 +34,7 @@ public class Human implements PersistanceObject<PHuman>{
 		humanManagerService.load();
 	}
 	
-	
+	@Override
 	public Long getId() {
 		return id;
 	}
@@ -62,13 +66,23 @@ public class Human implements PersistanceObject<PHuman>{
 		this.status = status;
 	}
 
+	public String getNickname() {
+		return nickname;
+	}
 
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+
+	
+	
 	@Override
 	public void fromEntity(PHuman entity) {
 		this.setId(entity.getId());
 		this.setDeviceMac(entity.getDeviceMac());
 		this.setCharId(entity.getCharId());
 		this.setStatus(entity.getStatus());
+		this.setNickname(entity.getNickname());
 	}
 	@Override
 	public PHuman toEntity() {
@@ -77,12 +91,14 @@ public class Human implements PersistanceObject<PHuman>{
 		entity.setDeviceMac(this.getDeviceMac());
 		entity.setCharId(this.getCharId());
 		entity.setStatus(this.getStatus());
+		entity.setNickname(this.getNickname());
 		return entity;
 	}
 
+	
 	@Override
-	public void setModified() {
-		Globals.getPersistService().persist(this);
+	public void setModified(Human human) {
+		Globals.getRedisService().updateRedis(human, this);
 		
 	}
 

@@ -1,0 +1,1777 @@
+2018-04-24 15:07:55 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:07:56 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:09:20 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:09:21 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:09:21 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer ������]
+2018-04-24 15:09:57 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:09:57 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:09:58 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:24:13 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:24:13 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:24:14 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:24:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x522f504f, L:/192.168.1.41:8080 - R:/192.168.1.41:55250] REGISTERED
+2018-04-24 15:24:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x522f504f, L:/192.168.1.41:8080 - R:/192.168.1.41:55250] ACTIVE
+2018-04-24 15:24:23 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:55250进入
+2018-04-24 15:24:23 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x522f504f, L:/192.168.1.41:8080 - R:/192.168.1.41:55250] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:24:23 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:24:24 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x522f504f, L:/192.168.1.41:8080 - R:/192.168.1.41:55250] READ COMPLETE
+2018-04-24 15:25:50 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:25:50 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:25:51 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:26:00 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x4efca6cb, L:/192.168.1.41:8080 - R:/192.168.1.41:55537] REGISTERED
+2018-04-24 15:26:00 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x4efca6cb, L:/192.168.1.41:8080 - R:/192.168.1.41:55537] ACTIVE
+2018-04-24 15:26:00 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:55537进入
+2018-04-24 15:26:00 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x4efca6cb, L:/192.168.1.41:8080 - R:/192.168.1.41:55537] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:26:00 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:26:00 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x4efca6cb, L:/192.168.1.41:8080 - R:/192.168.1.41:55537] READ COMPLETE
+2018-04-24 15:30:51 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:30:52 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:30:52 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:31:28 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x0d94ccc1, L:/192.168.1.41:8080 - R:/192.168.1.41:56429] REGISTERED
+2018-04-24 15:31:28 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x0d94ccc1, L:/192.168.1.41:8080 - R:/192.168.1.41:56429] ACTIVE
+2018-04-24 15:31:28 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:56429进入
+2018-04-24 15:31:28 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x0d94ccc1, L:/192.168.1.41:8080 - R:/192.168.1.41:56429] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:31:28 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:31:28 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x0d94ccc1, L:/192.168.1.41:8080 - R:/192.168.1.41:56429] READ COMPLETE
+2018-04-24 15:32:02 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:32:02 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:32:02 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:32:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3d82645f, L:/192.168.1.41:8080 - R:/192.168.1.41:56587] REGISTERED
+2018-04-24 15:32:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3d82645f, L:/192.168.1.41:8080 - R:/192.168.1.41:56587] ACTIVE
+2018-04-24 15:32:11 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:56587进入
+2018-04-24 15:32:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3d82645f, L:/192.168.1.41:8080 - R:/192.168.1.41:56587] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:32:11 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:32:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3d82645f, L:/192.168.1.41:8080 - R:/192.168.1.41:56587] READ COMPLETE
+2018-04-24 15:33:35 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:33:35 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:33:36 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:33:42 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3c1a6f7b, L:/192.168.1.41:8080 - R:/192.168.1.41:56852] REGISTERED
+2018-04-24 15:33:42 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3c1a6f7b, L:/192.168.1.41:8080 - R:/192.168.1.41:56852] ACTIVE
+2018-04-24 15:33:42 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:56852进入
+2018-04-24 15:33:42 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3c1a6f7b, L:/192.168.1.41:8080 - R:/192.168.1.41:56852] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:33:42 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:33:42 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x3c1a6f7b, L:/192.168.1.41:8080 - R:/192.168.1.41:56852] READ COMPLETE
+2018-04-24 15:34:44 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:34:44 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:34:44 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:34:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb75ff27f, L:/192.168.1.41:8080 - R:/192.168.1.41:57084] REGISTERED
+2018-04-24 15:34:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb75ff27f, L:/192.168.1.41:8080 - R:/192.168.1.41:57084] ACTIVE
+2018-04-24 15:34:52 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:57084进入
+2018-04-24 15:34:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb75ff27f, L:/192.168.1.41:8080 - R:/192.168.1.41:57084] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:34:52 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:34:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xb75ff27f, L:/192.168.1.41:8080 - R:/192.168.1.41:57084] READ COMPLETE
+2018-04-24 15:35:04 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ? and id = ?; params:123456,0,
+2018-04-24 15:35:04 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wezaq71x5vfbp|479460a6, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wezaq71x5vfbp|479460a6, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:04 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:05 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:06 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:07 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:08 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:09 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:35:10 [WARN]-[com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded] Could not load driverClass com.mysql.jdbc.Driver
+java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.ensureDriverLoaded(DriverManagerDataSource.java:143)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:173)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:36:58 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:36:58 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:36:59 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:37:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc1b83074, L:/192.168.1.41:8080 - R:/192.168.1.41:57501] REGISTERED
+2018-04-24 15:37:11 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc1b83074, L:/192.168.1.41:8080 - R:/192.168.1.41:57501] ACTIVE
+2018-04-24 15:37:11 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:57501进入
+2018-04-24 15:37:12 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc1b83074, L:/192.168.1.41:8080 - R:/192.168.1.41:57501] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:37:12 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:37:12 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc1b83074, L:/192.168.1.41:8080 - R:/192.168.1.41:57501] READ COMPLETE
+2018-04-24 15:37:12 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ? and id = ?; params:123456,0,
+2018-04-24 15:37:12 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wf26gwlq2lzn|1339e7aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wf26gwlq2lzn|1339e7aa, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 15:37:42 [WARN]-[com.mchange.v2.resourcepool.BasicResourcePool.run] com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6ddfd09d -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLNonTransientConnectionException: CLIENT_PLUGIN_AUTH is required
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:79)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: CLIENT_PLUGIN_AUTH is required
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:59)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:83)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:220)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1411)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:165)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:982)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:852)
+	... 12 more
+2018-04-24 15:37:42 [ERROR]-[com.mchange.v2.resourcepool.BasicResourcePool.run] A RESOURCE POOL IS PERMANENTLY BROKEN! [com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6ddfd09d] (because a series of 30 acquisition attempts failed.)
+2018-04-24 15:37:42 [ERROR]-[com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak] com.mchange.v2.resourcepool.BasicResourcePool@6ad2a9df -- Unexpectedly broken!!!
+com.mchange.v2.resourcepool.ResourcePoolException: Unexpected Break Stack Trace!
+	at com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak(BasicResourcePool.java:974)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$1000(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1927)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:37:42 [WARN]-[com.mchange.v2.resourcepool.BasicResourcePool.run] com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@70bb350f -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+java.sql.SQLNonTransientConnectionException: CLIENT_PLUGIN_AUTH is required
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:79)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:862)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:230)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:226)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:175)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:220)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:206)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:203)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1138)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1125)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$700(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1870)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+Caused by: com.mysql.cj.exceptions.UnableToConnectException: CLIENT_PLUGIN_AUTH is required
+	at sun.reflect.GeneratedConstructorAccessor5.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:59)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:83)
+	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:220)
+	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1411)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:165)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:982)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:852)
+	... 12 more
+2018-04-24 15:37:42 [ERROR]-[com.mchange.v2.resourcepool.BasicResourcePool.run] A RESOURCE POOL IS PERMANENTLY BROKEN! [com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@70bb350f] (because a series of 30 acquisition attempts failed.)
+2018-04-24 15:37:42 [ERROR]-[com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak] com.mchange.v2.resourcepool.BasicResourcePool@6ad2a9df -- Unexpectedly broken!!!
+com.mchange.v2.resourcepool.ResourcePoolException: Unexpected Break Stack Trace!
+	at com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak(BasicResourcePool.java:974)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$1000(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1927)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+2018-04-24 15:37:42 [WARN]-[com.mchange.v2.resourcepool.BasicResourcePool.close] com.mchange.v2.resourcepool.BasicResourcePool@6ad2a9df -- close() called multiple times.
+2018-04-24 15:37:42 [INFO]-[com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource] com.mchange.v2.resourcepool.BasicResourcePool@6ad2a9df -- an attempt to checkout a resource was interrupted, because the pool is now closed. [Thread: Thread-2]
+2018-04-24 15:38:46 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:38:46 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:38:46 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:39:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x50c8bd54, L:/192.168.1.41:8080 - R:/192.168.1.41:58105] REGISTERED
+2018-04-24 15:39:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x50c8bd54, L:/192.168.1.41:8080 - R:/192.168.1.41:58105] ACTIVE
+2018-04-24 15:39:01 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:58105进入
+2018-04-24 15:39:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x50c8bd54, L:/192.168.1.41:8080 - R:/192.168.1.41:58105] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:39:01 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:39:01 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x50c8bd54, L:/192.168.1.41:8080 - R:/192.168.1.41:58105] READ COMPLETE
+2018-04-24 15:39:01 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ? and id = ?; params:123456,0,
+2018-04-24 15:39:01 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wf4hjikhqc52|6239aba6, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wf4hjikhqc52|6239aba6, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 15:39:34 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:39:35 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:39:35 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:39:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x79c6889b, L:/192.168.1.41:8080 - R:/192.168.1.41:58266] REGISTERED
+2018-04-24 15:39:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x79c6889b, L:/192.168.1.41:8080 - R:/192.168.1.41:58266] ACTIVE
+2018-04-24 15:39:43 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:58266进入
+2018-04-24 15:39:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x79c6889b, L:/192.168.1.41:8080 - R:/192.168.1.41:58266] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:39:43 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:39:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x79c6889b, L:/192.168.1.41:8080 - R:/192.168.1.41:58266] READ COMPLETE
+2018-04-24 15:39:43 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ? and id = ?; params:123456,0,
+2018-04-24 15:39:43 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wf5j1dadmfxw|1339e7aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wf5j1dadmfxw|1339e7aa, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 15:40:35 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:40:36 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:40:36 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:40:47 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xaa145b01, L:/192.168.1.41:8080 - R:/192.168.1.41:58476] REGISTERED
+2018-04-24 15:40:47 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xaa145b01, L:/192.168.1.41:8080 - R:/192.168.1.41:58476] ACTIVE
+2018-04-24 15:40:47 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:58476进入
+2018-04-24 15:40:47 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xaa145b01, L:/192.168.1.41:8080 - R:/192.168.1.41:58476] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:40:47 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:40:47 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xaa145b01, L:/192.168.1.41:8080 - R:/192.168.1.41:58476] READ COMPLETE
+2018-04-24 15:40:47 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ? and id = ?; params:123456,0,
+2018-04-24 15:40:47 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wf6u334vewj1|1339e7aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wf6u334vewj1|1339e7aa, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 15:47:08 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:47:08 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:47:09 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:47:16 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcc5ff0a1, L:/192.168.1.41:8080 - R:/192.168.1.41:59469] REGISTERED
+2018-04-24 15:47:16 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcc5ff0a1, L:/192.168.1.41:8080 - R:/192.168.1.41:59469] ACTIVE
+2018-04-24 15:47:16 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:59469进入
+2018-04-24 15:47:16 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcc5ff0a1, L:/192.168.1.41:8080 - R:/192.168.1.41:59469] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:47:16 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:47:17 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xcc5ff0a1, L:/192.168.1.41:8080 - R:/192.168.1.41:59469] READ COMPLETE
+2018-04-24 15:47:17 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 15:47:17 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wff9881gojljx|1339e7aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wff9881gojljx|1339e7aa, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 15:48:01 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:48:01 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:48:01 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:48:08 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc308f2d6, L:/192.168.1.41:8080 - R:/192.168.1.41:59657] REGISTERED
+2018-04-24 15:48:08 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc308f2d6, L:/192.168.1.41:8080 - R:/192.168.1.41:59657] ACTIVE
+2018-04-24 15:48:08 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:59657进入
+2018-04-24 15:48:08 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc308f2d6, L:/192.168.1.41:8080 - R:/192.168.1.41:59657] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:48:08 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:48:09 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc308f2d6, L:/192.168.1.41:8080 - R:/192.168.1.41:59657] READ COMPLETE
+2018-04-24 15:48:09 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 15:48:09 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wfgdt415kdsyb|d41f816, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wfgdt415kdsyb|d41f816, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 15:51:45 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:51:45 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:51:46 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:51:53 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xacc39469, L:/192.168.1.41:8080 - R:/192.168.1.41:60264] REGISTERED
+2018-04-24 15:51:53 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xacc39469, L:/192.168.1.41:8080 - R:/192.168.1.41:60264] ACTIVE
+2018-04-24 15:51:53 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:60264进入
+2018-04-24 15:51:54 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xacc39469, L:/192.168.1.41:8080 - R:/192.168.1.41:60264] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:51:54 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:51:54 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xacc39469, L:/192.168.1.41:8080 - R:/192.168.1.41:60264] READ COMPLETE
+2018-04-24 15:51:54 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 15:51:54 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wfl6zng4x7iv|1339e7aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wfl6zng4x7iv|1339e7aa, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 15:53:03 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 15:53:04 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 15:53:04 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 15:53:14 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x04f2b393, L:/192.168.1.41:8080 - R:/192.168.1.41:60516] REGISTERED
+2018-04-24 15:53:14 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x04f2b393, L:/192.168.1.41:8080 - R:/192.168.1.41:60516] ACTIVE
+2018-04-24 15:53:14 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:60516进入
+2018-04-24 15:53:14 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x04f2b393, L:/192.168.1.41:8080 - R:/192.168.1.41:60516] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 15:53:14 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 15:53:14 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x04f2b393, L:/192.168.1.41:8080 - R:/192.168.1.41:60516] READ COMPLETE
+2018-04-24 15:53:14 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 15:53:14 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wfmv99caqupy|1339e7aa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wfmv99caqupy|1339e7aa, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 16:45:03 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 16:45:03 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 16:45:04 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 18:42:55 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:42:55 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:42:56 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 18:44:49 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:44:49 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:44:50 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 18:46:56 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:46:56 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:46:56 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 18:49:39 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:49:39 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:49:40 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 18:49:49 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x02d7b13d, L:/192.168.1.41:8080 - R:/192.168.1.41:61693] REGISTERED
+2018-04-24 18:49:49 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x02d7b13d, L:/192.168.1.41:8080 - R:/192.168.1.41:61693] ACTIVE
+2018-04-24 18:49:49 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:61693进入
+2018-04-24 18:49:49 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x02d7b13d, L:/192.168.1.41:8080 - R:/192.168.1.41:61693] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 18:49:49 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [������Ϣ]��ǰ��Ϣ reqID:2001 --- ��Ϣ��:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 18:49:49 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x02d7b13d, L:/192.168.1.41:8080 - R:/192.168.1.41:61693] READ COMPLETE
+2018-04-24 18:49:49 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 18:49:49 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wlxz03aqann6|3b7d3a38, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wlxz03aqann6|3b7d3a38, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 18:52:31 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:52:32 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:52:32 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 18:52:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xbe1d2c31, L:/192.168.1.41:8080 - R:/192.168.1.41:62172] REGISTERED
+2018-04-24 18:52:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xbe1d2c31, L:/192.168.1.41:8080 - R:/192.168.1.41:62172] ACTIVE
+2018-04-24 18:52:43 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:62172进入
+2018-04-24 18:52:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xbe1d2c31, L:/192.168.1.41:8080 - R:/192.168.1.41:62172] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 18:52:43 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [当前请求 的消息  reqID:2001 --- 消息体:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 18:52:43 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xbe1d2c31, L:/192.168.1.41:8080 - R:/192.168.1.41:62172] READ COMPLETE
+2018-04-24 18:52:58 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 18:52:58 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wm1nywq44z1d|3b7d3a38, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wm1nywq44z1d|3b7d3a38, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 18:55:12 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:55:12 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:55:12 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 18:55:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x6f5913aa, L:/192.168.1.41:8080 - R:/192.168.1.41:62633] REGISTERED
+2018-04-24 18:55:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x6f5913aa, L:/192.168.1.41:8080 - R:/192.168.1.41:62633] ACTIVE
+2018-04-24 18:55:20 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:62633进入
+2018-04-24 18:55:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x6f5913aa, L:/192.168.1.41:8080 - R:/192.168.1.41:62633] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 18:55:20 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [当前请求 的消息  reqID:2001 --- 消息体:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 18:55:20 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x6f5913aa, L:/192.168.1.41:8080 - R:/192.168.1.41:62633] READ COMPLETE
+2018-04-24 18:55:20 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 18:55:20 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wm53iu4yjs07|3b7d3a38, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wm53iu4yjs07|3b7d3a38, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 18:56:25 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:56:25 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:56:26 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 18:56:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc5e182d1, L:/192.168.1.41:8080 - R:/192.168.1.41:62888] REGISTERED
+2018-04-24 18:56:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc5e182d1, L:/192.168.1.41:8080 - R:/192.168.1.41:62888] ACTIVE
+2018-04-24 18:56:36 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:62888进入
+2018-04-24 18:56:37 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc5e182d1, L:/192.168.1.41:8080 - R:/192.168.1.41:62888] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 18:56:37 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [当前请求 的消息  reqID:2001 --- 消息体:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 18:56:37 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0xc5e182d1, L:/192.168.1.41:8080 - R:/192.168.1.41:62888] READ COMPLETE
+2018-04-24 18:56:37 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 18:56:37 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wm6ob6stz9pq|3899782c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wm6ob6stz9pq|3899782c, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 18:59:21 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 18:59:21 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 18:59:21 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 18:59:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 - R:/192.168.1.41:63376] REGISTERED
+2018-04-24 18:59:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 - R:/192.168.1.41:63376] ACTIVE
+2018-04-24 18:59:36 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:63376进入
+2018-04-24 18:59:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 - R:/192.168.1.41:63376] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 18:59:36 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [当前请求 的消息  reqID:2001 --- 消息体:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 18:59:36 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 - R:/192.168.1.41:63376] READ COMPLETE
+2018-04-24 18:59:36 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 18:59:36 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wmafmyfkol6m|3b7d3a38, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wmafmyfkol6m|3b7d3a38, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 19:02:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 - R:/192.168.1.41:63376] READ COMPLETE
+2018-04-24 19:02:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 - R:/192.168.1.41:63376] EXCEPTION: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:745)
+2018-04-24 19:02:39 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.exceptionCaught] ChatClient:/192.168.1.41:63376当前用户异常退出
+2018-04-24 19:02:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 - R:/192.168.1.41:63376] CLOSE
+2018-04-24 19:02:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 ! R:/192.168.1.41:63376] USER_EVENT: io.netty.channel.socket.ChannelInputShutdownReadComplete@2d3b216c
+2018-04-24 19:02:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 ! R:/192.168.1.41:63376] INACTIVE
+2018-04-24 19:02:39 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x8edbb743, L:/192.168.1.41:8080 ! R:/192.168.1.41:63376] UNREGISTERED
+2018-04-24 19:02:39 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.handlerRemoved] 当前用户:/192.168.1.41:63376 退出
+
+2018-04-24 19:02:44 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 19:02:44 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 19:02:45 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 19:02:53 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x4972a23b, L:/192.168.1.41:8080 - R:/192.168.1.41:63928] REGISTERED
+2018-04-24 19:02:53 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x4972a23b, L:/192.168.1.41:8080 - R:/192.168.1.41:63928] ACTIVE
+2018-04-24 19:02:53 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:63928进入
+2018-04-24 19:02:53 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x4972a23b, L:/192.168.1.41:8080 - R:/192.168.1.41:63928] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 19:02:53 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [当前请求 的消息  reqID:2001 --- 消息体:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 19:02:53 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x4972a23b, L:/192.168.1.41:8080 - R:/192.168.1.41:63928] READ COMPLETE
+2018-04-24 19:02:53 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 19:02:53 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wmesm21koufl|3b7d3a38, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wmesm21koufl|3b7d3a38, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2018-04-24 19:04:44 [INFO]-[com.mchange.v2.log.MLog.run] MLog clients using log4j logging.
+2018-04-24 19:04:44 [INFO]-[com.mchange.v2.c3p0.C3P0Registry.banner] Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2018-04-24 19:04:45 [INFO]-[com.three.core.server.NettyServer.run] [ChatServer has started]
+2018-04-24 19:04:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x42b75aec, L:/192.168.1.41:8080 - R:/192.168.1.41:64270] REGISTERED
+2018-04-24 19:04:52 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x42b75aec, L:/192.168.1.41:8080 - R:/192.168.1.41:64270] ACTIVE
+2018-04-24 19:04:52 [INFO]-[com.three.core.server.messageHandler.ChatServerHandler.channelActive] 当前用户:/192.168.1.41:64270进入
+2018-04-24 19:04:53 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x42b75aec, L:/192.168.1.41:8080 - R:/192.168.1.41:64270] READ: 55B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 36 08 d1 0f 1a 31 7b 22 64 65 76 69 63 65 4d 61 |6....1{"deviceMa|
+|00000010| 63 22 3a 22 31 32 33 34 35 36 22 2c 22 6d 73 67 |c":"123456","msg|
+|00000020| 43 6f 64 65 22 3a 32 30 30 31 2c 22 6d 73 67 54 |Code":2001,"msgT|
+|00000030| 79 70 65 22 3a 31 7d                            |ype":1}         |
++--------+-------------------------------------------------+----------------+
+2018-04-24 19:04:53 [INFO]-[com.three.core.msg.transform.MessageRecognizer.toReadMsg] [当前请求 的消息  reqID:2001 --- 消息体:{"deviceMac":"123456","msgCode":2001,"msgType":1}
+2018-04-24 19:04:53 [INFO]-[io.netty.handler.logging.LoggingHandler.log] [id: 0x42b75aec, L:/192.168.1.41:8080 - R:/192.168.1.41:64270] READ COMPLETE
+2018-04-24 19:04:53 [INFO]-[com.three.database.dbutils.BaseDaoImpl.queryList] queryList::sql = select * from p_human where device_mac = ?; params:123456,
+2018-04-24 19:04:53 [INFO]-[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge1499u1wmhd9e1f4b1du|14fc1f0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge1499u1wmhd9e1f4b1du|14fc1f0, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/threedis?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]

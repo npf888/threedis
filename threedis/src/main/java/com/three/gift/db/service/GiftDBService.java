@@ -7,8 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.three.database.inter.BaseEntity;
 import com.three.database.inter.DBService;
-import com.three.database.inter.PersistanceObject;
-import com.three.gift.db.Gift;
 import com.three.gift.db.dao.GiftDao;
 import com.three.gift.db.entity.PGift;
 
@@ -17,6 +15,7 @@ import com.three.gift.db.entity.PGift;
  * @author JavaServer
  *
  */
+@SuppressWarnings("rawtypes")
 @Service
 public class GiftDBService implements DBService{
 	
@@ -26,14 +25,8 @@ public class GiftDBService implements DBService{
 
 
 	@Override
-	public void saveOrUpdate(PersistanceObject base) {
-		Gift gift = (Gift)base.toEntity();
-		
-		if(gift == null || gift.getId() == 0){
-			giftDao.insert(gift.toEntity());
-		}else{
-			giftDao.update(gift.toEntity());
-		}
+	public void update(BaseEntity base) {
+		giftDao.update((PGift)base);
 	}
 
 
@@ -43,6 +36,8 @@ public class GiftDBService implements DBService{
 	}
 
 	
+	
+	@SuppressWarnings("unchecked")
 	public List<PGift> findAllByCondition(PGift condition){
 		return (List<PGift>)giftDao.queryList(condition);
 	}
